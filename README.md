@@ -32,6 +32,10 @@ Die Wetterseite trennt modellbasierte Prognosehinweise ausdrücklich von amtlich
 
 Der Workflow `.github/workflows/update-hazards.yml` prüft die amtlichen BAFU- und SLF-Daten alle 30 Minuten. Er schreibt nur dann einen neuen Commit, wenn sich die Gefahrenlage tatsächlich geändert hat. GitHub Actions muss für das Repository aktiviert sein.
 
+## Roundshot Naters
+
+Die 360°-Livecam `https://naters.roundshot.com/#/` ist als iframe auf der Webcam-Seite eingebunden. Roundshot erlaubt die technische Einbettung; die Antwort enthält weder `X-Frame-Options` noch eine blockierende `frame-ancestors`-Richtlinie. Beim Anzeigen wird eine direkte Verbindung zu Roundshot und dessen statischem CDN aufgebaut, wodurch die öffentliche IP-Adresse des Fernsehers technisch an diese Anbieter übermittelt wird.
+
 ## Lokal testen
 
 `index.html` kann direkt im Browser geöffnet werden. Wegen Browser-Sicherheitsregeln funktionieren externe Inhalte zuverlässiger über einen kleinen lokalen Webserver:
