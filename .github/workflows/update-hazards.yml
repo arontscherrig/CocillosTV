@@ -1,0 +1,42 @@
+name: Update official hazard data
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-official-hazard-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Fetch official data
+        run: node scripts/update-hazards.mjs
+
+      - name: Commit changed data
+        run: |
+          if git diff --quiet -- data/hazards.json; then
+            echo "No hazard changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/hazards.json
+          git commit -m "Update official hazard data"
+          git pull --rebase origin main
+          git push origin HEAD:main

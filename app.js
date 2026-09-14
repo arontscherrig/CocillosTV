@@ -44,6 +44,22 @@
     99: ["⛈️", "Starkes Gewitter"]
   };
 
+  const dangerLabels = {
+    1: "gering",
+    2: "mässig",
+    3: "erheblich",
+    4: "gross",
+    5: "sehr gross"
+  };
+
+  const avalancheValues = {
+    low: 1,
+    moderate: 2,
+    considerable: 3,
+    high: 4,
+    very_high: 5
+  };
+
   const byId = (id) => document.getElementById(id);
 
   function setText(id, value) {
@@ -353,15 +369,21 @@
       current: [
         "temperature_2m",
         "apparent_temperature",
+        "relative_humidity_2m",
         "precipitation",
         "weather_code",
-        "wind_speed_10m"
+        "wind_speed_10m",
+        "wind_gusts_10m"
       ].join(","),
       daily: [
         "weather_code",
         "temperature_2m_max",
         "temperature_2m_min",
-        "precipitation_probability_max"
+        "precipitation_probability_max",
+        "precipitation_sum",
+        "rain_sum",
+        "snowfall_sum",
+        "wind_gusts_10m_max"
       ].join(","),
       timezone: "auto",
       forecast_days: String(Math.min(7, Math.max(3, Number(weather.forecastDays) || 5)))
@@ -397,7 +419,8 @@
     setText("currentCondition", info[1]);
     setText("feelsLike", `${Math.round(current.apparent_temperature ?? current.temperature_2m ?? 0)}°`);
     setText("windSpeed", `${Math.round(current.wind_speed_10m || 0)} km/h`);
-    setText("precipitation", `${Number(current.precipitation || 0).toFixed(1)} mm`);
+    setText("windGusts", `${Math.round(current.wind_gusts_10m || 0)} km/h`);
+    setText("humidity", `${Math.round(current.relative_humidity_2m || 0)} %`);
     setText(
       "weatherUpdated",
       `Aktualisiert ${new Intl.DateTimeFormat("de-CH", {
@@ -429,6 +452,10 @@
       icon.textContent = dayInfo[0];
       icon.title = dayInfo[1];
 
+      const condition = document.createElement("span");
+      condition.className = "condition";
+      condition.textContent = dayInfo[1];
+
       const range = document.createElement("span");
       range.className = "range";
       const maximum = Math.round((daily.temperature_2m_max || [])[index]);
@@ -440,17 +467,235 @@
 
       const rain = document.createElement("span");
       rain.className = "rain";
-      rain.textContent = `Regen ${Math.round((daily.precipitation_probability_max || [])[index] || 0)} %`;
+      const probability = Math.round((daily.precipitation_probability_max || [])[index] || 0);
+      const amount = Number((daily.precipitation_sum || [])[index] || 0);
+      const gust = Math.round((daily.wind_gusts_10m_max || [])[index] || 0);
+      rain.textContent = `${amount.toFixed(1)} mm · ${probability} % · Böen ${gust}`;
 
-      card.append(dayName, icon, range, rain);
+      card.append(dayName, icon, condition, range, rain);
       forecast.appendChild(card);
     });
+
+    renderForecastHazards(daily);
+  }
+
+  function updateHazardCard(cardId, statusId, detailId, status, detail, tone = "neutral") {
+    const card = byId(cardId);
+    if (card) {
+      card.classList.remove("status-neutral", "status-ok", "status-watch", "status-danger");
+      card.classList.add(`status-${tone}`);
+    }
+    setText(statusId, status);
+    setText(detailId, detail);
+  }
+
+  function numericValues(values) {
+    return (Array.isArray(values) ? values : [])
+      .map(Number)
+      .filter(Number.isFinite);
+  }
+
+  function renderForecastHazards(daily) {
+    const codes = numericValues(daily.weather_code).slice(0, 5);
+    const gusts = numericValues(daily.wind_gusts_10m_max).slice(0, 5);
+    const precipitation = numericValues(daily.precipitation_sum).slice(0, 5);
+    const snowfall = numericValues(daily.snowfall_sum).slice(0, 5);
+    const temperatures = numericValues(daily.temperature_2m_max).slice(0, 5);
+    const signals = [];
+
+    const maximumGust = Math.max(0, ...gusts);
+    const maximumRain = Math.max(0, ...precipitation);
+    const maximumSnow = Math.max(0, ...snowfall);
+    const maximumTemperature = Math.max(-99, ...temperatures);
+
+    if (codes.some((code) => code >= 95)) {
+      signals.push({ severity: 2, status: "Gewitter möglich", detail: "Lokale Böen, Blitz und Starkregen beachten" });
+    }
+    if (maximumGust >= 90) {
+      signals.push({ severity: 2, status: "Sturmböen möglich", detail: `Bis ${Math.round(maximumGust)} km/h prognostiziert` });
+    } else if (maximumGust >= 60) {
+      signals.push({ severity: 1, status: "Starke Böen möglich", detail: `Bis ${Math.round(maximumGust)} km/h prognostiziert` });
+    }
+    if (maximumSnow >= 25) {
+      signals.push({ severity: 2, status: "Kräftiger Schneefall möglich", detail: `Bis ${Math.round(maximumSnow)} cm pro Tag im Modell` });
+    } else if (maximumSnow >= 10) {
+      signals.push({ severity: 1, status: "Schneefall beachten", detail: `Bis ${Math.round(maximumSnow)} cm pro Tag im Modell` });
+    }
+    if (maximumTemperature >= 34) {
+      signals.push({ severity: 2, status: "Starke Hitze möglich", detail: `Bis ${Math.round(maximumTemperature)} °C prognostiziert` });
+    } else if (maximumTemperature >= 30) {
+      signals.push({ severity: 1, status: "Hitze beachten", detail: `Bis ${Math.round(maximumTemperature)} °C prognostiziert` });
+    }
+
+    signals.sort((a, b) => b.severity - a.severity);
+    const primary = signals[0];
+    updateHazardCard(
+      "forecastHazardCard",
+      "forecastHazardStatus",
+      "forecastHazardDetail",
+      primary?.status || "Keine markanten Wettersignale",
+      primary?.detail || "5-Tage-Prognose ohne auffällige Schwellenwerte",
+      primary ? (primary.severity >= 2 ? "danger" : "watch") : "ok"
+    );
+
+    const totalRain = precipitation.reduce((sum, value) => sum + value, 0);
+    const floodDanger = maximumRain >= 50 || totalRain >= 90;
+    const floodWatch = maximumRain >= 30 || totalRain >= 55;
+    updateHazardCard(
+      "floodHazardCard",
+      "floodHazardStatus",
+      "floodHazardDetail",
+      `${totalRain.toFixed(1)} mm in 5 Tagen`,
+      floodDanger
+        ? `Bis ${maximumRain.toFixed(1)} mm/Tag · amtliche Lage prüfen`
+        : floodWatch
+          ? `Erhöhte Regenmenge · amtliche Lage prüfen`
+          : `Maximal ${maximumRain.toFixed(1)} mm/Tag · amtliche Lage öffnen`,
+      floodDanger ? "danger" : floodWatch ? "watch" : "ok"
+    );
+  }
+
+  async function loadHazards() {
+    const weather = config.weather || {};
+    const dataPath = weather.hazardDataUrl || "data/hazards.json";
+
+    try {
+      const url = new URL(dataPath, window.location.href);
+      url.searchParams.set("_cocillos_refresh", Date.now());
+      const response = await fetch(url, { cache: "no-store" });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      renderOfficialHazards(await response.json());
+    } catch (error) {
+      console.error("Gefahrendaten konnten nicht geladen werden:", error);
+      updateHazardCard(
+        "fireHazardCard",
+        "fireHazardStatus",
+        "fireHazardDetail",
+        "Amtliche Daten nicht verfügbar",
+        "BAFU-Lage mit Klick öffnen",
+        "neutral"
+      );
+      updateHazardCard(
+        "avalancheHazardCard",
+        "avalancheHazardStatus",
+        "avalancheHazardDetail",
+        "Amtliche Daten nicht verfügbar",
+        "SLF-Bulletin mit Klick öffnen",
+        "neutral"
+      );
+    }
+  }
+
+  function renderOfficialHazards(data) {
+    const weather = config.weather || {};
+    const requestedFireRegions = (Array.isArray(weather.fireRegions) ? weather.fireRegions : [])
+      .map((name) => String(name).trim().toLowerCase())
+      .filter(Boolean);
+    const fireRegions = Array.isArray(data.fire?.regions) ? data.fire.regions : [];
+    const selectedFireRegions = fireRegions.filter((region) => {
+      const name = String(region.name || "").toLowerCase();
+      return requestedFireRegions.some((requested) => name.includes(requested));
+    });
+
+    if (data.fire?.status === "ok" && selectedFireRegions.length) {
+      const fireLevel = Math.max(...selectedFireRegions.map((region) => Number(region.level) || 0));
+      const measureCategory = Math.max(...selectedFireRegions.map((region) => Number(region.measureCategory) || 0));
+      const measureTitles = {
+        1: "Besondere Vorsicht mit Feuer",
+        2: "Bedingtes Feuerverbot",
+        3: "Feuerverbot im Wald",
+        4: "Absolutes Feuerverbot"
+      };
+      const fireStatus = measureTitles[measureCategory]
+        || `Gefahr ${dangerLabels[fireLevel] || "nicht eingestuft"}`;
+      const regionNames = selectedFireRegions.map((region) => region.name).join(" + ");
+      const tone = measureCategory >= 2 || fireLevel >= 4
+        ? "danger"
+        : measureCategory >= 1 || fireLevel >= 3
+          ? "watch"
+          : "ok";
+
+      updateHazardCard(
+        "fireHazardCard",
+        "fireHazardStatus",
+        "fireHazardDetail",
+        fireStatus,
+        `${regionNames} · Gefahrenstufe ${fireLevel}/5`,
+        tone
+      );
+    } else {
+      updateHazardCard(
+        "fireHazardCard",
+        "fireHazardStatus",
+        "fireHazardDetail",
+        data.fire?.status === "ok" ? "Region nicht gefunden" : "BAFU-Daten nicht verfügbar",
+        "Amtliche Lage mit Klick öffnen",
+        "neutral"
+      );
+    }
+
+    const prefixes = (Array.isArray(weather.avalancheRegionPrefixes)
+      ? weather.avalancheRegionPrefixes
+      : ["CH-42"]
+    ).map(String);
+    const bulletins = Array.isArray(data.avalanche?.bulletins) ? data.avalanche.bulletins : [];
+    const selectedBulletins = bulletins.filter((bulletin) =>
+      (Array.isArray(bulletin.regions) ? bulletin.regions : [])
+        .some((region) => prefixes.some((prefix) => String(region.id || "").startsWith(prefix)))
+    );
+
+    if (data.avalanche?.status === "ok" && selectedBulletins.length) {
+      const level = Math.max(...selectedBulletins.map((bulletin) =>
+        Number(bulletin.level) || avalancheValues[bulletin.mainValue] || 0
+      ));
+      const endTimes = selectedBulletins
+        .map((bulletin) => bulletin.validUntil ? new Date(bulletin.validUntil).getTime() : Number.NaN)
+        .filter(Number.isFinite);
+      const validUntil = endTimes.length
+        ? new Intl.DateTimeFormat("de-CH", { weekday: "short", hour: "2-digit", minute: "2-digit" })
+            .format(new Date(Math.max(...endTimes)))
+        : null;
+
+      updateHazardCard(
+        "avalancheHazardCard",
+        "avalancheHazardStatus",
+        "avalancheHazardDetail",
+        `Stufe ${level} – ${dangerLabels[level] || "nicht eingestuft"}`,
+        validUntil ? `Oberwallis · gültig bis ${validUntil}` : "Oberwallis · SLF-Bulletin",
+        level >= 4 ? "danger" : level >= 3 ? "watch" : "ok"
+      );
+    } else {
+      updateHazardCard(
+        "avalancheHazardCard",
+        "avalancheHazardStatus",
+        "avalancheHazardDetail",
+        data.avalanche?.status === "ok" ? "Kein Bulletin aktiv" : "SLF-Daten nicht verfügbar",
+        "Aktuelle Lage mit Klick beim SLF prüfen",
+        data.avalanche?.status === "ok" ? "ok" : "neutral"
+      );
+    }
   }
 
   function showWeatherError(message) {
     setText("overviewWeatherText", message);
     setText("currentCondition", message);
     setText("weatherUpdated", "keine Verbindung");
+    updateHazardCard(
+      "forecastHazardCard",
+      "forecastHazardStatus",
+      "forecastHazardDetail",
+      "Prognose nicht verfügbar",
+      "Open-Meteo konnte nicht erreicht werden",
+      "neutral"
+    );
+    updateHazardCard(
+      "floodHazardCard",
+      "floodHazardStatus",
+      "floodHazardDetail",
+      "Regenprognose nicht verfügbar",
+      "Amtliche Lage mit Klick öffnen",
+      "neutral"
+    );
   }
 
   function initWebcam() {
@@ -596,8 +841,10 @@
     initGallery();
 
     loadWeather();
+    loadHazards();
     const refreshMinutes = Math.max(5, Number(config.weather?.refreshMinutes) || 15);
     window.setInterval(loadWeather, refreshMinutes * 60 * 1000);
+    window.setInterval(loadHazards, refreshMinutes * 60 * 1000);
 
     showSlide(0);
   }

@@ -18,7 +18,7 @@ window.COCILLOS_CONFIG = {
     defaultSeconds: 22,
     slides: {
       overview: 18,
-      weather: 25,
+      weather: 34,
       webcam: 28,
       map: 24,
       club: 25,
@@ -31,7 +31,16 @@ window.COCILLOS_CONFIG = {
     latitude: 46.316,
     longitude: 7.987,
     forecastDays: 5,
-    refreshMinutes: 15
+    refreshMinutes: 15,
+
+    /*
+     * Amtliche Gefahren werden durch GitHub Actions in data/hazards.json
+     * aktualisiert. Für Brig/Naters sind Aletsch und Südrampe die
+     * nächstliegenden BAFU-Waldbrandregionen. Weitere Namen sind möglich.
+     */
+    hazardDataUrl: "data/hazards.json",
+    fireRegions: ["Aletsch", "Südrampe"],
+    avalancheRegionPrefixes: ["CH-42"]
   },
 
   webcam: {

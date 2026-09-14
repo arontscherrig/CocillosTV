@@ -5,7 +5,9 @@ Ein eigenständiger, browserbasierter Vereinsbildschirm für die Guggumüsig Coc
 ## Funktionen
 
 - automatische, einstellbare Seitenrotation
-- Live-Uhr und Wetter
+- Live-Uhr, detailliertes Wetter und 5-Tage-Prognose
+- Niederschlagsmengen und modellbasierte Hinweise auf markantes Wetter
+- amtliche Waldbrand-/Feuerverbotsdaten für das Wallis und SLF-Lawinenstufen
 - eigene Karte mit Markierungen
 - Roundshot-Webcam als Bild oder eingebettete Seite
 - Termine und Countdown
@@ -16,6 +18,19 @@ Ein eigenständiger, browserbasierter Vereinsbildschirm für die Guggumüsig Coc
 ## Konfiguration
 
 Die Vereinsdaten werden zentral in `config.js` gepflegt. Dort lassen sich Ort, Koordinaten, Webcam-Link, Karteneinträge, Termine, Fotos, Aufgaben und Anzeigedauer ändern.
+
+Unter `weather.fireRegions` werden die gewünschten BAFU-Waldbrandregionen gewählt. `weather.avalancheRegionPrefixes` begrenzt das SLF-Bulletin auf die gewünschten Lawinenwarnregionen. Standardmässig ist das Oberwallis eingestellt.
+
+## Wetter- und Gefahrendaten
+
+- Prognose: Open-Meteo (ohne API-Schlüssel)
+- Waldbrandgefahr und Feuerverbote: BAFU und Kantone
+- Lawinengefahr: WSL-Institut für Schnee- und Lawinenforschung SLF
+- Hochwasser und weitere amtliche Warnungen: Verlinkung auf das Naturgefahrenportal des Bundes
+
+Die Wetterseite trennt modellbasierte Prognosehinweise ausdrücklich von amtlichen Warnungen. Massgebend bleiben immer die verlinkten Behördeninformationen. Es werden keine Cookies gesetzt und keine personenbezogenen Daten gespeichert.
+
+Der Workflow `.github/workflows/update-hazards.yml` prüft die amtlichen BAFU- und SLF-Daten alle 30 Minuten. Er schreibt nur dann einen neuen Commit, wenn sich die Gefahrenlage tatsächlich geändert hat. GitHub Actions muss für das Repository aktiviert sein.
 
 ## Lokal testen
 
