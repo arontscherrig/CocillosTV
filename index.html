@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08090b">
+  <title>CocillosTV</title>
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <div>
+        <strong id="brandName">COCILLOS</strong>
+        <span id="brandSubtitle">Vereins-TV</span>
+      </div>
+    </div>
+
+    <div class="slide-title-wrap">
+      <span class="live-dot"></span>
+      <span id="slideTitle">Übersicht</span>
+    </div>
+
+    <div class="clock">
+      <strong id="clockTime">--:--</strong>
+      <span id="clockDate">---</span>
+    </div>
+  </header>
+
+  <main id="dashboard" aria-live="polite">
+    <section class="slide active" data-slide="overview" data-title="Übersicht">
+      <div class="overview-grid">
+        <article class="hero-card panel">
+          <span class="eyebrow">Guggumüsig Cocillos</span>
+          <h1>Was läuft<br><em>als Nächstes?</em></h1>
+          <div id="nextEvent" class="next-event">
+            <span class="muted">Nächster Termin</span>
+            <strong>Noch keine Termine eingetragen</strong>
+          </div>
+        </article>
+
+        <article class="weather-now panel">
+          <div>
+            <span class="eyebrow" id="overviewWeatherPlace">Oberwallis</span>
+            <div class="temperature-row">
+              <span id="overviewWeatherIcon" class="weather-icon">◌</span>
+              <strong id="overviewTemperature">--°</strong>
+            </div>
+          </div>
+          <p id="overviewWeatherText">Wetter wird geladen …</p>
+        </article>
+
+        <article class="quick-info panel">
+          <span class="eyebrow">Heute im Lokal</span>
+          <strong id="openTodoCount">3</strong>
+          <span class="muted">offene Aufgaben</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="slide" data-slide="weather" data-title="Bergwetter">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">Live-Wetter</span>
+          <h2 id="weatherHeading">Oberwallis</h2>
+        </div>
+        <span id="weatherUpdated" class="muted">wird geladen …</span>
+      </div>
+
+      <div class="weather-layout">
+        <article class="current-weather panel">
+          <span id="currentWeatherIcon" class="weather-icon huge">◌</span>
+          <div>
+            <strong id="currentTemperature">--°</strong>
+            <p id="currentCondition">Wetter wird geladen …</p>
+          </div>
+          <dl class="weather-details">
+            <div><dt>Gefühlt</dt><dd id="feelsLike">--°</dd></div>
+            <div><dt>Wind</dt><dd id="windSpeed">-- km/h</dd></div>
+            <div><dt>Niederschlag</dt><dd id="precipitation">-- mm</dd></div>
+          </dl>
+        </article>
+
+        <div id="forecast" class="forecast-grid" aria-label="Fünftagesprognose"></div>
+      </div>
+      <span class="source-note">Wetterdaten: Open-Meteo</span>
+    </section>
+
+    <section class="slide" data-slide="webcam" data-title="Roundshot Live">
+      <div class="section-heading over-media">
+        <div>
+          <span class="eyebrow">Blick nach draussen</span>
+          <h2 id="webcamTitle">Roundshot Live</h2>
+        </div>
+        <span class="live-badge"><span class="live-dot"></span>LIVE</span>
+      </div>
+      <div id="webcamContainer" class="media-frame panel">
+        <div class="empty-state">
+          <span class="empty-icon">◎</span>
+          <h3>Roundshot bereit</h3>
+          <p>Webcam-URL in <code>config.js</code> eintragen.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" data-slide="map" data-title="Vereinskarte">
+      <div class="section-heading map-heading">
+        <div>
+          <span class="eyebrow">Unsere Orte</span>
+          <h2>Vereinskarte</h2>
+        </div>
+        <span class="muted">Marker in config.js verwalten</span>
+      </div>
+      <div id="map" class="map panel" role="img" aria-label="Karte mit Vereinsorten"></div>
+    </section>
+
+    <section class="slide" data-slide="club" data-title="Termine & Aufgaben">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">Cocillos intern</span>
+          <h2>Auf dem Laufenden</h2>
+        </div>
+      </div>
+
+      <div class="club-grid">
+        <article class="panel list-panel">
+          <div class="panel-heading">
+            <span>Kalender</span>
+            <span class="panel-symbol">↗</span>
+          </div>
+          <div id="eventList" class="event-list"></div>
+        </article>
+
+        <article class="panel list-panel">
+          <div class="panel-heading">
+            <span>To-dos</span>
+            <span id="todoBadge" class="count-badge">0</span>
+          </div>
+          <div id="todoList" class="todo-list"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="slide" data-slide="gallery" data-title="Aus dem Archiv">
+      <div id="photoStage" class="photo-stage panel">
+        <div id="photoFallback" class="empty-state">
+          <span class="empty-icon">▧</span>
+          <h3>Das Vereinsarchiv wartet</h3>
+          <p>Fotos nach <code>assets/photos/</code> laden und in <code>config.js</code> eintragen.</p>
+        </div>
+        <div id="photoCaption" class="photo-caption" hidden></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="progress-track" aria-hidden="true">
+    <div id="slideProgress" class="progress-bar"></div>
+  </div>
+
+  <footer class="footer">
+    <div class="ticker-window">
+      <div id="ticker" class="ticker"></div>
+    </div>
+
+    <nav id="slideDots" class="slide-dots" aria-label="Seiten"></nav>
+
+    <div class="controls">
+      <button id="previousButton" type="button" aria-label="Vorherige Seite">←</button>
+      <button id="pauseButton" type="button" aria-label="Rotation pausieren">Ⅱ</button>
+      <button id="nextButton" type="button" aria-label="Nächste Seite">→</button>
+      <button id="fullscreenButton" type="button" aria-label="Vollbild">⛶</button>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
