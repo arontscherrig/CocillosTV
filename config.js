@@ -1,0 +1,85 @@
+/*
+ * CocillosTV – zentrale Konfiguration
+ * Nur diese Datei muss für den normalen Betrieb angepasst werden.
+ */
+window.COCILLOS_CONFIG = {
+  branding: {
+    name: "COCILLOS",
+    subtitle: "Vereins-TV",
+    accent: "#e30613"
+  },
+
+  clock: {
+    locale: "de-CH",
+    timeZone: "Europe/Zurich"
+  },
+
+  rotation: {
+    defaultSeconds: 22,
+    slides: {
+      overview: 18,
+      weather: 25,
+      webcam: 28,
+      map: 24,
+      club: 25,
+      gallery: 30
+    }
+  },
+
+  weather: {
+    label: "Oberwallis",
+    latitude: 46.316,
+    longitude: 7.987,
+    forecastDays: 5,
+    refreshMinutes: 15
+  },
+
+  webcam: {
+    title: "Roundshot Live",
+    /*
+     * type: "iframe" für eine einbettbare Webseite
+     * type: "image" für die direkte URL des jeweils neuesten Bildes
+     */
+    type: "iframe",
+    url: "",
+    refreshSeconds: 300
+  },
+
+  map: {
+    center: [46.316, 7.987],
+    zoom: 11,
+    pins: [
+      {
+        title: "Vereinslokal",
+        coordinates: [46.316, 7.987],
+        description: "Position in config.js anpassen"
+      }
+    ]
+  },
+
+  /*
+   * Datum als YYYY-MM-DD oder YYYY-MM-DDTHH:MM eintragen.
+   * Beispiel:
+   * { title: "Probe", date: "2026-10-02T20:00", place: "Vereinslokal" }
+   */
+  events: [],
+
+  todos: [
+    { text: "Roundshot-Link eintragen", done: false },
+    { text: "Standort der Karte festlegen", done: false },
+    { text: "Erste Vereinsfotos hochladen", done: false }
+  ],
+
+  /*
+   * Bilder zuerst ins Repository laden, zum Beispiel nach assets/photos/.
+   * Beispiel:
+   * { src: "assets/photos/probe.jpg", caption: "Probe 2026" }
+   */
+  photos: [],
+
+  ticker: [
+    "Willkommen bei Cocillos TV",
+    "Termine, Aufgaben und Bilder zentral in config.js pflegen",
+    "Pfeiltasten wechseln die Seite · Leertaste pausiert · F aktiviert Vollbild"
+  ]
+};
