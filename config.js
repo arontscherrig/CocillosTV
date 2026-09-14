@@ -50,7 +50,7 @@ window.COCILLOS_CONFIG = {
      * type: "image" für die direkte URL des jeweils neuesten Bildes
     */
     type: "iframe",
-    url: "https://naters.roundshot.com/#/",
+    url: "https://naters.roundshot.com/",
     refreshSeconds: 300
   },
 
