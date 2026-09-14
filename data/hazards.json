@@ -1,0 +1,224 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-14T20:39:35.601Z",
+  "fire": {
+    "status": "ok",
+    "source": "BAFU und Kantone",
+    "sourceUrl": "https://www.waldbrandgefahr.ch/de/aktuelle-gefahrenlage",
+    "regions": [
+      {
+        "id": 97,
+        "name": "Aletsch (VS)",
+        "level": 4,
+        "warningValidFrom": "2026-08-28T12:02:41.105+02:00",
+        "measureCategory": 4,
+        "measureTitle": "Absolutes Feuerverbot",
+        "measureValidFrom": "2026-06-25T11:00:00.000+02:00"
+      },
+      {
+        "id": 26,
+        "name": "Anniviers (VS)",
+        "level": 3,
+        "warningValidFrom": "2026-09-10T12:03:24.280+02:00",
+        "measureCategory": 4,
+        "measureTitle": "Absolutes Feuerverbot",
+        "measureValidFrom": "2026-06-25T11:00:00.000+02:00"
+      },
+      {
+        "id": 65,
+        "name": "Arpille (VS)",
+        "level": 3,
+        "warningValidFrom": "2026-09-10T12:03:24.280+02:00",
+        "measureCategory": 4,
+        "measureTitle": "Absolutes Feuerverbot",
+        "measureValidFrom": "2026-06-25T11:00:00.000+02:00"
+      },
+      {
+        "id": 79,
+        "name": "Bagnes (VS)",
+        "level": 4,
+        "warningValidFrom": "2026-08-21T12:05:51.540+02:00",
+        "measureCategory": 4,
+        "measureTitle": "Absolutes Feuerverbot",
+        "measureValidFrom": "2026-06-25T11:00:00.000+02:00"
+      },
+      {
+        "id": 131,
+        "name": "Binn (VS)",
+        "level": 3,
+        "warningValidFrom": "2026-09-10T12:03:24.280+02:00",
+        "measureCategory": 4,
+        "measureTitle": "Absolutes Feuerverbot",
+        "measureValidFrom": "2026-06-25T11:00:00.000+02:00"
+      },
+      {
+        "id": 98,
+        "name": "Chablais (VS)",
+        "level": 3,
+        "warningValidFrom": "2026-08-28T12:02:41.105+02:00",
+        "measureCategory": 4,
+        "measureTitle": "Absolutes Feuerverbot",
+        "measureValidFrom": "2026-06-25T11:00:00.000+02:00"
+      },
+      {
+        "id": 14,
+        "name": "Evolène (VS)",
+        "level": 3,
+        "warningValidFrom": "2026-09-10T12:03:24.280+02:00",
+        "measureCategory": 4,
+        "measureTitle": "Absolutes Feuerverbot",
+        "measureValidFrom": "2026-06-25T11:00:00.000+02:00"
+      },
+      {
+        "id": 116,
+        "name": "Fully (VS)",
+        "level": 3,
+        "warningValidFrom": "2026-09-10T12:03:24.280+02:00",
+        "measureCategory": 4,
+        "measureTitle": "Absolutes Feuerverbot",
+        "measureValidFrom": "2026-06-25T11:00:00.000+02:00"
+      },
+      {
+        "id": 28,
+        "name": "Gd St. Bernard (VS)",
+        "level": 4,
+        "warningValidFrom": "2026-08-21T12:05:51.540+02:00",
+        "measureCategory": 4,
+        "measureTitle": "Absolutes Feuerverbot",
+        "measureValidFrom": "2026-06-25T11:00:00.000+02:00"
+      },
+      {
+        "id": 22,
+        "name": "Goms (VS)",
+        "level": 4,
+        "warningValidFrom": "2026-08-28T12:02:41.105+02:00",
+        "measureCategory": 4,
+        "measureTitle": "Absolutes Feuerverbot",
+        "measureValidFrom": "2026-06-25T11:00:00.000+02:00"
+      },
+      {
+        "id": 139,
+        "name": "Lötschental (VS)",
+        "level": 3,
+        "warningValidFrom": "2026-08-28T12:02:41.105+02:00",
+        "measureCategory": 4,
+        "measureTitle": "Absolutes Feuerverbot",
+        "measureValidFrom": "2026-06-25T11:00:00.000+02:00"
+      },
+      {
+        "id": 112,
+        "name": "Montana (VS)",
+        "level": 3,
+        "warningValidFrom": "2026-09-10T12:03:24.280+02:00",
+        "measureCategory": 4,
+        "measureTitle": "Absolutes Feuerverbot",
+        "measureValidFrom": "2026-06-25T11:00:00.000+02:00"
+      },
+      {
+        "id": 43,
+        "name": "Nikolai (VS)",
+        "level": 4,
+        "warningValidFrom": "2026-09-10T12:03:24.280+02:00",
+        "measureCategory": 4,
+        "measureTitle": "Absolutes Feuerverbot",
+        "measureValidFrom": "2026-06-25T11:00:00.000+02:00"
+      },
+      {
+        "id": 111,
+        "name": "Riddes (VS)",
+        "level": 3,
+        "warningValidFrom": "2026-09-10T12:03:24.280+02:00",
+        "measureCategory": 4,
+        "measureTitle": "Absolutes Feuerverbot",
+        "measureValidFrom": "2026-06-25T11:00:00.000+02:00"
+      },
+      {
+        "id": 38,
+        "name": "Saas (VS)",
+        "level": 4,
+        "warningValidFrom": "2026-09-10T12:03:24.280+02:00",
+        "measureCategory": 4,
+        "measureTitle": "Absolutes Feuerverbot",
+        "measureValidFrom": "2026-06-25T11:00:00.000+02:00"
+      },
+      {
+        "id": 101,
+        "name": "Simplon (VS)",
+        "level": 3,
+        "warningValidFrom": "2026-09-10T12:03:24.280+02:00",
+        "measureCategory": 4,
+        "measureTitle": "Absolutes Feuerverbot",
+        "measureValidFrom": "2026-06-25T11:00:00.000+02:00"
+      },
+      {
+        "id": 143,
+        "name": "Simplon Nord (VS)",
+        "level": 5,
+        "warningValidFrom": "2026-06-23T12:06:26.946+02:00",
+        "measureCategory": 4,
+        "measureTitle": "Absolutes Feuerverbot",
+        "measureValidFrom": "2026-06-25T11:00:00.000+02:00"
+      },
+      {
+        "id": 130,
+        "name": "Sitten-Siders (VS)",
+        "level": 4,
+        "warningValidFrom": "2026-09-10T12:03:24.280+02:00",
+        "measureCategory": 4,
+        "measureTitle": "Absolutes Feuerverbot",
+        "measureValidFrom": "2026-06-25T11:00:00.000+02:00"
+      },
+      {
+        "id": 39,
+        "name": "St. Maurice (VS)",
+        "level": 3,
+        "warningValidFrom": "2026-08-28T12:02:41.105+02:00",
+        "measureCategory": 4,
+        "measureTitle": "Absolutes Feuerverbot",
+        "measureValidFrom": "2026-06-25T11:00:00.000+02:00"
+      },
+      {
+        "id": 6,
+        "name": "Südrampe (VS)",
+        "level": 4,
+        "warningValidFrom": "2026-09-10T12:03:24.280+02:00",
+        "measureCategory": 4,
+        "measureTitle": "Absolutes Feuerverbot",
+        "measureValidFrom": "2026-06-25T11:00:00.000+02:00"
+      },
+      {
+        "id": 81,
+        "name": "Turtmanntal (VS)",
+        "level": 3,
+        "warningValidFrom": "2026-09-10T12:03:24.280+02:00",
+        "measureCategory": 4,
+        "measureTitle": "Absolutes Feuerverbot",
+        "measureValidFrom": "2026-06-25T11:00:00.000+02:00"
+      },
+      {
+        "id": 83,
+        "name": "Val d'Illiez (VS)",
+        "level": 3,
+        "warningValidFrom": "2026-08-28T12:02:41.105+02:00",
+        "measureCategory": 4,
+        "measureTitle": "Absolutes Feuerverbot",
+        "measureValidFrom": "2026-06-25T11:00:00.000+02:00"
+      },
+      {
+        "id": 7,
+        "name": "Vispertal (VS)",
+        "level": 5,
+        "warningValidFrom": "2026-06-23T12:06:26.946+02:00",
+        "measureCategory": 4,
+        "measureTitle": "Absolutes Feuerverbot",
+        "measureValidFrom": "2026-06-25T11:00:00.000+02:00"
+      }
+    ]
+  },
+  "avalanche": {
+    "status": "ok",
+    "source": "WSL-Institut für Schnee- und Lawinenforschung SLF",
+    "sourceUrl": "https://www.slf.ch/de/lawinenbulletin-und-schneesituation/",
+    "bulletins": []
+  }
+}

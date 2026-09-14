@@ -64,32 +64,75 @@
       </div>
     </section>
 
-    <section class="slide" data-slide="weather" data-title="Bergwetter">
+    <section class="slide weather-slide" data-slide="weather" data-title="Wetter & Gefahren">
       <div class="section-heading">
         <div>
-          <span class="eyebrow">Live-Wetter</span>
+          <span class="eyebrow">5 Tage · Wetter & Naturgefahren</span>
           <h2 id="weatherHeading">Oberwallis</h2>
         </div>
         <span id="weatherUpdated" class="muted">wird geladen …</span>
       </div>
 
-      <div class="weather-layout">
-        <article class="current-weather panel">
-          <span id="currentWeatherIcon" class="weather-icon huge">◌</span>
-          <div>
-            <strong id="currentTemperature">--°</strong>
-            <p id="currentCondition">Wetter wird geladen …</p>
-          </div>
-          <dl class="weather-details">
-            <div><dt>Gefühlt</dt><dd id="feelsLike">--°</dd></div>
-            <div><dt>Wind</dt><dd id="windSpeed">-- km/h</dd></div>
-            <div><dt>Niederschlag</dt><dd id="precipitation">-- mm</dd></div>
-          </dl>
-        </article>
+      <div class="weather-dashboard">
+        <div class="weather-primary">
+          <article class="current-weather panel">
+            <div class="current-main">
+              <span id="currentWeatherIcon" class="weather-icon huge">◌</span>
+              <div>
+                <strong id="currentTemperature">--°</strong>
+                <p id="currentCondition">Wetter wird geladen …</p>
+              </div>
+            </div>
+            <dl class="weather-details">
+              <div><dt>Gefühlt</dt><dd id="feelsLike">--°</dd></div>
+              <div><dt>Wind</dt><dd id="windSpeed">-- km/h</dd></div>
+              <div><dt>Böen</dt><dd id="windGusts">-- km/h</dd></div>
+              <div><dt>Luftfeuchte</dt><dd id="humidity">-- %</dd></div>
+            </dl>
+          </article>
 
-        <div id="forecast" class="forecast-grid" aria-label="Fünftagesprognose"></div>
+          <div id="forecast" class="forecast-grid" aria-label="Fünftagesprognose"></div>
+        </div>
+
+        <div class="hazard-grid" aria-label="Gefahrenhinweise">
+          <article id="forecastHazardCard" class="hazard-card panel status-neutral">
+            <span class="hazard-symbol" aria-hidden="true">⚠</span>
+            <div class="hazard-copy">
+              <span class="hazard-label">5-Tage-Signal</span>
+              <strong id="forecastHazardStatus">Prognose wird geprüft</strong>
+              <span id="forecastHazardDetail">Wind, Gewitter, Schnee und Hitze</span>
+            </div>
+          </article>
+
+          <a id="fireHazardCard" class="hazard-card panel status-neutral" href="https://www.waldbrandgefahr.ch/de/aktuelle-gefahrenlage" target="_blank" rel="noopener">
+            <span class="hazard-symbol" aria-hidden="true">🔥</span>
+            <div class="hazard-copy">
+              <span class="hazard-label">Waldbrand & Feuerverbot</span>
+              <strong id="fireHazardStatus">Amtliche Lage wird geladen</strong>
+              <span id="fireHazardDetail">Quelle: BAFU / Kantone</span>
+            </div>
+          </a>
+
+          <a id="avalancheHazardCard" class="hazard-card panel status-neutral" href="https://www.slf.ch/de/lawinenbulletin-und-schneesituation/" target="_blank" rel="noopener">
+            <span class="hazard-symbol" aria-hidden="true">🏔</span>
+            <div class="hazard-copy">
+              <span class="hazard-label">Lawinengefahr</span>
+              <strong id="avalancheHazardStatus">SLF-Bulletin wird geladen</strong>
+              <span id="avalancheHazardDetail">Oberwallis</span>
+            </div>
+          </a>
+
+          <a id="floodHazardCard" class="hazard-card panel status-neutral" href="https://www.natural-hazards.ch/home/current-natural-hazards.html" target="_blank" rel="noopener">
+            <span class="hazard-symbol" aria-hidden="true">🌊</span>
+            <div class="hazard-copy">
+              <span class="hazard-label">Starkregen & Hochwasser</span>
+              <strong id="floodHazardStatus">Prognose wird geprüft</strong>
+              <span id="floodHazardDetail">Amtliche Lage mit Klick öffnen</span>
+            </div>
+          </a>
+        </div>
       </div>
-      <span class="source-note">Wetterdaten: Open-Meteo</span>
+      <span class="source-note">Prognose: Open-Meteo · Waldbrand: BAFU/Kantone · Lawinen: SLF · Prognosehinweise sind keine amtlichen Warnungen</span>
     </section>
 
     <section class="slide" data-slide="webcam" data-title="Roundshot Live">
