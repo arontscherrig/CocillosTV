@@ -19,7 +19,7 @@ window.COCILLOS_CONFIG = {
     slides: {
       overview: 18,
       weather: 34,
-      webcam: 28,
+      webcam: 40,
       map: 24,
       club: 25,
       gallery: 30
@@ -44,13 +44,13 @@ window.COCILLOS_CONFIG = {
   },
 
   webcam: {
-    title: "Roundshot Live",
+    title: "Roundshot Naters · Live",
     /*
      * type: "iframe" für eine einbettbare Webseite
      * type: "image" für die direkte URL des jeweils neuesten Bildes
-     */
+    */
     type: "iframe",
-    url: "",
+    url: "https://naters.roundshot.com/#/",
     refreshSeconds: 300
   },
 
@@ -74,7 +74,6 @@ window.COCILLOS_CONFIG = {
   events: [],
 
   todos: [
-    { text: "Roundshot-Link eintragen", done: false },
     { text: "Standort der Karte festlegen", done: false },
     { text: "Erste Vereinsfotos hochladen", done: false }
   ],
