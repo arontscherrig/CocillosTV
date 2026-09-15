@@ -22,6 +22,7 @@ window.COCILLOS_CONFIG = {
       webcam: 40,
       map: 24,
       club: 25,
+      maintenance: 30,
       gallery: 30
     }
   },
@@ -81,6 +82,58 @@ window.COCILLOS_CONFIG = {
    * { title: "Probe", date: "2026-10-02T20:00", place: "Vereinslokal" }
    */
   events: [],
+
+  maintenance: {
+    title: "Unterhalt Probesaison 26 / 27",
+    weekly: [
+      {
+        area: "Proberaum",
+        tasks: "Abfall entsorgen, Bar aufräumen und sauber machen, Boden saugen/wischen"
+      },
+      {
+        area: "Küche",
+        tasks: "Flächen abwischen, Geschirr wegräumen, Müll raus"
+      },
+      {
+        area: "Lager",
+        tasks: "Ordnung prüfen und bei Bedarf aufräumen, Boden kehren"
+      },
+      {
+        area: "Aussen & WC",
+        tasks: "Müll sammeln und entsorgen, Aschenbecher leeren, WC reinigen und Toilettenpapier auffüllen"
+      }
+    ],
+    schedule: [
+      { date: "2026-09-20", task: "Rasen mähen", board: "Andreas", helpers: ["Alina", "Michael A.", "Bettina"] },
+      { date: "2026-09-27", task: "Küche putzen und aufräumen", board: "Alena", helpers: ["Mirco", "Gian", "Philipp"] },
+      { date: "2026-10-04", task: "Rasen mähen", board: "Marvin", helpers: ["Jasmin", "Samuel", "Lara"] },
+      { date: "2026-10-11", task: "Instrumente und Lager aufräumen", board: "Gabriela", helpers: ["Kai", "Fernando", "Melanie"] },
+      { date: "2026-10-18", task: "Rasen mähen", board: "Aron", helpers: ["Michael E.", "Friedli", "Levi"] },
+      { date: "2026-10-25", task: "Fenster reinigen", board: "Kevin S.", helpers: ["Nicolà", "Elias", "Tamara"] },
+      { date: "2026-11-01", task: "Rasen mähen, Gartengeräte reinigen", board: "Andreas", helpers: ["Kerstin", "Romaine", "Noah"] },
+      { date: "2026-11-08", task: "Umgebung Winterschlaf machen", board: "Gabriela", helpers: ["Roland", "Etienne", "Céline"] },
+      { date: "2026-11-22", task: "Toilette gründlich reinigen", board: "Marvin", helpers: ["Carmen", "Robert", "Silvia"] },
+      { date: "2026-11-29", task: "Bar aufräumen und reinigen", board: "Alena", helpers: ["Michèle", "Anna", "Lara Maria"] },
+      { date: "2026-12-06", task: "Kühlschränke kontrollieren und reinigen", board: "Aron", helpers: ["Christina", "André", "Otto"] },
+      { date: "2026-12-13", task: "Ablagen im Proberaum abstauben", board: "Kevin S.", helpers: ["Riccardo", "Michelle", "David"] },
+      { date: "2026-12-20", task: "Küche putzen und aufräumen", board: "Andreas", helpers: ["Severin", "Svenja", "Sara Romina"] },
+      { date: "2027-01-03", task: "Instrumente und Lager aufräumen", board: "Gabriela", helpers: ["Kevin Z."] },
+      { date: "2027-01-10", task: "Toilette gründlich reinigen", board: "Marvin", helpers: [] },
+      {
+        date: "2027-02-13",
+        task: "Endreinigung & Vorbereitung Sommersaison",
+        board: "Alle",
+        helpers: [],
+        details: [
+          "Instrumente verräumen und Lager aufräumen",
+          "Bar ausräumen",
+          "Kühlschränke leeren und ausschalten",
+          "Küche aufräumen und reinigen",
+          "Sicherung von Heizung und Küche ausschalten"
+        ]
+      }
+    ]
+  },
 
   todos: [
     { text: "Standort der Karte festlegen", done: false },
