@@ -305,7 +305,11 @@
         const summary = decodeIcalText(event.SUMMARY?.value)
           .replace(/\s+\(Guggenmusik Cocillos\)$/i, "");
         const description = decodeIcalText(event.DESCRIPTION?.value);
-        const categories = decodeIcalText(event.CATEGORIES?.value);
+        const categories = decodeIcalText(event.CATEGORIES?.value)
+          .split(",")
+          .map((category) => category.trim())
+          .filter(Boolean)
+          .join(", ");
 
         if (startDate && summary) {
           entries.push({
