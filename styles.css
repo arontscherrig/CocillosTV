@@ -755,7 +755,7 @@ a.hazard-card::after {
 .club-grid {
   height: 78%;
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.4vw;
 }
 
@@ -798,6 +798,54 @@ a.hazard-card::after {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.special-events-panel {
+  padding: clamp(18px, 1.55vw, 30px);
+}
+
+.special-events-panel .panel-heading {
+  margin-bottom: 10px;
+  padding-bottom: 12px;
+}
+
+.special-event-list {
+  gap: 6px;
+}
+
+.special-event-list .event-item {
+  min-height: 44px;
+  grid-template-columns: 56px minmax(0, 1fr) auto;
+  gap: 10px;
+  padding: 7px 11px;
+}
+
+.special-event-list .event-date strong {
+  font-size: clamp(18px, 1.35vw, 27px);
+}
+
+.special-event-list .event-date span {
+  font-size: 9px;
+}
+
+.special-event-list .event-copy {
+  min-width: 0;
+}
+
+.special-event-list .event-copy strong {
+  overflow: hidden;
+  font-size: clamp(13px, 0.9vw, 18px);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.special-event-list .event-copy span,
+.special-event-list .event-time {
+  font-size: clamp(10px, 0.66vw, 13px);
+}
+
+.special-event-list .event-time {
+  white-space: nowrap;
 }
 
 .event-item,
@@ -1146,7 +1194,7 @@ body.paused .ticker {
     height: auto;
   }
 
-  .list-panel:last-child {
+  .special-event-list .event-copy span {
     display: none;
   }
 }
