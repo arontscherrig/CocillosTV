@@ -486,6 +486,41 @@
     });
   }
 
+  function fitEventRows(listId) {
+    const list = byId(listId);
+    const panel = list?.closest(".list-panel");
+    if (!list || !panel) return;
+
+    const rows = Array.from(list.querySelectorAll(".event-item"));
+    rows.forEach((row) => {
+      row.hidden = false;
+    });
+
+    const panelStyle = getComputedStyle(panel);
+    const availableBottom = panel.getBoundingClientRect().bottom
+      - (parseFloat(panelStyle.paddingBottom) || 0);
+    const firstClippedRow = rows.findIndex(
+      (row) => row.getBoundingClientRect().bottom > availableBottom + 0.5
+    );
+
+    if (firstClippedRow >= 0) {
+      rows.slice(firstClippedRow).forEach((row) => {
+        row.hidden = true;
+      });
+    }
+  }
+
+  function fitAllEventRows() {
+    fitEventRows("regularEventList");
+    fitEventRows("specialEventList");
+  }
+
+  function scheduleEventRowFit() {
+    window.requestAnimationFrame(() => {
+      window.requestAnimationFrame(fitAllEventRows);
+    });
+  }
+
   function renderEvents() {
     const configuredEvents = Array.isArray(config.events) ? config.events : [];
     const normalized = [...configuredEvents, ...calendarEvents]
@@ -558,6 +593,7 @@
       "Keine besonderen Termine oder Auftritte.",
       10
     );
+    scheduleEventRowFit();
   }
 
   function renderTodos() {
@@ -1143,6 +1179,7 @@
 
     buildTicker();
     buildNavigation();
+    window.addEventListener("resize", scheduleEventRowFit);
     loadCalendar();
     renderTodos();
     initWebcam();
