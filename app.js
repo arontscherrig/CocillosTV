@@ -637,6 +637,120 @@
     });
   }
 
+  function renderMaintenance() {
+    const maintenance = config.maintenance || {};
+    const schedule = (Array.isArray(maintenance.schedule) ? maintenance.schedule : [])
+      .map((entry) => ({ ...entry, parsedDate: parseEventDate(entry.date) }))
+      .filter((entry) => entry.parsedDate)
+      .sort((a, b) => a.parsedDate - b.parsedDate);
+
+    const startOfToday = new Date();
+    startOfToday.setHours(0, 0, 0, 0);
+    const upcoming = schedule.filter((entry) => entry.parsedDate >= startOfToday);
+    const next = upcoming[0];
+
+    setText("maintenanceTitle", maintenance.title || "Unterhalt");
+    setText(
+      "maintenanceStatus",
+      upcoming.length
+        ? `${upcoming.length} Einsätze ausstehend`
+        : "Saisonplan abgeschlossen"
+    );
+
+    const nextCard = byId("maintenanceNext");
+    if (nextCard) nextCard.classList.toggle("is-empty", !next);
+
+    setText(
+      "maintenanceNextDay",
+      next ? calendarFormat(next.parsedDate, { day: "2-digit" }) : "✓"
+    );
+    setText(
+      "maintenanceNextMonth",
+      next
+        ? calendarFormat(next.parsedDate, { month: "short" }).replace(".", "")
+        : "fertig"
+    );
+    setText(
+      "maintenanceNextWeekday",
+      next ? calendarFormat(next.parsedDate, { weekday: "long" }) : ""
+    );
+    setText("maintenanceNextTask", next?.task || "Alle Einsätze abgeschlossen");
+    setText("maintenanceNextBoard", next?.board || "Noch offen");
+    setText(
+      "maintenanceNextHelpers",
+      next?.helpers?.length ? next.helpers.join(", ") : next ? "Noch offen" : "–"
+    );
+
+    const details = byId("maintenanceNextDetails");
+    if (details) {
+      const detailItems = Array.isArray(next?.details) ? next.details : [];
+      details.replaceChildren();
+      details.hidden = !detailItems.length;
+
+      detailItems.forEach((detail) => {
+        const item = document.createElement("span");
+        item.textContent = detail;
+        details.appendChild(item);
+      });
+    }
+
+    const upcomingList = byId("maintenanceUpcoming");
+    if (upcomingList) {
+      upcomingList.replaceChildren();
+      const following = upcoming.slice(1, 6);
+
+      if (!following.length) {
+        const empty = document.createElement("div");
+        empty.className = "empty-list";
+        empty.textContent = "Keine weiteren Einsätze geplant.";
+        upcomingList.appendChild(empty);
+      } else {
+        following.forEach((entry) => {
+          const row = document.createElement("article");
+          row.className = "maintenance-upcoming-item";
+
+          const date = document.createElement("div");
+          date.className = "maintenance-mini-date";
+          const day = document.createElement("strong");
+          day.textContent = calendarFormat(entry.parsedDate, { day: "2-digit" });
+          const month = document.createElement("span");
+          month.textContent = calendarFormat(entry.parsedDate, { month: "short" })
+            .replace(".", "");
+          date.append(day, month);
+
+          const copy = document.createElement("div");
+          copy.className = "maintenance-upcoming-copy";
+          const task = document.createElement("strong");
+          task.textContent = entry.task;
+          const team = document.createElement("span");
+          const helpers = Array.isArray(entry.helpers) && entry.helpers.length
+            ? entry.helpers.join(", ")
+            : "Helfer noch offen";
+          team.textContent = `${entry.board || "Vorstand offen"} · ${helpers}`;
+          copy.append(task, team);
+
+          row.append(date, copy);
+          upcomingList.appendChild(row);
+        });
+      }
+    }
+
+    const routine = byId("maintenanceRoutine");
+    if (routine) {
+      routine.replaceChildren();
+      (Array.isArray(maintenance.weekly) ? maintenance.weekly : []).forEach((entry) => {
+        const card = document.createElement("article");
+        card.className = "maintenance-routine-item";
+        const area = document.createElement("strong");
+        area.textContent = entry.area;
+        const tasks = document.createElement("span");
+        tasks.textContent = entry.tasks;
+        card.append(area, tasks);
+        routine.appendChild(card);
+      });
+    }
+  }
+
   async function loadWeather() {
     const weather = config.weather || {};
     const latitude = Number(weather.latitude);
@@ -1189,6 +1303,8 @@
     window.addEventListener("resize", scheduleEventRowFit);
     loadCalendar();
     renderTodos();
+    renderMaintenance();
+    window.setInterval(renderMaintenance, 15 * 60 * 1000);
     initWebcam();
     initMap();
     initGallery();
