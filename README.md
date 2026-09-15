@@ -34,7 +34,7 @@ Der Workflow `.github/workflows/update-hazards.yml` prüft die amtlichen BAFU- u
 
 ## Roundshot Naters
 
-Die Webcam-Seite lädt das aktuelle Panorama direkt über den Roundshot-Bildendpunkt, schwenkt automatisch darüber und aktualisiert es alle fünf Minuten. Dadurch bleibt die Rotation erhalten, ohne die interaktive Roundshot-App samt Cookie-Dialog zu laden. Beim Abruf des Bildes wird dennoch eine direkte Verbindung zu Roundshot und dessen Speicher-CDN aufgebaut; dabei wird die öffentliche IP-Adresse des Fernsehers technisch an diese Anbieter übermittelt.
+Die Webcam-Seite lädt das aktuelle Panorama direkt über den Roundshot-Bildendpunkt und aktualisiert es alle fünf Minuten. Während des 40-Sekunden-Slides startet die nahtlose 360°-Schleife am rechten Bildrand, läuft einmal vollständig in derselben Richtung und endet exakt mit dem Slide. Dadurch bleibt die Rotation erhalten, ohne die interaktive Roundshot-App samt Cookie-Dialog zu laden. Beim Abruf des Bildes wird dennoch eine direkte Verbindung zu Roundshot und dessen Speicher-CDN aufgebaut; dabei wird die öffentliche IP-Adresse des Fernsehers technisch an diese Anbieter übermittelt.
 
 ## Lokal testen
 
