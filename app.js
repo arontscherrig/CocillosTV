@@ -637,6 +637,161 @@
     });
   }
 
+  function datePartsInTimeZone(date, timeZone) {
+    const parts = new Intl.DateTimeFormat("en-CA", {
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+      timeZone
+    }).formatToParts(date);
+
+    return parts.reduce((result, part) => {
+      if (part.type !== "literal") result[part.type] = Number(part.value);
+      return result;
+    }, {});
+  }
+
+  function firstFriday(year, monthIndex) {
+    const first = new Date(Date.UTC(year, monthIndex, 1));
+    const offset = (5 - first.getUTCDay() + 7) % 7;
+    return new Date(Date.UTC(year, monthIndex, 1 + offset));
+  }
+
+  function nextHockDate() {
+    const timeZone = config.clock?.timeZone || "Europe/Zurich";
+    const today = datePartsInTimeZone(new Date(), timeZone);
+    const todayValue = Date.UTC(today.year, today.month - 1, today.day);
+    let monthIndex = today.month - 1;
+    let year = today.year;
+    let hock = firstFriday(year, monthIndex);
+
+    if (hock.getTime() < todayValue) {
+      monthIndex += 1;
+      if (monthIndex > 11) {
+        monthIndex = 0;
+        year += 1;
+      }
+      hock = firstFriday(year, monthIndex);
+    }
+
+    return { hock, todayValue };
+  }
+
+  function renderNextHock() {
+    const locale = config.clock?.locale || "de-CH";
+    const { hock, todayValue } = nextHockDate();
+    const dayDistance = Math.round((hock.getTime() - todayValue) / 86400000);
+    const monthName = new Intl.DateTimeFormat(locale, {
+      month: "long",
+      timeZone: "UTC"
+    }).format(hock);
+
+    setText("hockDay", String(hock.getUTCDate()).padStart(2, "0"));
+    setText("hockMonth", monthName.toUpperCase());
+    setText("hockYear", hock.getUTCFullYear());
+    setText(
+      "hockWeekday",
+      new Intl.DateTimeFormat(locale, { weekday: "long", timeZone: "UTC" }).format(hock)
+    );
+    setText(
+      "hockCountdown",
+      dayDistance === 0 ? "Heute" : `In ${dayDistance} Tagen`
+    );
+  }
+
+  function renderWeeklyMenu(data) {
+    const container = byId("weeklyMenu");
+    if (!container) return;
+
+    container.replaceChildren();
+    setText("menuWeek", data.week || "Aktuelles Wochenmenü");
+
+    const source = byId("menuSource");
+    if (source) source.href = config.hock?.sourceUrl || data.source || source.href;
+
+    const updatedAt = data.updatedAt ? new Date(data.updatedAt) : null;
+    if (updatedAt && !Number.isNaN(updatedAt.getTime())) {
+      const locale = config.clock?.locale || "de-CH";
+      const timeZone = config.clock?.timeZone || "Europe/Zurich";
+      setText(
+        "menuUpdated",
+        `Stand ${new Intl.DateTimeFormat(locale, {
+          day: "2-digit",
+          month: "2-digit",
+          year: "numeric",
+          timeZone
+        }).format(updatedAt)}`
+      );
+    }
+
+    const days = Array.isArray(data.days) ? data.days.slice(0, 5) : [];
+    if (!days.length) {
+      const empty = document.createElement("div");
+      empty.className = "empty-list";
+      empty.textContent = "Momentan ist kein Wochenmenü veröffentlicht.";
+      container.appendChild(empty);
+      return;
+    }
+
+    days.forEach((day) => {
+      const row = document.createElement("div");
+      row.className = `weekly-menu-day${day.closed ? " is-closed" : ""}`;
+
+      const dayName = document.createElement("strong");
+      dayName.textContent = day.day || "Tag";
+
+      const options = document.createElement("div");
+      options.className = "weekly-menu-options";
+
+      if (day.closed) {
+        const closed = document.createElement("span");
+        closed.className = "weekly-menu-closed";
+        closed.textContent = day.closed;
+        options.appendChild(closed);
+      } else {
+        (Array.isArray(day.menus) ? day.menus : []).slice(0, 2).forEach((menu) => {
+          const item = document.createElement("div");
+          item.className = "weekly-menu-item";
+
+          const label = document.createElement("span");
+          label.className = "weekly-menu-label";
+          label.textContent = [menu.name, menu.price].filter(Boolean).join(" · ");
+
+          const dish = document.createElement("span");
+          dish.className = "weekly-menu-dish";
+          dish.textContent = menu.dish || "Menü folgt";
+
+          item.append(label, dish);
+          options.appendChild(item);
+        });
+      }
+
+      row.append(dayName, options);
+      container.appendChild(row);
+    });
+  }
+
+  async function loadWeeklyMenu() {
+    const menuUrl = config.hock?.menuUrl || "data/weekly-menu.json";
+
+    try {
+      const url = new URL(menuUrl, window.location.href);
+      url.searchParams.set("_cocillos_refresh", Date.now());
+      const response = await fetch(url, { cache: "no-store" });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      renderWeeklyMenu(await response.json());
+    } catch (error) {
+      const container = byId("weeklyMenu");
+      if (!container) return;
+      container.replaceChildren();
+      const empty = document.createElement("div");
+      empty.className = "empty-list";
+      empty.textContent = "Wochenmenü momentan nicht verfügbar.";
+      container.appendChild(empty);
+      setText("menuUpdated", "Quelle direkt öffnen");
+    }
+  }
+
   function renderMaintenance() {
     const maintenance = config.maintenance || {};
     const schedule = (Array.isArray(maintenance.schedule) ? maintenance.schedule : [])
@@ -1304,7 +1459,10 @@
     loadCalendar();
     renderTodos();
     renderMaintenance();
+    renderNextHock();
+    loadWeeklyMenu();
     window.setInterval(renderMaintenance, 15 * 60 * 1000);
+    window.setInterval(renderNextHock, 60 * 60 * 1000);
     initWebcam();
     initMap();
     initGallery();
@@ -1320,6 +1478,12 @@
       Number(config.calendar?.refreshMinutes) || 15
     );
     window.setInterval(loadCalendar, calendarRefreshMinutes * 60 * 1000);
+
+    const menuRefreshMinutes = Math.max(
+      15,
+      Number(config.hock?.refreshMinutes) || 60
+    );
+    window.setInterval(loadWeeklyMenu, menuRefreshMinutes * 60 * 1000);
 
     showSlide(0);
   }

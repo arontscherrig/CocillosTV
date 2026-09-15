@@ -12,6 +12,7 @@ Ein eigenständiger, browserbasierter Vereinsbildschirm für die Guggumüsig Coc
 - Roundshot-Webcam als automatisch aktualisiertes Livebild
 - Konzertmeister-Termine aus iCalendar mit Countdown
 - eigener Unterhalts- und To-do-Plan mit nächstem Einsatz, Team und Wochenarbeiten
+- monatlicher Hock mit automatisch berechnetem ersten Freitag und aktuellem Wochenmenü
 - Vereinsfotos
 - To-do-Liste und Mitteilungen
 - Vollbild- und Pausensteuerung
@@ -42,6 +43,12 @@ Der veröffentlichte Export ist bereinigt: Direkte Konzertmeister-Links, Termin-
 ## Unterhalt und To-do
 
 Die eigene Unterhaltsseite basiert auf `maintenance` in `config.js`. Sie zeigt den nächsten anstehenden Einsatz gross, danach die folgenden fünf Einteilungen sowie die vier wöchentlichen Reinigungsbereiche. Einsätze bleiben am jeweiligen Datum den ganzen Tag sichtbar und verschwinden ab dem Folgetag. Die Endreinigung am 13. Februar 2027 ist Teil des Plans.
+
+## Nächster Hock und Wochenmenü
+
+Die Hock-Seite zeigt automatisch den nächsten ersten Freitag eines Monats. Ist der erste Freitag des laufenden Monats bereits vorbei, wird der erste Freitag des Folgemonats angezeigt.
+
+Das als **Werbung** gekennzeichnete Wochenmenü stammt vom [Restaurant Simplon](https://restaurant-simplon.ch/wochenmenue/). Der Workflow `.github/workflows/update-weekly-menu.yml` prüft die Quelle von Montag bis Freitag am Morgen. `data/weekly-menu.json` wird nur dann neu committed, wenn sich das veröffentlichte Menü tatsächlich verändert hat. Bei einem vorübergehenden Abruffehler bleibt der letzte erfolgreiche Stand sichtbar.
 
 ## Aletschbord-Webcam
 

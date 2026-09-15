@@ -23,6 +23,7 @@ window.COCILLOS_CONFIG = {
       map: 24,
       club: 25,
       maintenance: 30,
+      hock: 34,
       gallery: 30
     }
   },
@@ -48,6 +49,12 @@ window.COCILLOS_CONFIG = {
     url: "data/konzertmeister.ical",
     sourceLabel: "Konzertmeister",
     refreshMinutes: 15
+  },
+
+  hock: {
+    menuUrl: "data/weekly-menu.json",
+    sourceUrl: "https://restaurant-simplon.ch/wochenmenue/",
+    refreshMinutes: 60
   },
 
   webcam: {

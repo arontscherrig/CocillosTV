@@ -1,0 +1,80 @@
+{
+  "source": "https://restaurant-simplon.ch/wochenmenue/",
+  "week": "14. September 2026 – 20. September 2026",
+  "updatedAt": "2026-09-15T22:45:00Z",
+  "days": [
+    {
+      "day": "Montag",
+      "closed": "Geschlossen",
+      "menus": []
+    },
+    {
+      "day": "Dienstag",
+      "menus": [
+        {
+          "name": "Menü 1",
+          "price": "19 CHF",
+          "starter": "Tagesvorspeise",
+          "dish": "Poulet Cordonbleu dazu Pommes und saisonales Gemüse"
+        },
+        {
+          "name": "Menü 2",
+          "price": "18 CHF",
+          "starter": "Tagesvorspeise",
+          "dish": "Pasta an cremiger Tomaten-Mascarpone-Sauce mit Parmesan"
+        }
+      ]
+    },
+    {
+      "day": "Mittwoch",
+      "menus": [
+        {
+          "name": "Menü 1",
+          "price": "19 CHF",
+          "starter": "Tagesvorspeise",
+          "dish": "Rindsgeschnetzeltes an Pfeffersauce dazu Rösti und Gemüse"
+        },
+        {
+          "name": "Menü 2",
+          "price": "18 CHF",
+          "starter": "Tagesvorspeise",
+          "dish": "Pasta an cremiger Tomaten-Mascarpone-Sauce mit Parmesan"
+        }
+      ]
+    },
+    {
+      "day": "Donnerstag",
+      "menus": [
+        {
+          "name": "Menü 1",
+          "price": "19 CHF",
+          "starter": "Tagesvorspeise",
+          "dish": "Rindshacktäschli mit Käsefüllung an Jus dazu Kartoffelstock und saisonales Gemüse"
+        },
+        {
+          "name": "Menü 2",
+          "price": "18 CHF",
+          "starter": "Tagesvorspeise",
+          "dish": "Cremiges Risotto Al Limone mit Parmesan"
+        }
+      ]
+    },
+    {
+      "day": "Freitag",
+      "menus": [
+        {
+          "name": "Menü 1",
+          "price": "19 CHF",
+          "starter": "Tagesvorspeise",
+          "dish": "Knusprige Fischknusperli mit Tartarsauce dazu Petersilienkartoffel und saisonales Gemüse"
+        },
+        {
+          "name": "Menü 2",
+          "price": "18 CHF",
+          "starter": "Tagesvorspeise",
+          "dish": "Cremiges Risotto Al Limone mit Parmesan"
+        }
+      ]
+    }
+  ]
+}

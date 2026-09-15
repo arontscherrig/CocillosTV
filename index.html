@@ -7,7 +7,7 @@
   <title>CocillosTV</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=20260915-maintenance">
+  <link rel="stylesheet" href="styles.css?v=20260915-hock">
 </head>
 <body>
   <div class="ambient ambient-one"></div>
@@ -236,6 +236,53 @@
       </div>
     </section>
 
+    <section class="slide hock-slide" data-slide="hock" data-title="Nächster Hock">
+      <div class="section-heading hock-heading">
+        <div>
+          <span class="eyebrow">Monatlicher Treffpunkt</span>
+          <h2>Nächster Hock</h2>
+        </div>
+        <span id="hockCountdown" class="muted">Datum wird berechnet …</span>
+      </div>
+
+      <div class="hock-dashboard">
+        <article class="panel hock-hero">
+          <img class="hock-photo" src="assets/hock/simplon-restaurant.webp" alt="Gastraum des Restaurant Simplon">
+          <div class="hock-photo-shade"></div>
+          <div class="hock-date-card">
+            <span class="eyebrow">Erster Freitag im Monat</span>
+            <div class="hock-date-line">
+              <strong id="hockDay">--</strong>
+              <div>
+                <span id="hockMonth">---</span>
+                <span id="hockYear">----</span>
+              </div>
+            </div>
+            <span id="hockWeekday" class="hock-weekday">Freitag</span>
+          </div>
+          <div class="hock-logo-card">
+            <img src="assets/hock/simplon-logo.webp" alt="Simplon Steakhaus Naters">
+          </div>
+        </article>
+
+        <article class="panel hock-menu-panel">
+          <div class="panel-heading hock-menu-heading">
+            <span>Wochenmenü</span>
+            <span class="advertising-badge">Werbung</span>
+          </div>
+          <div class="hock-menu-meta">
+            <strong id="menuWeek">Aktuelles Menü wird geladen …</strong>
+            <span>Restaurant Simplon · Naters</span>
+          </div>
+          <div id="weeklyMenu" class="weekly-menu-list" aria-live="polite"></div>
+          <div class="hock-menu-footer">
+            <span id="menuUpdated">Automatisch aktualisiert</span>
+            <a id="menuSource" href="https://restaurant-simplon.ch/wochenmenue/" target="_blank" rel="noopener">Quelle ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <section class="slide" data-slide="gallery" data-title="Aus dem Archiv">
       <div id="photoStage" class="photo-stage panel">
         <div id="photoFallback" class="empty-state">
@@ -268,7 +315,7 @@
   </footer>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="config.js?v=20260915-maintenance"></script>
-  <script src="app.js?v=20260915-maintenance"></script>
+  <script src="config.js?v=20260915-hock"></script>
+  <script src="app.js?v=20260915-hock"></script>
 </body>
 </html>
