@@ -10,6 +10,7 @@
   let currentSlide = 0;
   let rotationTimer = null;
   let photoTimer = null;
+  let calendarEvents = [];
   let isPaused = false;
   let mapInstance = null;
 
@@ -233,15 +234,214 @@
     }
   }
 
+  function calendarFormat(date, options) {
+    const clock = config.clock || {};
+    return new Intl.DateTimeFormat(clock.locale || "de-CH", {
+      timeZone: clock.timeZone || "Europe/Zurich",
+      ...options
+    }).format(date);
+  }
+
+  function calendarDayKey(date) {
+    return calendarFormat(date, {
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit"
+    });
+  }
+
+  function decodeIcalText(value = "") {
+    return value
+      .replace(/\\[nN]/g, " ")
+      .replace(/\\,/g, ",")
+      .replace(/\\;/g, ";")
+      .replace(/\\\\/g, "\\")
+      .trim();
+  }
+
+  function parseIcalDate(value) {
+    if (!value) return null;
+
+    const dateOnly = value.match(/^(\d{4})(\d{2})(\d{2})$/);
+    if (dateOnly) {
+      return new Date(
+        Number(dateOnly[1]),
+        Number(dateOnly[2]) - 1,
+        Number(dateOnly[3]),
+        12
+      );
+    }
+
+    const dateTime = value.match(
+      /^(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2})(Z)?$/
+    );
+    if (!dateTime) return null;
+
+    const parts = dateTime.slice(1, 7).map(Number);
+    return dateTime[7]
+      ? new Date(Date.UTC(parts[0], parts[1] - 1, parts[2], parts[3], parts[4], parts[5]))
+      : new Date(parts[0], parts[1] - 1, parts[2], parts[3], parts[4], parts[5]);
+  }
+
+  function parseIcalEvents(text) {
+    const unfolded = String(text).replace(/\r?\n[ \t]/g, "");
+    const lines = unfolded.split(/\r?\n/);
+    const entries = [];
+    let event = null;
+
+    lines.forEach((line) => {
+      if (line === "BEGIN:VEVENT") {
+        event = {};
+        return;
+      }
+
+      if (line === "END:VEVENT") {
+        if (!event) return;
+
+        const startValue = event.DTSTART?.value;
+        const endValue = event.DTEND?.value;
+        const startDate = parseIcalDate(startValue);
+        const endDate = parseIcalDate(endValue);
+        const summary = decodeIcalText(event.SUMMARY?.value)
+          .replace(/\s+\(Guggenmusik Cocillos\)$/i, "");
+        const description = decodeIcalText(event.DESCRIPTION?.value);
+        const categories = decodeIcalText(event.CATEGORIES?.value);
+
+        if (startDate && summary) {
+          entries.push({
+            title: summary,
+            date: startDate.toISOString(),
+            parsedDate: startDate,
+            end: endDate?.toISOString() || "",
+            parsedEndDate: endDate,
+            allDay: /^\d{8}$/.test(startValue || ""),
+            category: categories,
+            place: [...new Set([description, categories].filter(Boolean))].join(" · ")
+          });
+        }
+
+        event = null;
+        return;
+      }
+
+      if (!event) return;
+      const separator = line.indexOf(":");
+      if (separator < 0) return;
+
+      const property = line.slice(0, separator);
+      const name = property.split(";")[0].toUpperCase();
+      event[name] = {
+        value: line.slice(separator + 1),
+        property
+      };
+    });
+
+    return entries;
+  }
+
+  async function loadCalendar() {
+    const calendar = config.calendar || {};
+    if (!calendar.url) {
+      calendarEvents = [];
+      renderEvents();
+      return;
+    }
+
+    try {
+      const url = new URL(calendar.url, window.location.href);
+      url.searchParams.set("_cocillos_refresh", Date.now());
+      const response = await fetch(url, { cache: "no-store" });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+      calendarEvents = parseIcalEvents(await response.text());
+      renderEvents();
+    } catch (error) {
+      console.error("Konzertmeister-Kalender konnte nicht geladen werden:", error);
+      calendarEvents = [];
+      renderEvents();
+    }
+  }
+
+  function eventDateLabel(event) {
+    const startLabel = calendarFormat(event.parsedDate, {
+      weekday: "long",
+      day: "numeric",
+      month: "long"
+    });
+
+    if (
+      event.parsedEndDate &&
+      calendarDayKey(event.parsedEndDate) !== calendarDayKey(event.parsedDate)
+    ) {
+      const endLabel = calendarFormat(event.parsedEndDate, {
+        weekday: "long",
+        day: "numeric",
+        month: "long"
+      });
+      return `${startLabel} – ${endLabel}`;
+    }
+
+    return startLabel;
+  }
+
+  function eventTimeLabel(event) {
+    if (event.allDay) return "ganztägig";
+
+    const startTime = calendarFormat(event.parsedDate, {
+      hour: "2-digit",
+      minute: "2-digit"
+    });
+
+    if (!event.parsedEndDate) return startTime;
+
+    const endTime = calendarFormat(event.parsedEndDate, {
+      hour: "2-digit",
+      minute: "2-digit"
+    });
+
+    if (calendarDayKey(event.parsedDate) === calendarDayKey(event.parsedEndDate)) {
+      return `${startTime}–${endTime}`;
+    }
+
+    const startDate = calendarFormat(event.parsedDate, {
+      day: "2-digit",
+      month: "2-digit"
+    });
+    const endDate = calendarFormat(event.parsedEndDate, {
+      day: "2-digit",
+      month: "2-digit"
+    });
+    return `${startDate} ${startTime} – ${endDate} ${endTime}`;
+  }
+
   function renderEvents() {
-    const events = (Array.isArray(config.events) ? config.events : [])
-      .map((event) => ({ ...event, parsedDate: parseEventDate(event.date) }))
+    const configuredEvents = Array.isArray(config.events) ? config.events : [];
+    const normalized = [...configuredEvents, ...calendarEvents]
+      .map((event) => ({
+        ...event,
+        parsedDate: event.parsedDate instanceof Date
+          ? event.parsedDate
+          : parseEventDate(event.date),
+        parsedEndDate: event.parsedEndDate instanceof Date
+          ? event.parsedEndDate
+          : parseEventDate(event.end)
+      }))
       .filter((event) => event.parsedDate)
       .sort((a, b) => a.parsedDate - b.parsedDate);
 
+    const seen = new Set();
+    const events = normalized.filter((event) => {
+      const key = `${event.parsedDate.getTime()}|${event.title}`;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+
     const startOfToday = new Date();
     startOfToday.setHours(0, 0, 0, 0);
-    const upcoming = events.filter((event) => event.parsedDate >= startOfToday);
+    const upcoming = events.filter((event) => (
+      event.parsedEndDate || event.parsedDate
+    ) >= startOfToday);
     const next = upcoming[0];
     const nextContainer = byId("nextEvent");
 
@@ -262,13 +462,12 @@
       const meta = document.createElement("span");
       meta.className = "event-meta";
       const days = Math.max(0, Math.ceil((next.parsedDate - new Date()) / 86400000));
-      const dateText = new Intl.DateTimeFormat("de-CH", {
-        weekday: "long",
-        day: "numeric",
-        month: "long"
-      }).format(next.parsedDate);
       const countdown = days === 0 ? "heute" : days === 1 ? "morgen" : `in ${days} Tagen`;
-      meta.textContent = [dateText, countdown, next.place].filter(Boolean).join(" · ");
+      meta.textContent = [
+        eventDateLabel(next),
+        countdown,
+        next.place
+      ].filter(Boolean).join(" · ");
       nextContainer.appendChild(meta);
     }
 
@@ -278,7 +477,7 @@
     if (!upcoming.length) {
       const empty = document.createElement("div");
       empty.className = "empty-list";
-      empty.textContent = "Noch keine kommenden Termine in config.js eingetragen.";
+      empty.textContent = "Keine kommenden Konzertmeister-Termine.";
       list.appendChild(empty);
       return;
     }
@@ -290,10 +489,9 @@
       const date = document.createElement("div");
       date.className = "event-date";
       const day = document.createElement("strong");
-      day.textContent = new Intl.DateTimeFormat("de-CH", { day: "2-digit" }).format(event.parsedDate);
+      day.textContent = calendarFormat(event.parsedDate, { day: "2-digit" });
       const month = document.createElement("span");
-      month.textContent = new Intl.DateTimeFormat("de-CH", { month: "short" })
-        .format(event.parsedDate)
+      month.textContent = calendarFormat(event.parsedDate, { month: "short" })
         .replace(".", "");
       date.append(day, month);
 
@@ -302,14 +500,15 @@
       const name = document.createElement("strong");
       name.textContent = event.title;
       const place = document.createElement("span");
-      place.textContent = event.place || "Ort noch offen";
+      place.textContent = event.place
+        || event.category
+        || config.calendar?.sourceLabel
+        || "Ort noch offen";
       copy.append(name, place);
 
       const time = document.createElement("span");
       time.className = "event-time";
-      time.textContent = String(event.date).includes("T")
-        ? new Intl.DateTimeFormat("de-CH", { hour: "2-digit", minute: "2-digit" }).format(event.parsedDate)
-        : "ganztägig";
+      time.textContent = eventTimeLabel(event);
 
       row.append(date, copy, time);
       list.appendChild(row);
@@ -898,7 +1097,7 @@
 
     buildTicker();
     buildNavigation();
-    renderEvents();
+    loadCalendar();
     renderTodos();
     initWebcam();
     initMap();
@@ -909,6 +1108,12 @@
     const refreshMinutes = Math.max(5, Number(config.weather?.refreshMinutes) || 15);
     window.setInterval(loadWeather, refreshMinutes * 60 * 1000);
     window.setInterval(loadHazards, refreshMinutes * 60 * 1000);
+
+    const calendarRefreshMinutes = Math.max(
+      5,
+      Number(config.calendar?.refreshMinutes) || 15
+    );
+    window.setInterval(loadCalendar, calendarRefreshMinutes * 60 * 1000);
 
     showSlide(0);
   }
