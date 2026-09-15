@@ -10,7 +10,7 @@ Ein eigenständiger, browserbasierter Vereinsbildschirm für die Guggumüsig Coc
 - amtliche Waldbrand-/Feuerverbotsdaten für das Wallis und SLF-Lawinenstufen
 - eigene Karte mit Markierungen
 - Roundshot-Webcam als automatisch aktualisiertes Livebild
-- Termine und Countdown
+- Konzertmeister-Termine aus iCalendar mit Countdown
 - Vereinsfotos
 - To-do-Liste und Mitteilungen
 - Vollbild- und Pausensteuerung
@@ -31,6 +31,12 @@ Unter `weather.fireRegions` werden die gewünschten BAFU-Waldbrandregionen gewä
 Die Wetterseite trennt modellbasierte Prognosehinweise ausdrücklich von amtlichen Warnungen. Massgebend bleiben immer die verlinkten Behördeninformationen. Es werden keine Cookies gesetzt und keine personenbezogenen Daten gespeichert.
 
 Der Workflow `.github/workflows/update-hazards.yml` prüft die amtlichen BAFU- und SLF-Daten alle 30 Minuten. Er schreibt nur dann einen neuen Commit, wenn sich die Gefahrenlage tatsächlich geändert hat. GitHub Actions muss für das Repository aktiviert sein.
+
+## Konzertmeister-Termine
+
+Die Datei `data/konzertmeister.ical` wird beim Laden des TVs eingelesen und alle 15 Minuten erneut abgerufen. Übersicht und Terminseite zeigen automatisch die nächsten fünf Einträge in der Zeitzone `Europe/Zurich`. Mehrtagestermine werden mit Start- und Endzeit dargestellt.
+
+Der veröffentlichte Export ist bereinigt: Direkte Konzertmeister-Links, Termin-IDs und Export-Zeitstempel wurden entfernt. Da die hochgeladene Datei keine abonnierbare Kalenderadresse enthält, muss sie bei Änderungen durch einen neuen bereinigten Export ersetzt werden.
 
 ## Aletschbord-Webcam
 
