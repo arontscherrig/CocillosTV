@@ -11,6 +11,7 @@ Ein eigenständiger, browserbasierter Vereinsbildschirm für die Guggumüsig Coc
 - eigene Karte mit Markierungen
 - Roundshot-Webcam als automatisch aktualisiertes Livebild
 - Konzertmeister-Termine aus iCalendar mit Countdown
+- eigener Unterhalts- und To-do-Plan mit nächstem Einsatz, Team und Wochenarbeiten
 - Vereinsfotos
 - To-do-Liste und Mitteilungen
 - Vollbild- und Pausensteuerung
@@ -37,6 +38,10 @@ Der Workflow `.github/workflows/update-hazards.yml` prüft die amtlichen BAFU- u
 Die Datei `data/konzertmeister.ical` wird beim Laden des TVs eingelesen und alle 15 Minuten erneut abgerufen. Die Übersicht zeigt den nächsten Termin. Auf der Terminseite stehen normale Gesamt- und Registerproben getrennt von Probetagen, Proben für Ehemalige und Auftritten. Alle Zeiten werden in `Europe/Zurich` dargestellt; Mehrtagestermine zeigen Start und Ende, Termine ohne bekannte Uhrzeit erscheinen als „Zeit offen“.
 
 Der veröffentlichte Export ist bereinigt: Direkte Konzertmeister-Links, Termin-IDs und Export-Zeitstempel wurden entfernt. Da die hochgeladene Datei keine abonnierbare Kalenderadresse enthält, muss sie bei Änderungen durch einen neuen bereinigten Export ersetzt werden.
+
+## Unterhalt und To-do
+
+Die eigene Unterhaltsseite basiert auf `maintenance` in `config.js`. Sie zeigt den nächsten anstehenden Einsatz gross, danach die folgenden fünf Einteilungen sowie die vier wöchentlichen Reinigungsbereiche. Einsätze bleiben am jeweiligen Datum den ganzen Tag sichtbar und verschwinden ab dem Folgetag. Die Endreinigung am 13. Februar 2027 ist Teil des Plans.
 
 ## Aletschbord-Webcam
 
