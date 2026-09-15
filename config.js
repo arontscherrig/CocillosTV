@@ -44,13 +44,16 @@ window.COCILLOS_CONFIG = {
   },
 
   webcam: {
-    title: "Roundshot Naters · Live",
+    title: "Aletschbord · Südblick",
     /*
-     * type: "iframe" für eine einbettbare Webseite
-     * type: "image" für die direkte URL des jeweils neuesten Bildes
-    */
+     * Das direkte Panoramabild bleibt cookie-frei eingebunden.
+     * view: "fixed" hält die gewünschte Himmelsrichtung dauerhaft fest.
+     */
     type: "image",
-    url: "https://naters.roundshot.com/cams/2186",
+    url: "https://belalp.roundshot.com/cams/1548",
+    view: "fixed",
+    heading: 180,
+    panoramaNorth: 340,
     refreshSeconds: 300
   },
 
