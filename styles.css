@@ -620,6 +620,21 @@ a.hazard-card::after {
   object-fit: cover;
 }
 
+.media-frame img {
+  animation: roundshot-pan 40s linear infinite alternate;
+  will-change: object-position;
+}
+
+@keyframes roundshot-pan {
+  from {
+    object-position: left center;
+  }
+
+  to {
+    object-position: right center;
+  }
+}
+
 .empty-state {
   position: absolute;
   inset: 0;
