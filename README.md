@@ -9,7 +9,7 @@ Ein eigenständiger, browserbasierter Vereinsbildschirm für die Guggumüsig Coc
 - Niederschlagsmengen und modellbasierte Hinweise auf markantes Wetter
 - amtliche Waldbrand-/Feuerverbotsdaten für das Wallis und SLF-Lawinenstufen
 - eigene Karte mit Markierungen
-- Roundshot-Webcam als Bild oder eingebettete Seite
+- Roundshot-Webcam als automatisch aktualisiertes Livebild
 - Termine und Countdown
 - Vereinsfotos
 - To-do-Liste und Mitteilungen
@@ -34,7 +34,7 @@ Der Workflow `.github/workflows/update-hazards.yml` prüft die amtlichen BAFU- u
 
 ## Roundshot Naters
 
-Die 360°-Livecam `https://naters.roundshot.com/#/` ist als iframe auf der Webcam-Seite eingebunden. Roundshot erlaubt die technische Einbettung; die Antwort enthält weder `X-Frame-Options` noch eine blockierende `frame-ancestors`-Richtlinie. Beim Anzeigen wird eine direkte Verbindung zu Roundshot und dessen statischem CDN aufgebaut, wodurch die öffentliche IP-Adresse des Fernsehers technisch an diese Anbieter übermittelt wird.
+Die Webcam-Seite lädt das aktuelle Panorama direkt über den Roundshot-Bildendpunkt und aktualisiert es alle fünf Minuten. Dadurch wird die interaktive Roundshot-App samt Cookie-Dialog nicht geladen. Beim Abruf des Bildes wird dennoch eine direkte Verbindung zu Roundshot und dessen Speicher-CDN aufgebaut; dabei wird die öffentliche IP-Adresse des Fernsehers technisch an diese Anbieter übermittelt.
 
 ## Lokal testen
 
