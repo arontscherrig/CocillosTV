@@ -32,9 +32,9 @@ Die Wetterseite trennt modellbasierte Prognosehinweise ausdrücklich von amtlich
 
 Der Workflow `.github/workflows/update-hazards.yml` prüft die amtlichen BAFU- und SLF-Daten alle 30 Minuten. Er schreibt nur dann einen neuen Commit, wenn sich die Gefahrenlage tatsächlich geändert hat. GitHub Actions muss für das Repository aktiviert sein.
 
-## Roundshot Naters
+## Aletschbord-Webcam
 
-Die Webcam-Seite lädt das aktuelle Panorama direkt über den Roundshot-Bildendpunkt und aktualisiert es alle fünf Minuten. Während des 40-Sekunden-Slides startet die nahtlose 360°-Schleife am rechten Bildrand, läuft einmal vollständig in derselben Richtung und endet exakt mit dem Slide. Dadurch bleibt die Rotation erhalten, ohne die interaktive Roundshot-App samt Cookie-Dialog zu laden. Beim Abruf des Bildes wird dennoch eine direkte Verbindung zu Roundshot und dessen Speicher-CDN aufgebaut; dabei wird die öffentliche IP-Adresse des Fernsehers technisch an diese Anbieter übermittelt.
+Die Webcam-Seite lädt das aktuelle Panorama der Aletschbord-Kamera direkt über den Roundshot-Bildendpunkt und aktualisiert es alle fünf Minuten. Der Ausschnitt ist anhand der Kameraausrichtung fest auf 180° (Süden) zentriert und zeigt ins Tal; eine Rundumfahrt findet nicht statt. Die interaktive Roundshot-App samt Cookie-Dialog wird nicht geladen. Beim Abruf des Bildes wird dennoch eine direkte Verbindung zu Roundshot und dessen Speicher-CDN aufgebaut; dabei wird die öffentliche IP-Adresse des Fernsehers technisch an diese Anbieter übermittelt.
 
 ## Lokal testen
 
