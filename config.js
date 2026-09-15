@@ -43,6 +43,12 @@ window.COCILLOS_CONFIG = {
     avalancheRegionPrefixes: ["CH-42"]
   },
 
+  calendar: {
+    url: "data/konzertmeister.ical",
+    sourceLabel: "Konzertmeister",
+    refreshMinutes: 15
+  },
+
   webcam: {
     title: "Aletschbord · Südblick",
     /*
