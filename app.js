@@ -319,6 +319,7 @@
             end: endDate?.toISOString() || "",
             parsedEndDate: endDate,
             allDay: /^\d{8}$/.test(startValue || ""),
+            timeOpen: event["X-COCILLOS-TIME-OPEN"]?.value === "TRUE",
             category: categories,
             place: [...new Set([description, categories].filter(Boolean))].join(" · ")
           });
@@ -389,6 +390,7 @@
   }
 
   function eventTimeLabel(event) {
+    if (event.timeOpen) return "Zeit offen";
     if (event.allDay) return "ganztägig";
 
     const startTime = calendarFormat(event.parsedDate, {
@@ -416,6 +418,72 @@
       month: "2-digit"
     });
     return `${startDate} ${startTime} – ${endDate} ${endTime}`;
+  }
+
+  function isSpecialCalendarEvent(event) {
+    const text = [
+      event.title,
+      event.category,
+      event.place
+    ].filter(Boolean).join(" ").toLocaleLowerCase("de-CH");
+
+    return [
+      "auftritt",
+      "ehemalige",
+      "probetag",
+      "probenachmittag",
+      "rätschateuf",
+      "caracas",
+      "schratti",
+      "drachenausbruch"
+    ].some((keyword) => text.includes(keyword));
+  }
+
+  function renderEventRows(listId, events, emptyMessage, limit) {
+    const list = byId(listId);
+    if (!list) return;
+
+    list.replaceChildren();
+
+    if (!events.length) {
+      const empty = document.createElement("div");
+      empty.className = "empty-list";
+      empty.textContent = emptyMessage;
+      list.appendChild(empty);
+      return;
+    }
+
+    events.slice(0, limit).forEach((event) => {
+      const row = document.createElement("div");
+      row.className = "event-item";
+
+      const date = document.createElement("div");
+      date.className = "event-date";
+      const day = document.createElement("strong");
+      day.textContent = calendarFormat(event.parsedDate, { day: "2-digit" });
+      const month = document.createElement("span");
+      month.textContent = calendarFormat(event.parsedDate, { month: "short" })
+        .replace(".", "");
+      date.append(day, month);
+
+      const copy = document.createElement("div");
+      copy.className = "event-copy";
+      const name = document.createElement("strong");
+      name.textContent = event.title;
+      const place = document.createElement("span");
+      place.textContent = event.place
+        || event.category
+        || config.calendar?.sourceLabel
+        || "Ort noch offen";
+      copy.append(name, place);
+
+      const time = document.createElement("span");
+      time.className = "event-time";
+      time.textContent = eventTimeLabel(event);
+
+      row.append(date, copy, time);
+      list.appendChild(row);
+    });
   }
 
   function renderEvents() {
@@ -475,48 +543,21 @@
       nextContainer.appendChild(meta);
     }
 
-    const list = byId("eventList");
-    list.replaceChildren();
+    const regularEvents = upcoming.filter((event) => !isSpecialCalendarEvent(event));
+    const specialEvents = upcoming.filter(isSpecialCalendarEvent);
 
-    if (!upcoming.length) {
-      const empty = document.createElement("div");
-      empty.className = "empty-list";
-      empty.textContent = "Keine kommenden Konzertmeister-Termine.";
-      list.appendChild(empty);
-      return;
-    }
-
-    upcoming.slice(0, 5).forEach((event) => {
-      const row = document.createElement("div");
-      row.className = "event-item";
-
-      const date = document.createElement("div");
-      date.className = "event-date";
-      const day = document.createElement("strong");
-      day.textContent = calendarFormat(event.parsedDate, { day: "2-digit" });
-      const month = document.createElement("span");
-      month.textContent = calendarFormat(event.parsedDate, { month: "short" })
-        .replace(".", "");
-      date.append(day, month);
-
-      const copy = document.createElement("div");
-      copy.className = "event-copy";
-      const name = document.createElement("strong");
-      name.textContent = event.title;
-      const place = document.createElement("span");
-      place.textContent = event.place
-        || event.category
-        || config.calendar?.sourceLabel
-        || "Ort noch offen";
-      copy.append(name, place);
-
-      const time = document.createElement("span");
-      time.className = "event-time";
-      time.textContent = eventTimeLabel(event);
-
-      row.append(date, copy, time);
-      list.appendChild(row);
-    });
+    renderEventRows(
+      "regularEventList",
+      regularEvents,
+      "Keine kommenden Gesamt- oder Registerproben.",
+      5
+    );
+    renderEventRows(
+      "specialEventList",
+      specialEvents,
+      "Keine besonderen Termine oder Auftritte.",
+      10
+    );
   }
 
   function renderTodos() {
@@ -526,6 +567,7 @@
     setText("todoBadge", openCount);
 
     const list = byId("todoList");
+    if (!list) return;
     list.replaceChildren();
 
     if (!todos.length) {
