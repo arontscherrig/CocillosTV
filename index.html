@@ -7,7 +7,7 @@
   <title>CocillosTV</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=20260915-termine">
+  <link rel="stylesheet" href="styles.css?v=20260915-maintenance">
 </head>
 <body>
   <div class="ambient ambient-one"></div>
@@ -183,6 +183,59 @@
       </div>
     </section>
 
+    <section class="slide maintenance-slide" data-slide="maintenance" data-title="To-do & Unterhalt">
+      <div class="section-heading maintenance-heading">
+        <div>
+          <span class="eyebrow">Probesaison 26 / 27</span>
+          <h2 id="maintenanceTitle">Unterhalt</h2>
+        </div>
+        <span id="maintenanceStatus" class="muted">Plan wird geladen …</span>
+      </div>
+
+      <div class="maintenance-dashboard">
+        <article id="maintenanceNext" class="panel maintenance-next-card">
+          <span class="eyebrow">Nächster Einsatz</span>
+          <div class="maintenance-next-date">
+            <div>
+              <strong id="maintenanceNextDay">--</strong>
+              <span id="maintenanceNextMonth">---</span>
+            </div>
+            <span id="maintenanceNextWeekday" class="muted">---</span>
+          </div>
+          <h3 id="maintenanceNextTask">Plan wird geladen …</h3>
+
+          <div class="maintenance-roles">
+            <div>
+              <span>Verantwortlicher Vorstand</span>
+              <strong id="maintenanceNextBoard">–</strong>
+            </div>
+            <div>
+              <span>Helferteam</span>
+              <strong id="maintenanceNextHelpers">–</strong>
+            </div>
+          </div>
+
+          <div id="maintenanceNextDetails" class="maintenance-details" hidden></div>
+        </article>
+
+        <article class="panel list-panel maintenance-upcoming-panel">
+          <div class="panel-heading">
+            <span>Danach</span>
+            <span class="panel-symbol">↗</span>
+          </div>
+          <div id="maintenanceUpcoming" class="maintenance-upcoming-list"></div>
+        </article>
+
+        <article class="panel maintenance-routine-panel">
+          <div class="panel-heading">
+            <span>Wöchentliche Reinigungsarbeiten</span>
+            <span class="panel-symbol">✓</span>
+          </div>
+          <div id="maintenanceRoutine" class="maintenance-routine-grid"></div>
+        </article>
+      </div>
+    </section>
+
     <section class="slide" data-slide="gallery" data-title="Aus dem Archiv">
       <div id="photoStage" class="photo-stage panel">
         <div id="photoFallback" class="empty-state">
@@ -215,7 +268,7 @@
   </footer>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="config.js?v=20260915-konzertmeister"></script>
-  <script src="app.js?v=20260915-termine-refit"></script>
+  <script src="config.js?v=20260915-maintenance"></script>
+  <script src="app.js?v=20260915-maintenance"></script>
 </body>
 </html>
