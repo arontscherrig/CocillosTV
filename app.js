@@ -708,20 +708,50 @@
     container.replaceChildren();
 
     if (webcam.type === "image") {
-      const image = document.createElement("img");
-      image.alt = webcam.title || "Aktuelles Webcam-Bild";
+      const track = document.createElement("div");
+      const primaryImage = document.createElement("img");
+      const duplicateImage = document.createElement("img");
+      const slideDurations = config.rotation && config.rotation.slides;
+      const panoramaSeconds = Math.max(1, Number(slideDurations && slideDurations.webcam) || 40);
+
+      track.className = "roundshot-panorama-track";
+      track.setAttribute("role", "img");
+      track.setAttribute("aria-label", webcam.title || "Aktuelles Webcam-Panorama");
+      track.style.setProperty("--panorama-duration", `${panoramaSeconds}s`);
+
+      primaryImage.alt = "";
+      duplicateImage.alt = "";
+      duplicateImage.setAttribute("aria-hidden", "true");
+
+      const updatePanoramaGeometry = () => {
+        if (!primaryImage.naturalWidth || !primaryImage.naturalHeight || !container.clientHeight) return;
+
+        const panoramaWidth = (primaryImage.naturalWidth / primaryImage.naturalHeight) * container.clientHeight;
+        const startPosition = Math.min(0, container.clientWidth - panoramaWidth);
+
+        track.style.setProperty("--panorama-start", `${startPosition}px`);
+        track.style.setProperty("--panorama-end", `${startPosition - panoramaWidth}px`);
+      };
 
       const refresh = () => {
         const url = new URL(webcam.url, window.location.href);
         url.searchParams.set("_cocillos_refresh", Date.now());
-        image.src = url.toString();
+        primaryImage.src = url.toString();
       };
 
-      image.addEventListener("error", () => {
-        image.alt = "Webcam-Bild konnte nicht geladen werden";
+      primaryImage.addEventListener("load", () => {
+        duplicateImage.src = primaryImage.currentSrc || primaryImage.src;
+        updatePanoramaGeometry();
+        track.classList.add("is-ready");
       });
 
-      container.appendChild(image);
+      primaryImage.addEventListener("error", () => {
+        track.setAttribute("aria-label", "Webcam-Bild konnte nicht geladen werden");
+      });
+
+      track.append(primaryImage, duplicateImage);
+      container.appendChild(track);
+      window.addEventListener("resize", updatePanoramaGeometry);
       refresh();
       window.setInterval(refresh, Math.max(30, Number(webcam.refreshSeconds) || 300) * 1000);
     } else {
