@@ -170,6 +170,11 @@
       window.setTimeout(() => mapInstance.invalidateSize(), 500);
     }
 
+    if (activeSlide.dataset.slide === "club") {
+      scheduleEventRowFit();
+      window.setTimeout(fitAllEventRows, 750);
+    }
+
     scheduleRotation();
   }
 
@@ -494,6 +499,7 @@
     const rows = Array.from(list.querySelectorAll(".event-item"));
     rows.forEach((row) => {
       row.hidden = false;
+      row.style.removeProperty("display");
     });
 
     const panelStyle = getComputedStyle(panel);
@@ -506,6 +512,7 @@
     if (firstClippedRow >= 0) {
       rows.slice(firstClippedRow).forEach((row) => {
         row.hidden = true;
+        row.style.display = "none";
       });
     }
   }
