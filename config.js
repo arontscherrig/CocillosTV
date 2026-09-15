@@ -49,8 +49,8 @@ window.COCILLOS_CONFIG = {
      * type: "iframe" für eine einbettbare Webseite
      * type: "image" für die direkte URL des jeweils neuesten Bildes
     */
-    type: "iframe",
-    url: "https://naters.roundshot.com/",
+    type: "image",
+    url: "https://naters.roundshot.com/cams/2186",
     refreshSeconds: 300
   },
 
