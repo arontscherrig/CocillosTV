@@ -34,7 +34,7 @@ Der Workflow `.github/workflows/update-hazards.yml` prüft die amtlichen BAFU- u
 
 ## Konzertmeister-Termine
 
-Die Datei `data/konzertmeister.ical` wird beim Laden des TVs eingelesen und alle 15 Minuten erneut abgerufen. Übersicht und Terminseite zeigen automatisch die nächsten fünf Einträge in der Zeitzone `Europe/Zurich`. Mehrtagestermine werden mit Start- und Endzeit dargestellt.
+Die Datei `data/konzertmeister.ical` wird beim Laden des TVs eingelesen und alle 15 Minuten erneut abgerufen. Die Übersicht zeigt den nächsten Termin. Auf der Terminseite stehen normale Gesamt- und Registerproben getrennt von Probetagen, Proben für Ehemalige und Auftritten. Alle Zeiten werden in `Europe/Zurich` dargestellt; Mehrtagestermine zeigen Start und Ende, Termine ohne bekannte Uhrzeit erscheinen als „Zeit offen“.
 
 Der veröffentlichte Export ist bereinigt: Direkte Konzertmeister-Links, Termin-IDs und Export-Zeitstempel wurden entfernt. Da die hochgeladene Datei keine abonnierbare Kalenderadresse enthält, muss sie bei Änderungen durch einen neuen bereinigten Export ersetzt werden.
 
