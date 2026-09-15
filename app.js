@@ -708,6 +708,40 @@
     container.replaceChildren();
 
     if (webcam.type === "image") {
+      if (webcam.view === "fixed") {
+        const image = document.createElement("img");
+        const heading = Number(webcam.heading);
+        const panoramaNorth = Number(webcam.panoramaNorth);
+        const normalizedHeading = Number.isFinite(heading)
+          ? ((heading % 360) + 360) % 360
+          : 180;
+        const normalizedNorth = Number.isFinite(panoramaNorth)
+          ? ((panoramaNorth % 360) + 360) % 360
+          : 0;
+        const focalPoint = ((normalizedNorth + normalizedHeading) % 360) / 360 * 100;
+
+        image.className = "webcam-fixed-image";
+        image.alt = webcam.title || "Aktuelles Webcam-Bild";
+        image.draggable = false;
+        image.style.setProperty("--webcam-offset-x", `${-focalPoint}%`);
+
+        const refresh = () => {
+          const url = new URL(webcam.url, window.location.href);
+          url.searchParams.set("_cocillos_refresh", Date.now());
+          image.src = url.toString();
+        };
+
+        image.addEventListener("load", () => image.classList.add("is-ready"));
+        image.addEventListener("error", () => {
+          image.alt = "Webcam-Bild konnte nicht geladen werden";
+        });
+
+        container.appendChild(image);
+        refresh();
+        window.setInterval(refresh, Math.max(30, Number(webcam.refreshSeconds) || 300) * 1000);
+        return;
+      }
+
       const track = document.createElement("div");
       const primaryImage = document.createElement("img");
       const duplicateImage = document.createElement("img");
