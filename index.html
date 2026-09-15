@@ -7,7 +7,7 @@
   <title>CocillosTV</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=20260915-aletschbord">
+  <link rel="stylesheet" href="styles.css?v=20260915-termine">
 </head>
 <body>
   <div class="ambient ambient-one"></div>
@@ -156,29 +156,29 @@
       <div id="map" class="map panel" role="img" aria-label="Karte mit Vereinsorten"></div>
     </section>
 
-    <section class="slide" data-slide="club" data-title="Termine & Aufgaben">
+    <section class="slide" data-slide="club" data-title="Termine">
       <div class="section-heading">
         <div>
           <span class="eyebrow">Cocillos intern</span>
-          <h2>Auf dem Laufenden</h2>
+          <h2>Unsere Termine</h2>
         </div>
       </div>
 
       <div class="club-grid">
         <article class="panel list-panel">
           <div class="panel-heading">
-            <span>Konzertmeister</span>
+            <span>Nächste Proben</span>
             <span class="panel-symbol">↗</span>
           </div>
-          <div id="eventList" class="event-list"></div>
+          <div id="regularEventList" class="event-list"></div>
         </article>
 
-        <article class="panel list-panel">
+        <article class="panel list-panel special-events-panel">
           <div class="panel-heading">
-            <span>To-dos</span>
-            <span id="todoBadge" class="count-badge">0</span>
+            <span>Besondere Termine & Auftritte</span>
+            <span class="panel-symbol">★</span>
           </div>
-          <div id="todoList" class="todo-list"></div>
+          <div id="specialEventList" class="event-list special-event-list"></div>
         </article>
       </div>
     </section>
@@ -216,6 +216,6 @@
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="config.js?v=20260915-konzertmeister"></script>
-  <script src="app.js?v=20260915-konzertmeister-2"></script>
+  <script src="app.js?v=20260915-termine"></script>
 </body>
 </html>
