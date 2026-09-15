@@ -612,26 +612,46 @@ a.hazard-card::after {
   height: 100%;
 }
 
-.media-frame iframe,
-.media-frame img {
+.media-frame iframe {
   width: 100%;
   height: 100%;
   border: 0;
-  object-fit: cover;
 }
 
-.media-frame img {
-  animation: roundshot-pan 40s linear infinite alternate;
-  will-change: object-position;
+.roundshot-panorama-track {
+  position: absolute;
+  inset: 0 auto 0 0;
+  display: flex;
+  width: max-content;
+  height: 100%;
+  opacity: 0;
+  transform: translateX(var(--panorama-start, 0));
+  will-change: transform;
+}
+
+.roundshot-panorama-track.is-ready {
+  opacity: 1;
+}
+
+.roundshot-panorama-track img {
+  flex: 0 0 auto;
+  width: auto;
+  max-width: none;
+  height: 100%;
+  border: 0;
+}
+
+.slide[data-slide="webcam"].active .roundshot-panorama-track.is-ready {
+  animation: roundshot-pan var(--panorama-duration, 40s) linear 1 both;
 }
 
 @keyframes roundshot-pan {
   from {
-    object-position: left center;
+    transform: translateX(var(--panorama-start, 0));
   }
 
   to {
-    object-position: right center;
+    transform: translateX(var(--panorama-end, -100%));
   }
 }
 
