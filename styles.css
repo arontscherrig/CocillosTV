@@ -1644,26 +1644,19 @@ a.hazard-card::after {
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: clamp(20px, 1.8vw, 28px);
-  background: linear-gradient(135deg, #27051f 0%, #72052f 38%, #b3082b 68%, #e30613 100%);
+  background: white;
   box-shadow:
     0 0 0 10px rgba(227, 6, 19, 0.065),
     0 22px 55px rgba(0, 0, 0, 0.32);
   isolation: isolate;
 }
 
-.payment-qr-frame img {
-  position: absolute;
+.payment-qr-code {
   display: block;
-  width: 125.3%;
-  max-width: none;
-  height: auto;
-  top: -2.42%;
-  left: -12.65%;
+  width: 100%;
+  height: 100%;
   background: white;
-}
-
-.payment-qr-code-layer {
-  mix-blend-mode: screen;
+  shape-rendering: geometricPrecision;
 }
 
 .payment-qr-note {

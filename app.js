@@ -61,7 +61,221 @@
     very_high: 5
   };
 
+  // Exaktes 37 × 37-Modulraster aus dem funktionierenden TWINT-JPG.
+  // Nur die Darstellung wird verändert; die codierten Module bleiben gleich.
+  const paymentQrMatrix = [
+    "1111111000000101011110011011001111111",
+    "1000001001010001110000111011001000001",
+    "1011101000100111010010110000101011101",
+    "1011101000110001100110010010101011101",
+    "1011101001001010100010110111001011101",
+    "1000001010010111110100001101001000001",
+    "1111111010101010101010101010101111111",
+    "0000000000101000011011110011100000000",
+    "1001011010011000111001011111010100000",
+    "0001000000011111110011001100011000001",
+    "0111001110110011000110000000001100101",
+    "0011110101001000101011110110110111001",
+    "1000001101100101011001100100011001001",
+    "1101010011010010100101000000111101001",
+    "0101111110100010000001011100101010011",
+    "0100110000101100100111001100000001001",
+    "1101001111110000100111001010011001111",
+    "1101010001001001000000111100101111011",
+    "0111101000111000011010101010111110101",
+    "1011100011001101111001110010100001110",
+    "1110101100000100001011111100011011011",
+    "0111110000000010011001101010001001001",
+    "0000001110000010001100000110111111101",
+    "0001000001010111001011000100000010011",
+    "0111011001000000101001110110101100001",
+    "0101100011101001011101000110001001101",
+    "1001101111101111100011010000011000111",
+    "0110000100001100111001010111010110000",
+    "1110011110001101111101010000111110110",
+    "0000000011011000011011110111100011001",
+    "1111111001110110110011000101101010011",
+    "1000001011000001000111011000100011100",
+    "1011101001111010010011110100111111001",
+    "1011101010011111010001100110000111010",
+    "1011101000010110100111100010000011011",
+    "1000001000011111001111101111110101000",
+    "1111111010111000011001100111101011011"
+  ];
+
   const byId = (id) => document.getElementById(id);
+
+  function renderPaymentQr() {
+    const svg = byId("paymentQr");
+    if (!svg) return;
+
+    const namespace = "http://www.w3.org/2000/svg";
+    const quietZone = 4;
+    const matrixSize = paymentQrMatrix.length;
+    const viewBoxSize = matrixSize + quietZone * 2;
+    const gradientId = "paymentQrGradient";
+
+    const element = (name, attributes = {}) => {
+      const node = document.createElementNS(namespace, name);
+      Object.entries(attributes).forEach(([key, value]) => {
+        node.setAttribute(key, String(value));
+      });
+      return node;
+    };
+
+    const isDark = (x, y) => (
+      x >= 0 && y >= 0 && x < matrixSize && y < matrixSize
+        ? paymentQrMatrix[y][x] === "1"
+        : false
+    );
+
+    const isFinder = (x, y) => (
+      (x <= 6 && y <= 6)
+      || (x >= matrixSize - 7 && y <= 6)
+      || (x <= 6 && y >= matrixSize - 7)
+    );
+
+    const isAlignment = (x, y) => x >= 28 && x <= 32 && y >= 28 && y <= 32;
+    const isSpecial = (x, y) => isFinder(x, y) || isAlignment(x, y);
+
+    svg.replaceChildren();
+    svg.setAttribute("viewBox", `0 0 ${viewBoxSize} ${viewBoxSize}`);
+    svg.setAttribute("preserveAspectRatio", "xMidYMid meet");
+
+    const title = element("title", { id: "paymentQrTitle" });
+    title.textContent = "TWINT QR-Code für Getränke im Vereinslokal";
+    svg.setAttribute("aria-labelledby", "paymentQrTitle");
+    svg.appendChild(title);
+
+    const definitions = element("defs");
+    const gradient = element("linearGradient", {
+      id: gradientId,
+      gradientUnits: "userSpaceOnUse",
+      x1: quietZone,
+      y1: quietZone,
+      x2: viewBoxSize - quietZone,
+      y2: viewBoxSize - quietZone
+    });
+
+    [
+      ["0%", "#27051f"],
+      ["38%", "#72052f"],
+      ["68%", "#b3082b"],
+      ["100%", "#e30613"]
+    ].forEach(([offset, color]) => {
+      gradient.appendChild(element("stop", { offset, "stop-color": color }));
+    });
+    definitions.appendChild(gradient);
+    svg.appendChild(definitions);
+
+    svg.appendChild(element("rect", {
+      x: 0,
+      y: 0,
+      width: viewBoxSize,
+      height: viewBoxSize,
+      rx: 2.2,
+      fill: "#fff"
+    }));
+
+    const modules = element("g", { fill: `url(#${gradientId})` });
+    const connectorThickness = 0.52;
+    const connectorOffset = (1 - connectorThickness) / 2;
+
+    for (let y = 0; y < matrixSize; y += 1) {
+      for (let x = 0; x < matrixSize; x += 1) {
+        if (!isDark(x, y) || isSpecial(x, y)) continue;
+
+        if (isDark(x + 1, y) && !isSpecial(x + 1, y)) {
+          modules.appendChild(element("rect", {
+            x: quietZone + x + 0.5,
+            y: quietZone + y + connectorOffset,
+            width: 1,
+            height: connectorThickness,
+            rx: connectorThickness / 2
+          }));
+        }
+
+        if (isDark(x, y + 1) && !isSpecial(x, y + 1)) {
+          modules.appendChild(element("rect", {
+            x: quietZone + x + connectorOffset,
+            y: quietZone + y + 0.5,
+            width: connectorThickness,
+            height: 1,
+            rx: connectorThickness / 2
+          }));
+        }
+      }
+    }
+
+    for (let y = 0; y < matrixSize; y += 1) {
+      for (let x = 0; x < matrixSize; x += 1) {
+        if (!isDark(x, y) || isSpecial(x, y)) continue;
+        modules.appendChild(element("circle", {
+          cx: quietZone + x + 0.5,
+          cy: quietZone + y + 0.5,
+          r: 0.39
+        }));
+      }
+    }
+
+    svg.appendChild(modules);
+
+    const drawFinder = (x, y) => {
+      svg.appendChild(element("rect", {
+        x: quietZone + x,
+        y: quietZone + y,
+        width: 7,
+        height: 7,
+        rx: 1.3,
+        fill: `url(#${gradientId})`
+      }));
+      svg.appendChild(element("rect", {
+        x: quietZone + x + 1,
+        y: quietZone + y + 1,
+        width: 5,
+        height: 5,
+        rx: 0.82,
+        fill: "#fff"
+      }));
+      svg.appendChild(element("rect", {
+        x: quietZone + x + 2,
+        y: quietZone + y + 2,
+        width: 3,
+        height: 3,
+        rx: 0.72,
+        fill: `url(#${gradientId})`
+      }));
+    };
+
+    drawFinder(0, 0);
+    drawFinder(matrixSize - 7, 0);
+    drawFinder(0, matrixSize - 7);
+
+    svg.appendChild(element("rect", {
+      x: quietZone + 28,
+      y: quietZone + 28,
+      width: 5,
+      height: 5,
+      rx: 0.9,
+      fill: `url(#${gradientId})`
+    }));
+    svg.appendChild(element("rect", {
+      x: quietZone + 29,
+      y: quietZone + 29,
+      width: 3,
+      height: 3,
+      rx: 0.5,
+      fill: "#fff"
+    }));
+    svg.appendChild(element("rect", {
+      x: quietZone + 30,
+      y: quietZone + 30,
+      width: 1,
+      height: 1,
+      rx: 0.32,
+      fill: `url(#${gradientId})`
+    }));
+  }
 
   function setText(id, value) {
     const element = byId(id);
@@ -1450,6 +1664,7 @@
 
   function init() {
     applyBranding();
+    renderPaymentQr();
     updateClock();
     window.setInterval(updateClock, 1000);
 

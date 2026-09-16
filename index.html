@@ -7,7 +7,7 @@
   <title>CocillosTV</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=20260916-twint-gradient">
+  <link rel="stylesheet" href="styles.css?v=20260916-twint-dots">
 </head>
 <body>
   <div class="ambient ambient-one"></div>
@@ -319,7 +319,7 @@
 
           <div class="payment-qr-stage">
             <div class="payment-qr-frame">
-              <img class="payment-qr-code-layer" src="assets/payment/twint-getraenkekasse.jpeg" alt="TWINT QR-Code für Getränke im Vereinslokal">
+              <svg id="paymentQr" class="payment-qr-code" role="img" aria-label="TWINT QR-Code für Getränke im Vereinslokal"></svg>
             </div>
           </div>
 
@@ -364,6 +364,6 @@
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="config.js?v=20260916-twint"></script>
-  <script src="app.js?v=20260915-hock"></script>
+  <script src="app.js?v=20260916-twint-dots"></script>
 </body>
 </html>
