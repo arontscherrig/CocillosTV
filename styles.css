@@ -1644,7 +1644,7 @@ a.hazard-card::after {
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: clamp(20px, 1.8vw, 28px);
-  background: #bd0010;
+  background: linear-gradient(135deg, #27051f 0%, #72052f 38%, #b3082b 68%, #e30613 100%);
   box-shadow:
     0 0 0 10px rgba(227, 6, 19, 0.065),
     0 22px 55px rgba(0, 0, 0, 0.32);
