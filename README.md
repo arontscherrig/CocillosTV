@@ -13,6 +13,7 @@ Ein eigenständiger, browserbasierter Vereinsbildschirm für die Guggumüsig Coc
 - Konzertmeister-Termine aus iCalendar mit Countdown
 - eigener Unterhalts- und To-do-Plan mit nächstem Einsatz, Team und Wochenarbeiten
 - monatlicher Hock mit automatisch berechnetem ersten Freitag und aktuellem Wochenmenü
+- eigener TWINT-Slide für die Getränkekasse im Vereinslokal
 - Vereinsfotos
 - To-do-Liste und Mitteilungen
 - Vollbild- und Pausensteuerung
@@ -49,6 +50,10 @@ Die eigene Unterhaltsseite basiert auf `maintenance` in `config.js`. Sie zeigt d
 Die Hock-Seite zeigt automatisch den nächsten ersten Freitag eines Monats. Ist der erste Freitag des laufenden Monats bereits vorbei, wird der erste Freitag des Folgemonats angezeigt.
 
 Das als **Werbung** gekennzeichnete Wochenmenü stammt vom [Restaurant Simplon](https://restaurant-simplon.ch/wochenmenue/). Der Workflow `.github/workflows/update-weekly-menu.yml` prüft die Quelle von Montag bis Freitag am Morgen. `data/weekly-menu.json` wird nur dann neu committed, wenn sich das veröffentlichte Menü tatsächlich verändert hat. Bei einem vorübergehenden Abruffehler bleibt der letzte erfolgreiche Stand sichtbar.
+
+## Getränkekasse mit TWINT
+
+Der Getränkekassen-Slide zeigt den offiziellen Zahlungs-QR-Code aus `assets/payment/twint-getraenkekasse.jpeg`. Der Code wird unverändert angezeigt und mit einer kurzen Zahlungsanleitung ergänzt. Beim Ersetzen muss wieder der vollständige Original-QR-Code inklusive weissem Rand verwendet werden, damit er zuverlässig scanbar bleibt.
 
 ## Aletschbord-Webcam
 

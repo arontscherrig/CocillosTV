@@ -24,6 +24,7 @@ window.COCILLOS_CONFIG = {
       club: 25,
       maintenance: 30,
       hock: 34,
+      twint: 40,
       gallery: 30
     }
   },

@@ -7,7 +7,7 @@
   <title>CocillosTV</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=20260915-hock">
+  <link rel="stylesheet" href="styles.css?v=20260916-twint">
 </head>
 <body>
   <div class="ambient ambient-one"></div>
@@ -283,6 +283,52 @@
       </div>
     </section>
 
+    <section class="slide payment-slide" data-slide="twint" data-title="Getränkekasse">
+      <div class="payment-glow payment-glow-one" aria-hidden="true"></div>
+      <div class="payment-glow payment-glow-two" aria-hidden="true"></div>
+
+      <div class="payment-layout">
+        <article class="payment-copy">
+          <span class="payment-pill"><span></span> Vereinslokal · Getränkekasse</span>
+          <h2>Durst gelöscht.<br><em>Jetzt kurz TWINTen.</em></h2>
+          <p>Scanne den QR-Code mit deiner TWINT-App und bezahle deine Getränke direkt in die Vereinskasse.</p>
+
+          <div class="payment-steps" aria-label="Zahlung in drei Schritten">
+            <div><strong>01</strong><span>QR-Code scannen</span></div>
+            <div><strong>02</strong><span>Betrag eingeben</span></div>
+            <div><strong>03</strong><span>Zahlung bestätigen</span></div>
+          </div>
+
+          <div class="payment-thanks">
+            <span aria-hidden="true">♥</span>
+            <div>
+              <strong>Danke fürs faire Bezahlen.</strong>
+              <span>So bleibt unsere Bar für alle unkompliziert.</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="payment-qr-shell">
+          <div class="payment-qr-heading">
+            <div>
+              <span>Getränke bezahlen</span>
+              <strong>Mit TWINT</strong>
+            </div>
+            <span class="payment-ready"><i></i> Bereit</span>
+          </div>
+
+          <div class="payment-qr-frame">
+            <img src="assets/payment/twint-getraenkekasse.jpeg" alt="TWINT QR-Code für Getränke im Vereinslokal">
+          </div>
+
+          <div class="payment-qr-note">
+            <span>Betrag gemäss Preisliste</span>
+            <strong>Scannen & bezahlen</strong>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <section class="slide" data-slide="gallery" data-title="Aus dem Archiv">
       <div id="photoStage" class="photo-stage panel">
         <div id="photoFallback" class="empty-state">
@@ -315,7 +361,7 @@
   </footer>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="config.js?v=20260915-hock"></script>
+  <script src="config.js?v=20260916-twint"></script>
   <script src="app.js?v=20260915-hock"></script>
 </body>
 </html>
