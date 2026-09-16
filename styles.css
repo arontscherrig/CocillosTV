@@ -1558,7 +1558,7 @@ a.hazard-card::after {
   border: 1px solid rgba(255, 255, 255, 0.13);
   border-radius: clamp(24px, 2vw, 36px);
   background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.025)),
+    linear-gradient(145deg, rgba(227, 6, 19, 0.09), rgba(255, 255, 255, 0.025) 42%),
     rgba(20, 22, 27, 0.92);
   box-shadow: 0 28px 80px rgba(0, 0, 0, 0.42);
 }
@@ -1617,37 +1617,53 @@ a.hazard-card::after {
   box-shadow: 0 0 0 4px rgba(85, 207, 133, 0.13);
 }
 
-.payment-qr-frame {
+.payment-qr-stage {
+  position: relative;
   display: grid;
   min-height: 0;
-  overflow: hidden;
   place-items: center;
-  padding: 8px;
-  border-radius: 22px;
+  padding: clamp(12px, 1.4vw, 24px);
+  border-radius: 30px;
+  background: radial-gradient(circle, rgba(227, 6, 19, 0.14), transparent 68%);
+}
+
+.payment-qr-stage::before {
+  position: absolute;
+  inset: clamp(10px, 1.2vw, 20px);
+  border: 1px solid rgba(227, 6, 19, 0.16);
+  border-radius: 28px;
+  content: "";
+  pointer-events: none;
+}
+
+.payment-qr-frame {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 520px);
+  aspect-ratio: 1;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: clamp(20px, 1.8vw, 28px);
   background: #bd0010;
-  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06);
+  box-shadow:
+    0 0 0 10px rgba(227, 6, 19, 0.065),
+    0 22px 55px rgba(0, 0, 0, 0.32);
   isolation: isolate;
 }
 
 .payment-qr-frame img {
+  position: absolute;
   display: block;
-  grid-area: 1 / 1;
-  width: 100%;
-  height: 100%;
-  border-radius: 16px;
-  object-fit: contain;
+  width: 125.3%;
+  max-width: none;
+  height: auto;
+  top: -2.42%;
+  left: -12.65%;
   background: white;
 }
 
 .payment-qr-code-layer {
-  z-index: 1;
-  clip-path: inset(0 0 30% 0);
   mix-blend-mode: screen;
-}
-
-.payment-qr-brand-layer {
-  z-index: 2;
-  clip-path: inset(70% 0 0 0);
 }
 
 .payment-qr-note {
