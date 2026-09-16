@@ -1624,17 +1624,30 @@ a.hazard-card::after {
   place-items: center;
   padding: 8px;
   border-radius: 22px;
-  background: white;
+  background: #bd0010;
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06);
+  isolation: isolate;
 }
 
 .payment-qr-frame img {
   display: block;
+  grid-area: 1 / 1;
   width: 100%;
   height: 100%;
   border-radius: 16px;
   object-fit: contain;
   background: white;
+}
+
+.payment-qr-code-layer {
+  z-index: 1;
+  clip-path: inset(0 0 30% 0);
+  mix-blend-mode: screen;
+}
+
+.payment-qr-brand-layer {
+  z-index: 2;
+  clip-path: inset(70% 0 0 0);
 }
 
 .payment-qr-note {
