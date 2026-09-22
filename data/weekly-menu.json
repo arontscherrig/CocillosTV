@@ -1,12 +1,12 @@
 {
   "source": "https://restaurant-simplon.ch/wochenmenue/",
-  "week": "14. September 2026 – 20. September 2026",
-  "updatedAt": "2026-09-15T22:45:00Z",
+  "week": "21. September 2026 – 27. September 2026",
+  "updatedAt": "2026-09-22T11:42:34Z",
   "days": [
     {
       "day": "Montag",
-      "closed": "Geschlossen",
-      "menus": []
+      "menus": [],
+      "closed": "Geschlossen"
     },
     {
       "day": "Dienstag",
@@ -15,13 +15,13 @@
           "name": "Menü 1",
           "price": "19 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Poulet Cordonbleu dazu Pommes und saisonales Gemüse"
+          "dish": "Zartes Beef Brisket dazu Country Cuts und saisonales Gemüse"
         },
         {
           "name": "Menü 2",
           "price": "18 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Pasta an cremiger Tomaten-Mascarpone-Sauce mit Parmesan"
+          "dish": "Gnocchi an Tomatensauce mit Mozzarella überbacken"
         }
       ]
     },
@@ -32,13 +32,13 @@
           "name": "Menü 1",
           "price": "19 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Rindsgeschnetzeltes an Pfeffersauce dazu Rösti und Gemüse"
+          "dish": "Saftige Pouletbrust sn Kräuterbutter dazu Rosmarinkartoffel und Gemüse"
         },
         {
           "name": "Menü 2",
           "price": "18 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Pasta an cremiger Tomaten-Mascarpone-Sauce mit Parmesan"
+          "dish": "Gnocchi an Tomatensauce mit Mozzarella überbacken"
         }
       ]
     },
@@ -49,13 +49,13 @@
           "name": "Menü 1",
           "price": "19 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Rindshacktäschli mit Käsefüllung an Jus dazu Kartoffelstock und saisonales Gemüse"
+          "dish": "Rindsplätzli an cremiger Champignonsauce dazu Butterspätzli und Gemüse"
         },
         {
           "name": "Menü 2",
           "price": "18 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Cremiges Risotto Al Limone mit Parmesan"
+          "dish": "Tortellini mit Ricotta-Spinat-Füllung an feiner Parmesan-Rahmsauce"
         }
       ]
     },
@@ -66,13 +66,13 @@
           "name": "Menü 1",
           "price": "19 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Knusprige Fischknusperli mit Tartarsauce dazu Petersilienkartoffel und saisonales Gemüse"
+          "dish": "Gebratenes Fischfilet an Zitronen-Kräuterbutter dazu Petersilienkartoffel und Gemüse"
         },
         {
           "name": "Menü 2",
           "price": "18 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Cremiges Risotto Al Limone mit Parmesan"
+          "dish": "Tortellini mit Ricotta-Spinat-Füllung an feiner Parmesan-Rahmsauce"
         }
       ]
     }
