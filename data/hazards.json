@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-15T12:58:22.845Z",
+  "generatedAt": "2026-09-24T12:24:12.136Z",
   "fire": {
     "status": "ok",
     "source": "BAFU und Kantone",
@@ -18,11 +18,11 @@
       {
         "id": 26,
         "name": "Anniviers (VS)",
-        "level": 3,
-        "warningValidFrom": "2026-09-10T12:03:24.280+02:00",
-        "measureCategory": 1,
-        "measureTitle": "Besondere Vorsicht mit Feuer",
-        "measureValidFrom": "2026-09-15T12:00:00.000+02:00"
+        "level": 4,
+        "warningValidFrom": "2026-09-24T12:01:05.641+02:00",
+        "measureCategory": 3,
+        "measureTitle": "Feuerverbot im Wald",
+        "measureValidFrom": "2026-09-24T13:00:00.000+02:00"
       },
       {
         "id": 65,
@@ -45,11 +45,11 @@
       {
         "id": 131,
         "name": "Binn (VS)",
-        "level": 3,
-        "warningValidFrom": "2026-09-10T12:03:24.280+02:00",
-        "measureCategory": 1,
-        "measureTitle": "Besondere Vorsicht mit Feuer",
-        "measureValidFrom": "2026-09-15T12:00:00.000+02:00"
+        "level": 4,
+        "warningValidFrom": "2026-09-24T12:01:05.641+02:00",
+        "measureCategory": 3,
+        "measureTitle": "Feuerverbot im Wald",
+        "measureValidFrom": "2026-09-24T13:00:00.000+02:00"
       },
       {
         "id": 98,
@@ -63,11 +63,11 @@
       {
         "id": 14,
         "name": "Evolène (VS)",
-        "level": 3,
-        "warningValidFrom": "2026-09-10T12:03:24.280+02:00",
-        "measureCategory": 1,
-        "measureTitle": "Besondere Vorsicht mit Feuer",
-        "measureValidFrom": "2026-09-15T12:00:00.000+02:00"
+        "level": 4,
+        "warningValidFrom": "2026-09-24T12:01:05.641+02:00",
+        "measureCategory": 3,
+        "measureTitle": "Feuerverbot im Wald",
+        "measureValidFrom": "2026-09-24T13:00:00.000+02:00"
       },
       {
         "id": 116,
@@ -81,11 +81,11 @@
       {
         "id": 28,
         "name": "Gd St. Bernard (VS)",
-        "level": 3,
-        "warningValidFrom": "2026-09-15T12:08:02.360+02:00",
-        "measureCategory": 1,
-        "measureTitle": "Besondere Vorsicht mit Feuer",
-        "measureValidFrom": "2026-09-15T12:00:00.000+02:00"
+        "level": 4,
+        "warningValidFrom": "2026-09-24T12:01:05.641+02:00",
+        "measureCategory": 3,
+        "measureTitle": "Feuerverbot im Wald",
+        "measureValidFrom": "2026-09-24T13:00:00.000+02:00"
       },
       {
         "id": 22,
@@ -117,8 +117,8 @@
       {
         "id": 43,
         "name": "Nikolai (VS)",
-        "level": 4,
-        "warningValidFrom": "2026-09-10T12:03:24.280+02:00",
+        "level": 5,
+        "warningValidFrom": "2026-09-24T12:01:05.641+02:00",
         "measureCategory": 3,
         "measureTitle": "Feuerverbot im Wald",
         "measureValidFrom": "2026-09-15T12:00:00.000+02:00"
@@ -162,8 +162,8 @@
       {
         "id": 130,
         "name": "Sitten-Siders (VS)",
-        "level": 4,
-        "warningValidFrom": "2026-09-10T12:03:24.280+02:00",
+        "level": 5,
+        "warningValidFrom": "2026-09-24T12:01:05.641+02:00",
         "measureCategory": 3,
         "measureTitle": "Feuerverbot im Wald",
         "measureValidFrom": "2026-09-15T12:00:00.000+02:00"
@@ -180,8 +180,8 @@
       {
         "id": 6,
         "name": "Südrampe (VS)",
-        "level": 4,
-        "warningValidFrom": "2026-09-10T12:03:24.280+02:00",
+        "level": 5,
+        "warningValidFrom": "2026-09-24T12:01:05.641+02:00",
         "measureCategory": 3,
         "measureTitle": "Feuerverbot im Wald",
         "measureValidFrom": "2026-09-15T12:00:00.000+02:00"
@@ -189,11 +189,11 @@
       {
         "id": 81,
         "name": "Turtmanntal (VS)",
-        "level": 3,
-        "warningValidFrom": "2026-09-10T12:03:24.280+02:00",
-        "measureCategory": 1,
-        "measureTitle": "Besondere Vorsicht mit Feuer",
-        "measureValidFrom": "2026-09-15T12:00:00.000+02:00"
+        "level": 4,
+        "warningValidFrom": "2026-09-24T12:01:05.641+02:00",
+        "measureCategory": 3,
+        "measureTitle": "Feuerverbot im Wald",
+        "measureValidFrom": "2026-09-24T13:00:00.000+02:00"
       },
       {
         "id": 83,
