@@ -1,7 +1,7 @@
 {
   "source": "https://restaurant-simplon.ch/wochenmenue/",
-  "week": "21. September 2026 – 27. September 2026",
-  "updatedAt": "2026-09-22T11:42:34Z",
+  "week": "28. September 2026 – 4. Oktober 2026",
+  "updatedAt": "2026-09-29T12:56:48Z",
   "days": [
     {
       "day": "Montag",
@@ -15,13 +15,13 @@
           "name": "Menü 1",
           "price": "19 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Zartes Beef Brisket dazu Country Cuts und saisonales Gemüse"
+          "dish": "Poulet-Satay-Spiesse “Sweet & Sour” dazu Jasminreis und knackiges Wokgemüse"
         },
         {
           "name": "Menü 2",
           "price": "18 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Gnocchi an Tomatensauce mit Mozzarella überbacken"
+          "dish": "Pasta alla Norma mit Auberginen, Tomatensauce und Parmesan"
         }
       ]
     },
@@ -32,13 +32,13 @@
           "name": "Menü 1",
           "price": "19 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Saftige Pouletbrust sn Kräuterbutter dazu Rosmarinkartoffel und Gemüse"
+          "dish": "Hausgemachter Rindshamburger dazu Pommes Frites und saisonales Gemüse"
         },
         {
           "name": "Menü 2",
           "price": "18 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Gnocchi an Tomatensauce mit Mozzarella überbacken"
+          "dish": "Pasta alla Norma mit Auberginen, Tomatensauce und Parmesan"
         }
       ]
     },
@@ -49,13 +49,13 @@
           "name": "Menü 1",
           "price": "19 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Rindsplätzli an cremiger Champignonsauce dazu Butterspätzli und Gemüse"
+          "dish": "Zartes Rindsgeschnetzeltes an Pilzrahmsauce dazu Butterspätzli und saisonales Gemüse"
         },
         {
           "name": "Menü 2",
           "price": "18 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Tortellini mit Ricotta-Spinat-Füllung an feiner Parmesan-Rahmsauce"
+          "dish": "Cremiges Steinpilzrisotto mit Parmesan"
         }
       ]
     },
@@ -66,13 +66,13 @@
           "name": "Menü 1",
           "price": "19 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Gebratenes Fischfilet an Zitronen-Kräuterbutter dazu Petersilienkartoffel und Gemüse"
+          "dish": "Pouletschnitzel im Knuspermantel dazu Pommes Frites und saisonales Gemüse"
         },
         {
           "name": "Menü 2",
           "price": "18 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Tortellini mit Ricotta-Spinat-Füllung an feiner Parmesan-Rahmsauce"
+          "dish": "Cremiges Steinpilzrisotto mit Parmesan"
         }
       ]
     }
