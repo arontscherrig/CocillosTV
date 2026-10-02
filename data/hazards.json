@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-24T12:24:12.136Z",
+  "generatedAt": "2026-10-02T15:09:39.970Z",
   "fire": {
     "status": "ok",
     "source": "BAFU und Kantone",
@@ -135,8 +135,8 @@
       {
         "id": 38,
         "name": "Saas (VS)",
-        "level": 4,
-        "warningValidFrom": "2026-09-10T12:03:24.280+02:00",
+        "level": 5,
+        "warningValidFrom": "2026-10-02T12:02:19.721+02:00",
         "measureCategory": 3,
         "measureTitle": "Feuerverbot im Wald",
         "measureValidFrom": "2026-09-15T12:00:00.000+02:00"
@@ -144,8 +144,8 @@
       {
         "id": 101,
         "name": "Simplon (VS)",
-        "level": 3,
-        "warningValidFrom": "2026-09-10T12:03:24.280+02:00",
+        "level": 4,
+        "warningValidFrom": "2026-10-02T12:02:19.721+02:00",
         "measureCategory": 1,
         "measureTitle": "Besondere Vorsicht mit Feuer",
         "measureValidFrom": "2026-09-15T12:00:00.000+02:00"
