@@ -1,7 +1,7 @@
 {
   "source": "https://restaurant-simplon.ch/wochenmenue/",
-  "week": "28. September 2026 – 4. Oktober 2026",
-  "updatedAt": "2026-09-29T12:56:48Z",
+  "week": "5. Oktober 2026 – 11. Oktober 2026",
+  "updatedAt": "2026-10-06T13:21:25Z",
   "days": [
     {
       "day": "Montag",
@@ -15,13 +15,13 @@
           "name": "Menü 1",
           "price": "19 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Poulet-Satay-Spiesse “Sweet & Sour” dazu Jasminreis und knackiges Wokgemüse"
+          "dish": "Pouletbrust an cremiger Senfrahmsauce dazu Buttertagliatelle und saisonales Gemüse"
         },
         {
           "name": "Menü 2",
           "price": "18 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Pasta alla Norma mit Auberginen, Tomatensauce und Parmesan"
+          "dish": "Pasta Pesto Rosso mit Cherrytomaten und Parmesanflocken"
         }
       ]
     },
@@ -32,13 +32,13 @@
           "name": "Menü 1",
           "price": "19 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Hausgemachter Rindshamburger dazu Pommes Frites und saisonales Gemüse"
+          "dish": "Rinds-Siedfleisch an kräftigem Jus dazu Salzkartoffel und saisonales Gemüse"
         },
         {
           "name": "Menü 2",
           "price": "18 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Pasta alla Norma mit Auberginen, Tomatensauce und Parmesan"
+          "dish": "Pasta Pesto Rosso mit Cherrytomaten und Parmesanflocken"
         }
       ]
     },
@@ -49,13 +49,13 @@
           "name": "Menü 1",
           "price": "19 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Zartes Rindsgeschnetzeltes an Pilzrahmsauce dazu Butterspätzli und saisonales Gemüse"
+          "dish": "Kalbsbratwurst an Zwiebelsauce dazu knusprige Rösti und saisonales Gemüse"
         },
         {
           "name": "Menü 2",
           "price": "18 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Cremiges Steinpilzrisotto mit Parmesan"
+          "dish": "Pasta an cremiger Kürbis-Rahmsauce mit Salbei und Parmesanflocken"
         }
       ]
     },
@@ -66,13 +66,13 @@
           "name": "Menü 1",
           "price": "19 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Pouletschnitzel im Knuspermantel dazu Pommes Frites und saisonales Gemüse"
+          "dish": "Fischknusperli mit Tartarsauce dazu Petersilienkartoffel und saisonales Gemüse"
         },
         {
           "name": "Menü 2",
           "price": "18 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Cremiges Steinpilzrisotto mit Parmesan"
+          "dish": "Pasta an cremiger Kürbis-Rahmsauce mit Salbei und Parmesanflocken"
         }
       ]
     }
