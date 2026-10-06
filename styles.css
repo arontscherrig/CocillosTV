@@ -752,6 +752,33 @@ a.hazard-card::after {
   background: white;
 }
 
+.member-marker-shell {
+  border: 0;
+  background: transparent;
+}
+
+.member-marker {
+  display: grid;
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+  place-items: center;
+  border: 2px solid white;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow:
+    0 3px 12px rgba(0, 0, 0, 0.55),
+    0 0 0 4px rgba(227, 6, 19, 0.18);
+}
+
+.member-marker.has-count {
+  width: 28px;
+  height: 28px;
+  font-size: 11px;
+  font-weight: 900;
+  line-height: 1;
+}
+
 .club-grid {
   height: 78%;
   display: grid;

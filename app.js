@@ -13,6 +13,8 @@
   let calendarEvents = [];
   let isPaused = false;
   let mapInstance = null;
+  let mapBounds = null;
+  let mapFitOptions = null;
 
   const weatherCodes = {
     0: ["☀️", "Klar"],
@@ -381,7 +383,12 @@
     });
 
     if (activeSlide.dataset.slide === "map" && mapInstance) {
-      window.setTimeout(() => mapInstance.invalidateSize(), 500);
+      window.setTimeout(() => {
+        mapInstance.invalidateSize();
+        if (mapBounds && config.map?.fitToPins) {
+          mapInstance.fitBounds(mapBounds, mapFitOptions || {});
+        }
+      }, 500);
     }
 
     if (activeSlide.dataset.slide === "club") {
@@ -1570,10 +1577,63 @@
     }
   }
 
-  function initMap() {
+  function lv95ToWgs84(coordinates) {
+    const easting = Number(coordinates?.[0]);
+    const northing = Number(coordinates?.[1]);
+    if (!Number.isFinite(easting) || !Number.isFinite(northing)) return null;
+
+    const y = (easting - 2600000) / 1000000;
+    const x = (northing - 1200000) / 1000000;
+    const longitude = (
+      2.6779094
+      + 4.728982 * y
+      + 0.791484 * y * x
+      + 0.1306 * y * x * x
+      - 0.0436 * y * y * y
+    ) * 100 / 36;
+    const latitude = (
+      16.9023892
+      + 3.238272 * x
+      - 0.270978 * y * y
+      - 0.002528 * x * x
+      - 0.0447 * y * y * x
+      - 0.014 * x * x * x
+    ) * 100 / 36;
+
+    return [latitude, longitude];
+  }
+
+  function normalizeMapCoordinates(coordinates, coordinateSystem) {
+    if (!Array.isArray(coordinates) || coordinates.length !== 2) return null;
+    if (String(coordinateSystem).toUpperCase() === "LV95") {
+      return lv95ToWgs84(coordinates);
+    }
+
+    const latitude = Number(coordinates[0]);
+    const longitude = Number(coordinates[1]);
+    return Number.isFinite(latitude) && Number.isFinite(longitude)
+      ? [latitude, longitude]
+      : null;
+  }
+
+  async function initMap() {
     const mapElement = byId("map");
-    const mapConfig = config.map || {};
-    const center = Array.isArray(mapConfig.center) ? mapConfig.center : [46.316, 7.987];
+    const configuredMap = config.map || {};
+    let mapConfig = configuredMap;
+
+    try {
+      const locationsUrl = new URL("data/member-locations.json", window.location.href);
+      locationsUrl.searchParams.set("_cocillos_refresh", Date.now());
+      const response = await fetch(locationsUrl, { cache: "no-store" });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      mapConfig = { ...configuredMap, ...(await response.json()) };
+    } catch (error) {
+      console.error("Mitgliederstandorte konnten nicht geladen werden:", error);
+    }
+
+    const coordinateSystem = mapConfig.coordinateSystem || "WGS84";
+    const center = normalizeMapCoordinates(mapConfig.center, coordinateSystem)
+      || [46.316, 7.987];
 
     if (!window.L) {
       mapElement.innerHTML = '<div class="empty-list">Kartenbibliothek konnte nicht geladen werden.</div>';
@@ -1599,27 +1659,85 @@
       popupAnchor: [0, -28]
     });
 
-    (Array.isArray(mapConfig.pins) ? mapConfig.pins : []).forEach((pin) => {
-      if (!Array.isArray(pin.coordinates) || pin.coordinates.length !== 2) return;
+    const groupedPins = new Map();
+    (Array.isArray(mapConfig.pins) ? mapConfig.pins : []).forEach((entry) => {
+      const pin = Array.isArray(entry) ? { coordinates: entry } : entry;
+      const coordinates = normalizeMapCoordinates(pin?.coordinates, coordinateSystem);
+      if (!coordinates) return;
 
-      const popup = document.createElement("div");
-      const title = document.createElement("strong");
-      title.textContent = pin.title || "Vereinsort";
-      popup.appendChild(title);
-
-      if (pin.description) {
-        const description = document.createElement("p");
-        description.textContent = pin.description;
-        description.style.margin = "6px 0 0";
-        popup.appendChild(description);
+      const key = coordinates.map((value) => value.toFixed(7)).join(":");
+      const group = groupedPins.get(key);
+      if (group) {
+        group.count += 1;
+        return;
       }
 
-      window.L.marker(pin.coordinates, { icon: markerIcon })
-        .addTo(mapInstance)
-        .bindPopup(popup);
+      groupedPins.set(key, {
+        coordinates,
+        count: 1,
+        title: pin.title,
+        description: pin.description
+      });
     });
 
-    window.setTimeout(() => mapInstance.invalidateSize(), 500);
+    const boundsCoordinates = [];
+    groupedPins.forEach((pin) => {
+      const isMemberMarker = mapConfig.markerStyle === "members";
+      const markerSize = pin.count > 1 ? 28 : 18;
+      const icon = isMemberMarker
+        ? window.L.divIcon({
+          className: "member-marker-shell",
+          html: `<span class="member-marker${pin.count > 1 ? " has-count" : ""}">${pin.count > 1 ? pin.count : ""}</span>`,
+          iconSize: [markerSize, markerSize],
+          iconAnchor: [markerSize / 2, markerSize / 2]
+        })
+        : markerIcon;
+
+      const marker = window.L.marker(pin.coordinates, {
+        icon,
+        title: pin.title || (pin.count > 1 ? `${pin.count} Einträge` : "Standort")
+      }).addTo(mapInstance);
+      boundsCoordinates.push(pin.coordinates);
+
+      if (pin.title || pin.description || pin.count > 1) {
+        const popup = document.createElement("div");
+        const title = document.createElement("strong");
+        title.textContent = pin.title
+          || `${pin.count} Einträge an diesem Standort`;
+        popup.appendChild(title);
+
+        if (pin.description) {
+          const description = document.createElement("p");
+          description.textContent = pin.description;
+          description.style.margin = "6px 0 0";
+          popup.appendChild(description);
+        }
+
+        marker.bindPopup(popup);
+      }
+    });
+
+    if (boundsCoordinates.length) {
+      mapBounds = window.L.latLngBounds(boundsCoordinates);
+      const padding = Array.isArray(mapConfig.fitPadding)
+        ? mapConfig.fitPadding.map((value) => Number(value) || 0)
+        : [48, 48];
+      mapFitOptions = {
+        padding,
+        maxZoom: Number(mapConfig.maxZoom) || 13,
+        animate: false
+      };
+      if (mapConfig.fitToPins) {
+        mapInstance.fitBounds(mapBounds, mapFitOptions);
+      }
+    }
+
+    window.setTimeout(() => {
+      mapInstance.invalidateSize();
+      if (mapBounds && mapConfig.fitToPins) {
+        mapInstance.fitBounds(mapBounds, mapFitOptions || {});
+      }
+    }, 500);
   }
 
   function initGallery() {

@@ -22,6 +22,8 @@ Ein eigenständiger, browserbasierter Vereinsbildschirm für die Guggumüsig Coc
 
 Die Vereinsdaten werden zentral in `config.js` gepflegt. Dort lassen sich Ort, Koordinaten, Webcam-Link, Karteneinträge, Termine, Fotos, Aufgaben und Anzeigedauer ändern.
 
+Die Vereinskarte liest `data/member-locations.json` mit Schweizer LV95-Koordinaten im Format `[E, N]`. Der sichtbare Ausschnitt wird automatisch an alle Einträge angepasst; identische Positionen werden als gemeinsamer Marker mit Anzahl dargestellt.
+
 Unter `weather.fireRegions` werden die gewünschten BAFU-Waldbrandregionen gewählt. `weather.avalancheRegionPrefixes` begrenzt das SLF-Bulletin auf die gewünschten Lawinenwarnregionen. Standardmässig ist das Oberwallis eingestellt.
 
 ## Wetter- und Gefahrendaten
