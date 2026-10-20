@@ -1,7 +1,7 @@
 {
   "source": "https://restaurant-simplon.ch/wochenmenue/",
-  "week": "12. Oktober 2026 – 18. Oktober 2026",
-  "updatedAt": "2026-10-13T14:15:30Z",
+  "week": "19. Oktober 2026 – 25. Oktober 2026",
+  "updatedAt": "2026-10-20T11:41:58Z",
   "days": [
     {
       "day": "Montag",
@@ -15,13 +15,13 @@
           "name": "Menü 1",
           "price": "19 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Pouletgeschnetzeltes an Paprika-Rahmsauce dazu Butterspätzli und saisonales Gemüse"
+          "dish": "Poulet-Piccata mit Tomatenspaghetti und saisonalem Gemüse"
         },
         {
           "name": "Menü 2",
           "price": "18 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Gnocchi an cremiger Gorgonzola-Rahmsauce mit Baumnüssen"
+          "dish": "Pasta an cremiger Champignon-Rahmsauce mit Parmesanflocken"
         }
       ]
     },
@@ -32,13 +32,13 @@
           "name": "Menü 1",
           "price": "19 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Zartes Kalbsgeschnetzeltes an Champignon-Rahmsauce dazu Kartoffelstock und Gemüse"
+          "dish": "Zarte Rindsplätzli an Pfefferrahmsauce mit Kartoffelgratin und Gemüse"
         },
         {
           "name": "Menü 2",
           "price": "18 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Gnocchi an cremiger Gorgonzola-Rahmsauce mit Baumnüssen"
+          "dish": "Pasta an cremiger Champignon-Rahmsauce mit Parmesanflocken"
         }
       ]
     },
@@ -49,13 +49,13 @@
           "name": "Menü 1",
           "price": "19 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Rindsragout an kräftigem Jus dazu cremige Polenta und glasierten Karotten"
+          "dish": "Rindsgeschnetzeltes an feiner Senfrahmsauce mit knuspriger Rösti und Gemüse"
         },
         {
           "name": "Menü 2",
           "price": "18 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Cremiges Maroni-Risotto mit Parmesan"
+          "dish": "Gnocchi an Kürbis-Mascarpone-Sauce mit gerösteten Kürbiskernen"
         }
       ]
     },
@@ -66,13 +66,13 @@
           "name": "Menü 1",
           "price": "19 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Knuspriges Poulet-Cordonbleu dazu Butternudeln und saisonales Gemüse"
+          "dish": "Gebratenes Fischfilet an Zitronenbutter mit Petersilienkartoffeln und Gemüse"
         },
         {
           "name": "Menü 2",
           "price": "18 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Cremiges Maroni-Risotto mit Parmesan"
+          "dish": "Gnocchi an Kürbis-Mascarpone-Sauce mit gerösteten Kürbiskernen"
         }
       ]
     }
