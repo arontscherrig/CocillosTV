@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-09T14:00:13.389Z",
+  "generatedAt": "2026-10-20T15:26:36.243Z",
   "fire": {
     "status": "ok",
     "source": "BAFU und Kantone",
@@ -219,6 +219,205 @@
     "status": "ok",
     "source": "WSL-Institut für Schnee- und Lawinenforschung SLF",
     "sourceUrl": "https://www.slf.ch/de/lawinenbulletin-und-schneesituation/",
-    "bulletins": []
+    "bulletins": [
+      {
+        "id": "d35575d0-da0d-4ba9-b614-a8c81bc014b0",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-10-20T15:00:00Z",
+        "validUntil": "2026-10-21T15:00:00Z",
+        "regions": [
+          {
+            "id": "CH-6113",
+            "name": "Bleniotal"
+          },
+          {
+            "id": "CH-7211",
+            "name": "Bergell"
+          },
+          {
+            "id": "CH-5212",
+            "name": "Südliches Tavetsch"
+          },
+          {
+            "id": "CH-4225",
+            "name": "Mattmark"
+          },
+          {
+            "id": "CH-4244",
+            "name": "Südliches Obergoms"
+          },
+          {
+            "id": "CH-6111",
+            "name": "Bedrettotal"
+          },
+          {
+            "id": "CH-6112",
+            "name": "Obere Leventina"
+          },
+          {
+            "id": "CH-5223",
+            "name": "Rheinwald"
+          },
+          {
+            "id": "CH-4242",
+            "name": "Binntal"
+          },
+          {
+            "id": "CH-4231",
+            "name": "Nördliches Simplon Gebiet"
+          },
+          {
+            "id": "CH-5233",
+            "name": "Avers"
+          },
+          {
+            "id": "CH-7112",
+            "name": "Bernina"
+          },
+          {
+            "id": "CH-7111",
+            "name": "Corvatsch"
+          },
+          {
+            "id": "CH-4232",
+            "name": "Südliches Simplon Gebiet"
+          },
+          {
+            "id": "CH-4224",
+            "name": "Monte Rosa"
+          },
+          {
+            "id": "CH-2224",
+            "name": "Südliche Urseren"
+          },
+          {
+            "id": "CH-6211",
+            "name": "Alto Moesano"
+          },
+          {
+            "id": "CH-5216",
+            "name": "Zervreila"
+          }
+        ]
+      },
+      {
+        "id": "24d4ef00-f52d-46df-9f7c-a93498fe5f5d",
+        "mainValue": "moderate",
+        "level": 2,
+        "validFrom": "2026-10-20T15:00:00Z",
+        "validUntil": "2026-10-21T15:00:00Z",
+        "regions": [
+          {
+            "id": "CH-4241",
+            "name": "Reckingen"
+          },
+          {
+            "id": "CH-4221",
+            "name": "Untere Vispertäler"
+          },
+          {
+            "id": "CH-4222",
+            "name": "Zermatt"
+          },
+          {
+            "id": "CH-3112",
+            "name": "Glarus Süd-Grosstal"
+          },
+          {
+            "id": "CH-4243",
+            "name": "Nördliches Obergoms"
+          },
+          {
+            "id": "CH-5215",
+            "name": "Val Sumvitg"
+          },
+          {
+            "id": "CH-4214",
+            "name": "Riederalp"
+          },
+          {
+            "id": "CH-4113",
+            "name": "Val d'Entremont - Val Ferret"
+          },
+          {
+            "id": "CH-5222",
+            "name": "Schams"
+          },
+          {
+            "id": "CH-6114",
+            "name": "Obere Maggiatäler"
+          },
+          {
+            "id": "CH-5211",
+            "name": "Nördliches Tavetsch"
+          },
+          {
+            "id": "CH-7221",
+            "name": "Oberes Puschlav"
+          },
+          {
+            "id": "CH-5232",
+            "name": "Savognin"
+          },
+          {
+            "id": "CH-6115",
+            "name": "Untere Leventina"
+          },
+          {
+            "id": "CH-5234",
+            "name": "Bivio"
+          },
+          {
+            "id": "CH-5124",
+            "name": "Flims"
+          },
+          {
+            "id": "CH-4213",
+            "name": "Konkordia Gebiet"
+          },
+          {
+            "id": "CH-4123",
+            "name": "Arolla"
+          },
+          {
+            "id": "CH-2222",
+            "name": "Maderanertal"
+          },
+          {
+            "id": "CH-2223",
+            "name": "Nördliche Urseren"
+          },
+          {
+            "id": "CH-1247",
+            "name": "Grimselpass"
+          },
+          {
+            "id": "CH-5214",
+            "name": "Obersaxen - Safiental"
+          },
+          {
+            "id": "CH-3113",
+            "name": "Glarus Süd-Sernftal"
+          },
+          {
+            "id": "CH-4116",
+            "name": "Haut Val de Bagnes"
+          },
+          {
+            "id": "CH-4223",
+            "name": "Saas Fee"
+          },
+          {
+            "id": "CH-7114",
+            "name": "St. Moritz"
+          },
+          {
+            "id": "CH-4125",
+            "name": "Mountet"
+          }
+        ]
+      }
+    ]
   }
 }
