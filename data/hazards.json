@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-21T15:43:36.348Z",
+  "generatedAt": "2026-10-22T12:10:28.743Z",
   "fire": {
     "status": "ok",
     "source": "BAFU und Kantone",
@@ -9,8 +9,8 @@
       {
         "id": 97,
         "name": "Aletsch (VS)",
-        "level": 4,
-        "warningValidFrom": "2026-08-28T12:02:41.105+02:00",
+        "level": 3,
+        "warningValidFrom": "2026-10-22T12:02:41.445+02:00",
         "measureCategory": 3,
         "measureTitle": "Feuerverbot im Wald",
         "measureValidFrom": "2026-09-15T12:00:00.000+02:00"
@@ -18,8 +18,8 @@
       {
         "id": 26,
         "name": "Anniviers (VS)",
-        "level": 4,
-        "warningValidFrom": "2026-09-24T12:01:05.641+02:00",
+        "level": 3,
+        "warningValidFrom": "2026-10-22T12:02:41.445+02:00",
         "measureCategory": 3,
         "measureTitle": "Feuerverbot im Wald",
         "measureValidFrom": "2026-09-24T13:00:00.000+02:00"
@@ -27,8 +27,8 @@
       {
         "id": 65,
         "name": "Arpille (VS)",
-        "level": 3,
-        "warningValidFrom": "2026-09-10T12:03:24.280+02:00",
+        "level": 2,
+        "warningValidFrom": "2026-10-22T12:02:41.445+02:00",
         "measureCategory": 1,
         "measureTitle": "Besondere Vorsicht mit Feuer",
         "measureValidFrom": "2026-09-15T12:00:00.000+02:00"
@@ -36,8 +36,8 @@
       {
         "id": 79,
         "name": "Bagnes (VS)",
-        "level": 4,
-        "warningValidFrom": "2026-08-21T12:05:51.540+02:00",
+        "level": 3,
+        "warningValidFrom": "2026-10-22T12:02:41.445+02:00",
         "measureCategory": 3,
         "measureTitle": "Feuerverbot im Wald",
         "measureValidFrom": "2026-09-15T12:00:00.000+02:00"
@@ -45,8 +45,8 @@
       {
         "id": 131,
         "name": "Binn (VS)",
-        "level": 4,
-        "warningValidFrom": "2026-09-24T12:01:05.641+02:00",
+        "level": 3,
+        "warningValidFrom": "2026-10-22T12:02:41.445+02:00",
         "measureCategory": 3,
         "measureTitle": "Feuerverbot im Wald",
         "measureValidFrom": "2026-09-24T13:00:00.000+02:00"
@@ -54,8 +54,8 @@
       {
         "id": 98,
         "name": "Chablais (VS)",
-        "level": 2,
-        "warningValidFrom": "2026-10-09T12:00:43.906+02:00",
+        "level": 1,
+        "warningValidFrom": "2026-10-22T12:02:41.445+02:00",
         "measureCategory": 1,
         "measureTitle": "Besondere Vorsicht mit Feuer",
         "measureValidFrom": "2026-09-15T12:00:00.000+02:00"
@@ -72,8 +72,8 @@
       {
         "id": 116,
         "name": "Fully (VS)",
-        "level": 4,
-        "warningValidFrom": "2026-09-15T12:08:02.360+02:00",
+        "level": 3,
+        "warningValidFrom": "2026-10-22T12:02:41.445+02:00",
         "measureCategory": 3,
         "measureTitle": "Feuerverbot im Wald",
         "measureValidFrom": "2026-09-15T12:00:00.000+02:00"
@@ -81,8 +81,8 @@
       {
         "id": 28,
         "name": "Gd St. Bernard (VS)",
-        "level": 3,
-        "warningValidFrom": "2026-10-09T12:00:43.906+02:00",
+        "level": 2,
+        "warningValidFrom": "2026-10-22T12:02:41.445+02:00",
         "measureCategory": 1,
         "measureTitle": "Besondere Vorsicht mit Feuer",
         "measureValidFrom": "2026-10-09T12:00:00.000+02:00"
@@ -90,8 +90,8 @@
       {
         "id": 22,
         "name": "Goms (VS)",
-        "level": 4,
-        "warningValidFrom": "2026-08-28T12:02:41.105+02:00",
+        "level": 3,
+        "warningValidFrom": "2026-10-22T12:02:41.445+02:00",
         "measureCategory": 3,
         "measureTitle": "Feuerverbot im Wald",
         "measureValidFrom": "2026-09-15T12:00:00.000+02:00"
@@ -99,8 +99,8 @@
       {
         "id": 139,
         "name": "Lötschental (VS)",
-        "level": 3,
-        "warningValidFrom": "2026-08-28T12:02:41.105+02:00",
+        "level": 2,
+        "warningValidFrom": "2026-10-22T12:02:41.445+02:00",
         "measureCategory": 1,
         "measureTitle": "Besondere Vorsicht mit Feuer",
         "measureValidFrom": "2026-09-15T12:00:00.000+02:00"
@@ -108,8 +108,8 @@
       {
         "id": 112,
         "name": "Montana (VS)",
-        "level": 4,
-        "warningValidFrom": "2026-09-15T12:08:02.360+02:00",
+        "level": 3,
+        "warningValidFrom": "2026-10-22T12:02:41.445+02:00",
         "measureCategory": 3,
         "measureTitle": "Feuerverbot im Wald",
         "measureValidFrom": "2026-09-15T12:00:00.000+02:00"
@@ -117,8 +117,8 @@
       {
         "id": 43,
         "name": "Nikolai (VS)",
-        "level": 5,
-        "warningValidFrom": "2026-09-24T12:01:05.641+02:00",
+        "level": 4,
+        "warningValidFrom": "2026-10-22T12:02:41.445+02:00",
         "measureCategory": 3,
         "measureTitle": "Feuerverbot im Wald",
         "measureValidFrom": "2026-09-15T12:00:00.000+02:00"
@@ -126,8 +126,8 @@
       {
         "id": 111,
         "name": "Riddes (VS)",
-        "level": 4,
-        "warningValidFrom": "2026-09-15T12:08:02.360+02:00",
+        "level": 3,
+        "warningValidFrom": "2026-10-22T12:02:41.445+02:00",
         "measureCategory": 3,
         "measureTitle": "Feuerverbot im Wald",
         "measureValidFrom": "2026-09-15T12:00:00.000+02:00"
@@ -135,8 +135,8 @@
       {
         "id": 38,
         "name": "Saas (VS)",
-        "level": 5,
-        "warningValidFrom": "2026-10-02T12:02:19.721+02:00",
+        "level": 4,
+        "warningValidFrom": "2026-10-22T12:02:41.445+02:00",
         "measureCategory": 3,
         "measureTitle": "Feuerverbot im Wald",
         "measureValidFrom": "2026-09-15T12:00:00.000+02:00"
@@ -144,8 +144,8 @@
       {
         "id": 101,
         "name": "Simplon (VS)",
-        "level": 3,
-        "warningValidFrom": "2026-10-09T12:00:43.906+02:00",
+        "level": 2,
+        "warningValidFrom": "2026-10-22T12:02:41.445+02:00",
         "measureCategory": 1,
         "measureTitle": "Besondere Vorsicht mit Feuer",
         "measureValidFrom": "2026-10-09T12:00:00.000+02:00"
@@ -153,8 +153,8 @@
       {
         "id": 143,
         "name": "Simplon Nord (VS)",
-        "level": 5,
-        "warningValidFrom": "2026-06-23T12:06:26.946+02:00",
+        "level": 4,
+        "warningValidFrom": "2026-10-22T12:02:41.445+02:00",
         "measureCategory": 3,
         "measureTitle": "Feuerverbot im Wald",
         "measureValidFrom": "2026-09-15T12:00:00.000+02:00"
@@ -162,8 +162,8 @@
       {
         "id": 130,
         "name": "Sitten-Siders (VS)",
-        "level": 4,
-        "warningValidFrom": "2026-10-09T12:00:43.906+02:00",
+        "level": 3,
+        "warningValidFrom": "2026-10-22T12:02:41.445+02:00",
         "measureCategory": 3,
         "measureTitle": "Feuerverbot im Wald",
         "measureValidFrom": "2026-09-15T12:00:00.000+02:00"
@@ -180,8 +180,8 @@
       {
         "id": 6,
         "name": "Südrampe (VS)",
-        "level": 5,
-        "warningValidFrom": "2026-09-24T12:01:05.641+02:00",
+        "level": 4,
+        "warningValidFrom": "2026-10-22T12:02:41.445+02:00",
         "measureCategory": 3,
         "measureTitle": "Feuerverbot im Wald",
         "measureValidFrom": "2026-09-15T12:00:00.000+02:00"
@@ -189,8 +189,8 @@
       {
         "id": 81,
         "name": "Turtmanntal (VS)",
-        "level": 4,
-        "warningValidFrom": "2026-09-24T12:01:05.641+02:00",
+        "level": 3,
+        "warningValidFrom": "2026-10-22T12:02:41.445+02:00",
         "measureCategory": 3,
         "measureTitle": "Feuerverbot im Wald",
         "measureValidFrom": "2026-09-24T13:00:00.000+02:00"
@@ -198,8 +198,8 @@
       {
         "id": 83,
         "name": "Val d'Illiez (VS)",
-        "level": 2,
-        "warningValidFrom": "2026-10-09T12:00:43.906+02:00",
+        "level": 1,
+        "warningValidFrom": "2026-10-22T12:02:41.445+02:00",
         "measureCategory": 1,
         "measureTitle": "Besondere Vorsicht mit Feuer",
         "measureValidFrom": "2026-09-15T12:00:00.000+02:00"
@@ -207,8 +207,8 @@
       {
         "id": 7,
         "name": "Vispertal (VS)",
-        "level": 5,
-        "warningValidFrom": "2026-06-23T12:06:26.946+02:00",
+        "level": 4,
+        "warningValidFrom": "2026-10-22T12:02:41.445+02:00",
         "measureCategory": 3,
         "measureTitle": "Feuerverbot im Wald",
         "measureValidFrom": "2026-09-15T12:00:00.000+02:00"
