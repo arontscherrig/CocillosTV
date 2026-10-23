@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-22T12:10:28.743Z",
+  "generatedAt": "2026-10-23T17:37:53.645Z",
   "fire": {
     "status": "ok",
     "source": "BAFU und Kantone",
@@ -219,6 +219,335 @@
     "status": "ok",
     "source": "WSL-Institut für Schnee- und Lawinenforschung SLF",
     "sourceUrl": "https://www.slf.ch/de/lawinenbulletin-und-schneesituation/",
-    "bulletins": []
+    "bulletins": [
+      {
+        "id": "d3b8dcf6-681d-4bf6-8070-baef6dcad583",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-10-23T15:00:00Z",
+        "validUntil": "2026-10-24T15:00:00Z",
+        "regions": [
+          {
+            "id": "CH-4111",
+            "name": "Emosson"
+          },
+          {
+            "id": "CH-4113",
+            "name": "Val d'Entremont - Val Ferret"
+          },
+          {
+            "id": "CH-1114",
+            "name": "Bex - Villars"
+          },
+          {
+            "id": "CH-1312",
+            "name": "Monthey - Val d'Illiez"
+          },
+          {
+            "id": "CH-4112",
+            "name": "Génépi"
+          },
+          {
+            "id": "CH-4114",
+            "name": "Conthey - Fully"
+          }
+        ]
+      },
+      {
+        "id": "438b2179-99c7-4a2b-9b54-0973037e9dc5",
+        "mainValue": "moderate",
+        "level": 2,
+        "validFrom": "2026-10-23T15:00:00Z",
+        "validUntil": "2026-10-24T15:00:00Z",
+        "regions": [
+          {
+            "id": "CH-4121",
+            "name": "Montana"
+          },
+          {
+            "id": "CH-3112",
+            "name": "Glarus Süd-Grosstal"
+          },
+          {
+            "id": "CH-1243",
+            "name": "Schreckhorn"
+          },
+          {
+            "id": "CH-4243",
+            "name": "Nördliches Obergoms"
+          },
+          {
+            "id": "CH-1113",
+            "name": "Aigle - Leysin"
+          },
+          {
+            "id": "CH-2122",
+            "name": "Engelberg"
+          },
+          {
+            "id": "CH-1112",
+            "name": "Pays d'Enhaut"
+          },
+          {
+            "id": "CH-2212",
+            "name": "Uri Rotstock"
+          },
+          {
+            "id": "CH-5211",
+            "name": "Nördliches Tavetsch"
+          },
+          {
+            "id": "CH-1246",
+            "name": "Gadmertal"
+          },
+          {
+            "id": "CH-4211",
+            "name": "Leukerbad - Lötschental"
+          },
+          {
+            "id": "CH-1223",
+            "name": "Wildhorn"
+          },
+          {
+            "id": "CH-4213",
+            "name": "Konkordia Gebiet"
+          },
+          {
+            "id": "CH-1311",
+            "name": "Vouvry"
+          },
+          {
+            "id": "CH-1232",
+            "name": "Blüemlisalp"
+          },
+          {
+            "id": "CH-1225",
+            "name": "Iffigen"
+          },
+          {
+            "id": "CH-2211",
+            "name": "Schächental"
+          },
+          {
+            "id": "CH-2222",
+            "name": "Maderanertal"
+          },
+          {
+            "id": "CH-2223",
+            "name": "Nördliche Urseren"
+          },
+          {
+            "id": "CH-1234",
+            "name": "Jungfrau - Schilthorn"
+          },
+          {
+            "id": "CH-1222",
+            "name": "Gstaad"
+          },
+          {
+            "id": "CH-2221",
+            "name": "Meiental"
+          },
+          {
+            "id": "CH-1247",
+            "name": "Grimselpass"
+          },
+          {
+            "id": "CH-1245",
+            "name": "Guttannen"
+          },
+          {
+            "id": "CH-3113",
+            "name": "Glarus Süd-Sernftal"
+          },
+          {
+            "id": "CH-1227",
+            "name": "Engstligen"
+          },
+          {
+            "id": "CH-4116",
+            "name": "Haut Val de Bagnes"
+          },
+          {
+            "id": "CH-4115",
+            "name": "Martigny - Verbier"
+          }
+        ]
+      },
+      {
+        "id": "68f90924-cd3f-4381-8f42-462813e858bf",
+        "mainValue": "moderate",
+        "level": 2,
+        "validFrom": "2026-10-23T15:00:00Z",
+        "validUntil": "2026-10-24T15:00:00Z",
+        "regions": [
+          {
+            "id": "CH-6113",
+            "name": "Bleniotal"
+          },
+          {
+            "id": "CH-7211",
+            "name": "Bergell"
+          },
+          {
+            "id": "CH-5212",
+            "name": "Südliches Tavetsch"
+          },
+          {
+            "id": "CH-4225",
+            "name": "Mattmark"
+          },
+          {
+            "id": "CH-4244",
+            "name": "Südliches Obergoms"
+          },
+          {
+            "id": "CH-6111",
+            "name": "Bedrettotal"
+          },
+          {
+            "id": "CH-6112",
+            "name": "Obere Leventina"
+          },
+          {
+            "id": "CH-5223",
+            "name": "Rheinwald"
+          },
+          {
+            "id": "CH-4242",
+            "name": "Binntal"
+          },
+          {
+            "id": "CH-4231",
+            "name": "Nördliches Simplon Gebiet"
+          },
+          {
+            "id": "CH-5233",
+            "name": "Avers"
+          },
+          {
+            "id": "CH-7112",
+            "name": "Bernina"
+          },
+          {
+            "id": "CH-7111",
+            "name": "Corvatsch"
+          },
+          {
+            "id": "CH-4232",
+            "name": "Südliches Simplon Gebiet"
+          },
+          {
+            "id": "CH-4224",
+            "name": "Monte Rosa"
+          },
+          {
+            "id": "CH-2224",
+            "name": "Südliche Urseren"
+          },
+          {
+            "id": "CH-6211",
+            "name": "Alto Moesano"
+          },
+          {
+            "id": "CH-5216",
+            "name": "Zervreila"
+          }
+        ]
+      },
+      {
+        "id": "0cb7cfee-5fd1-4ffa-a0a7-9f7361bec151",
+        "mainValue": "moderate",
+        "level": 2,
+        "validFrom": "2026-10-23T15:00:00Z",
+        "validUntil": "2026-10-24T15:00:00Z",
+        "regions": [
+          {
+            "id": "CH-5234",
+            "name": "Bivio"
+          },
+          {
+            "id": "CH-5124",
+            "name": "Flims"
+          },
+          {
+            "id": "CH-4122",
+            "name": "Val d'Hérens"
+          },
+          {
+            "id": "CH-4241",
+            "name": "Reckingen"
+          },
+          {
+            "id": "CH-4221",
+            "name": "Untere Vispertäler"
+          },
+          {
+            "id": "CH-4215",
+            "name": "Leuk"
+          },
+          {
+            "id": "CH-4222",
+            "name": "Zermatt"
+          },
+          {
+            "id": "CH-4123",
+            "name": "Arolla"
+          },
+          {
+            "id": "CH-5215",
+            "name": "Val Sumvitg"
+          },
+          {
+            "id": "CH-4214",
+            "name": "Riederalp"
+          },
+          {
+            "id": "CH-5222",
+            "name": "Schams"
+          },
+          {
+            "id": "CH-6114",
+            "name": "Obere Maggiatäler"
+          },
+          {
+            "id": "CH-5214",
+            "name": "Obersaxen - Safiental"
+          },
+          {
+            "id": "CH-7221",
+            "name": "Oberes Puschlav"
+          },
+          {
+            "id": "CH-5232",
+            "name": "Savognin"
+          },
+          {
+            "id": "CH-4212",
+            "name": "Turtmanntal"
+          },
+          {
+            "id": "CH-4223",
+            "name": "Saas Fee"
+          },
+          {
+            "id": "CH-4124",
+            "name": "Val d'Anniviers"
+          },
+          {
+            "id": "CH-6115",
+            "name": "Untere Leventina"
+          },
+          {
+            "id": "CH-7114",
+            "name": "St. Moritz"
+          },
+          {
+            "id": "CH-4125",
+            "name": "Mountet"
+          }
+        ]
+      }
+    ]
   }
 }
