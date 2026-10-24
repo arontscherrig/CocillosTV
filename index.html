@@ -7,7 +7,7 @@
   <title>CocillosTV</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=20261024-jam-visual">
+  <link rel="stylesheet" href="styles.css?v=20261024-song-text">
 </head>
 <body>
   <div class="ambient ambient-one"></div>
@@ -347,6 +347,12 @@
             <h2>Du bestimmst<br><em>den nächsten Beat.</em></h2>
             <p>Wünsch dir einen Song und gestalte die Playlist im Vereinslokal mit.</p>
           </div>
+          <div class="spotify-now" aria-live="off">
+            <span class="spotify-now-label">♪ AKTUELLER SONG</span>
+            <strong id="spotifyTrackTitle">Noch kein Song eingetragen</strong>
+            <span id="spotifyTrackArtist">Titel und Interpret können lokal eingetragen werden.</span>
+            <button id="spotifyTrackEdit" type="button">Song ändern</button>
+          </div>
           <div class="spotify-steps"><span><b>01</b> Scannen</span><span><b>02</b> Beitreten</span><span><b>03</b> Song wünschen</span></div>
         </article>
         <article class="spotify-join panel">
@@ -394,7 +400,7 @@
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-  <script src="config.js?v=20261024-jam-visual"></script>
-  <script src="app.js?v=20261024-jam-visual"></script>
+  <script src="config.js?v=20261024-song-text"></script>
+  <script src="app.js?v=20261024-song-text"></script>
 </body>
 </html>
