@@ -1890,14 +1890,8 @@
 
     showSlide(0);
 
-    // TV-Kiosk: alle 5 Minuten die Seite neu laden, damit Deployments
-    // ohne Bedienung am Vereins-Laptop übernommen werden.
-    // Lokale Jam-/Song-Einstellungen bleiben in localStorage erhalten.
-    window.setInterval(() => {
-      const url = new URL(window.location.href);
-      url.searchParams.set("tvrefresh", String(Date.now()));
-      window.location.replace(url.toString());
-    }, 5 * 60 * 1000);
+    // Kein automatischer Seiten-Reload: dieser beendet den per Button
+    // gestarteten Vollbildmodus. Daten werden oben separat aktualisiert.
   }
 
   init();
