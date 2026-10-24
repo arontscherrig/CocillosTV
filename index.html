@@ -7,7 +7,7 @@
   <title>CocillosTV</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=20261024-song-text">
+  <link rel="stylesheet" href="styles.css?v=20261024-gallery-fix">
 </head>
 <body>
   <div class="ambient ambient-one"></div>
@@ -369,11 +369,7 @@
 
     <section class="slide" data-slide="gallery" data-title="Aus dem Archiv">
       <div id="photoStage" class="photo-stage panel">
-        <div id="photoFallback" class="empty-state">
-          <span class="empty-icon">▧</span>
-          <h3>Das Vereinsarchiv wartet</h3>
-          <p>Fotos nach <code>assets/photos/</code> laden und in <code>config.js</code> eintragen.</p>
-        </div>
+        <div id="photoFallback" class="empty-state" hidden></div>
         <div id="photoCaption" class="photo-caption" hidden></div>
       </div>
     </section>
@@ -400,7 +396,7 @@
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-  <script src="config.js?v=20261024-song-text"></script>
-  <script src="app.js?v=20261024-song-text"></script>
+  <script src="config.js?v=20261024-gallery-fix"></script>
+  <script src="app.js?v=20261024-gallery-fix"></script>
 </body>
 </html>
