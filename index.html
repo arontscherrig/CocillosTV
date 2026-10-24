@@ -7,7 +7,7 @@
   <title>CocillosTV</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=20261024-spotify">
+  <link rel="stylesheet" href="styles.css?v=20261024-jam-visual">
 </head>
 <body>
   <div class="ambient ambient-one"></div>
@@ -331,22 +331,32 @@
       </div>
     </section>
 
-    <section class="slide spotify-slide" data-slide="spotify" data-title="Spotify Jam">
+    <section class="slide spotify-slide" data-slide="spotify" data-title="Music Jam">
       <div class="spotify-layout">
         <article class="spotify-main panel">
-          <span class="eyebrow">COCILLOS MUSIC</span>
-          <div class="spotify-record" aria-hidden="true"><span>♫</span></div>
-          <h2>Musik für alle.</h2>
-          <p>Spotify läuft auf dem Vereins-Laptop. Über den Jam kannst du Songs zur Warteschlange hinzufügen.</p>
-          <div class="spotify-live-note">Now Playing ist noch nicht verbunden – die Spotify-API benötigt eine separate Freigabe und sichere Server-Anbindung.</div>
+          <span class="eyebrow spotify-eyebrow"><span class="spotify-live-dot"></span> COCILLOS · MUSIC CORNER</span>
+          <div class="spotify-art" aria-hidden="true">
+            <div class="spotify-art-ring spotify-art-ring-outer"></div>
+            <div class="spotify-art-ring spotify-art-ring-inner"></div>
+            <div class="spotify-art-core">C</div>
+            <div class="spotify-art-spark spotify-art-spark-a"></div>
+            <div class="spotify-art-spark spotify-art-spark-b"></div>
+          </div>
+          <div class="spotify-main-copy">
+            <span class="spotify-kicker">DEIN SONG. UNSER SOUND.</span>
+            <h2>Du bestimmst<br><em>den nächsten Beat.</em></h2>
+            <p>Wünsch dir einen Song und gestalte die Playlist im Vereinslokal mit.</p>
+          </div>
+          <div class="spotify-steps"><span><b>01</b> Scannen</span><span><b>02</b> Beitreten</span><span><b>03</b> Song wünschen</span></div>
         </article>
         <article class="spotify-join panel">
-          <span class="eyebrow">SPOTIFY JAM</span>
-          <h2>Join the Jam</h2>
-          <div id="spotifyQr" class="spotify-qr" aria-label="Spotify Jam QR-Code"></div>
-          <p id="spotifyJamStatus">Noch kein Jam-Link eingerichtet.</p>
+          <span class="eyebrow">MUSIKWÜNSCHE · SPOTIFY JAM</span>
+          <h2>Join the Jam<span class="spotify-punctuation">.</span></h2>
+          <p class="spotify-join-subtitle">Scanne den Code mit deinem Handy.</p>
+          <div class="spotify-qr-shell"><div id="spotifyQr" class="spotify-qr" aria-label="Spotify Jam QR-Code"></div></div>
+          <p id="spotifyJamStatus" class="spotify-jam-status">Noch kein Jam-Link eingerichtet.</p>
           <button id="spotifySetupButton" type="button">Jam-Link einrichten</button>
-          <p class="spotify-hint">Jam in Spotify starten → Einladungslink kopieren → hier einfügen. Der Link wird nur in diesem Browser gespeichert.</p>
+          <p class="spotify-hint">Jam in der offiziellen Spotify-App starten, Einladungslink kopieren und hier einfügen. Nur auf diesem Gerät gespeichert.</p>
         </article>
       </div>
     </section>
@@ -384,7 +394,7 @@
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-  <script src="config.js?v=20261024-spotify"></script>
-  <script src="app.js?v=20261024-spotify"></script>
+  <script src="config.js?v=20261024-jam-visual"></script>
+  <script src="app.js?v=20261024-jam-visual"></script>
 </body>
 </html>
