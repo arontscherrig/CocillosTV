@@ -1703,6 +1703,11 @@ a.hazard-card::after {
   transition: background-image 700ms ease, opacity 450ms ease;
 }
 
+.photo-stage .empty-state[hidden],
+.photo-stage .photo-caption[hidden] {
+  display: none !important;
+}
+
 .photo-stage.has-photo::after {
   content: "";
   position: absolute;
