@@ -159,7 +159,10 @@ window.COCILLOS_CONFIG = {
    * Beispiel:
    * { src: "assets/photos/probe.jpg", caption: "Probe 2026" }
    */
-  photos: [],
+  // TEMPORÄR: Für die Spassfolie wieder auf [] setzen.
+  photos: [
+    { src: "assets/photos/cocillos_tv_spassbild.jpg", caption: "Cocillos – Spassbild" }
+  ],
 
   ticker: [
     "Willkommen bei Cocillos TV",
