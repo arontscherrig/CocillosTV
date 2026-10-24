@@ -2083,3 +2083,10 @@ body.paused .ticker {
 .spotify-join .spotify-hint{max-width:420px;margin:12px 0 0!important;color:#929e98!important}
 #spotifySetupButton{transition:filter .2s}#spotifySetupButton:hover{filter:brightness(1.1)}
 @media(max-width:800px){.spotify-art{width:clamp(100px,20vh,180px)}.spotify-main h2{font-size:clamp(24px,3.5vw,38px)}.spotify-qr{width:clamp(140px,24vh,210px);height:clamp(140px,24vh,210px)}.spotify-steps{gap:6px}.spotify-join h2{font-size:28px}}
+
+/* Text-only song field; intentionally no Spotify API connection */
+.spotify-now{display:flex;flex-direction:column;align-items:flex-start;gap:5px;border-left:3px solid #1ed760;background:rgba(30,215,96,.06);border-radius:0 14px 14px 0;padding:12px 18px;margin-top:16px;max-width:100%;width:100%}
+.spotify-now-label{color:#1ed760;font-size:clamp(10px,.8vw,13px);font-weight:800;letter-spacing:.14em}
+#spotifyTrackTitle{font-size:clamp(16px,1.7vw,27px);overflow-wrap:anywhere}
+#spotifyTrackArtist{font-size:clamp(12px,1vw,17px);color:#b9c6be;overflow-wrap:anywhere}
+#spotifyTrackEdit{align-self:flex-start;background:transparent;color:#a9eac0;border:1px solid #397654;border-radius:8px;padding:5px 10px;margin-top:5px;cursor:pointer;font-size:12px}
