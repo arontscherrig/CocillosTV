@@ -1786,6 +1786,28 @@
     const setup = byId("spotifySetupButton");
     if (!qr || !status || !setup) return;
     const storageKey = "cocillos-spotify-jam";
+    const trackTitle = byId("spotifyTrackTitle");
+    const trackArtist = byId("spotifyTrackArtist");
+    const trackEdit = byId("spotifyTrackEdit");
+    const songKey = "cocillos-spotify-song";
+    const renderSong = () => {
+      let song = null;
+      try { song = JSON.parse(localStorage.getItem(songKey) || "null"); } catch {}
+      if (trackTitle) trackTitle.textContent = song?.title || "Noch kein Song eingetragen";
+      if (trackArtist) trackArtist.textContent = song?.artist || "Titel und Interpret können lokal eingetragen werden.";
+    };
+    if (trackEdit) trackEdit.addEventListener("click", () => {
+      let current = null;
+      try { current = JSON.parse(localStorage.getItem(songKey) || "null"); } catch {}
+      const title = window.prompt("Songtitel (leer = Anzeige zurücksetzen):", current?.title || "");
+      if (title === null) return;
+      if (!title.trim()) { localStorage.removeItem(songKey); renderSong(); return; }
+      const artist = window.prompt("Interpret:", current?.artist || "");
+      if (artist === null) return;
+      localStorage.setItem(songKey, JSON.stringify({ title: title.trim().slice(0, 140), artist: artist.trim().slice(0, 140) }));
+      renderSong();
+    });
+    renderSong();
     const validLink = (value) => {
       try {
         const url = new URL(value);
