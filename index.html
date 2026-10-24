@@ -7,7 +7,7 @@
   <title>CocillosTV</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=20261006-map-lv95">
+  <link rel="stylesheet" href="styles.css?v=20261024-spotify">
 </head>
 <body>
   <div class="ambient ambient-one"></div>
@@ -331,6 +331,26 @@
       </div>
     </section>
 
+    <section class="slide spotify-slide" data-slide="spotify" data-title="Spotify Jam">
+      <div class="spotify-layout">
+        <article class="spotify-main panel">
+          <span class="eyebrow">COCILLOS MUSIC</span>
+          <div class="spotify-record" aria-hidden="true"><span>♫</span></div>
+          <h2>Musik für alle.</h2>
+          <p>Spotify läuft auf dem Vereins-Laptop. Über den Jam kannst du Songs zur Warteschlange hinzufügen.</p>
+          <div class="spotify-live-note">Now Playing ist noch nicht verbunden – die Spotify-API benötigt eine separate Freigabe und sichere Server-Anbindung.</div>
+        </article>
+        <article class="spotify-join panel">
+          <span class="eyebrow">SPOTIFY JAM</span>
+          <h2>Join the Jam</h2>
+          <div id="spotifyQr" class="spotify-qr" aria-label="Spotify Jam QR-Code"></div>
+          <p id="spotifyJamStatus">Noch kein Jam-Link eingerichtet.</p>
+          <button id="spotifySetupButton" type="button">Jam-Link einrichten</button>
+          <p class="spotify-hint">Jam in Spotify starten → Einladungslink kopieren → hier einfügen. Der Link wird nur in diesem Browser gespeichert.</p>
+        </article>
+      </div>
+    </section>
+
     <section class="slide" data-slide="gallery" data-title="Aus dem Archiv">
       <div id="photoStage" class="photo-stage panel">
         <div id="photoFallback" class="empty-state">
@@ -363,7 +383,8 @@
   </footer>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="config.js?v=20261006-map-lv95"></script>
-  <script src="app.js?v=20261006-map-lv95"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="config.js?v=20261024-spotify"></script>
+  <script src="app.js?v=20261024-spotify"></script>
 </body>
 </html>
