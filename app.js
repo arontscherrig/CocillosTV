@@ -1806,7 +1806,7 @@
         status.textContent = "QR-Bibliothek konnte nicht geladen werden.";
         return;
       }
-      new QRCode(qr, { text: link, width: 220, height: 220,
+      new QRCode(qr, { text: link, width: 300, height: 300,
         colorDark: "#101714", colorLight: "#ffffff",
         correctLevel: QRCode.CorrectLevel.H });
       status.textContent = "Scannen und über Spotify beitreten";
