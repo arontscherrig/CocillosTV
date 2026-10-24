@@ -25,8 +25,14 @@ window.COCILLOS_CONFIG = {
       maintenance: 30,
       hock: 34,
       twint: 40,
-      gallery: 30
+      gallery: 30,
+      spotify: 28
     }
+  },
+
+  spotify: {
+    // Optionaler Jam-Link. Alternativ lokal über die Spotify-Folie eintragen.
+    jamUrl: ""
   },
 
   weather: {
