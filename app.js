@@ -1889,6 +1889,15 @@
     window.setInterval(loadWeeklyMenu, menuRefreshMinutes * 60 * 1000);
 
     showSlide(0);
+
+    // TV-Kiosk: alle 5 Minuten die Seite neu laden, damit Deployments
+    // ohne Bedienung am Vereins-Laptop übernommen werden.
+    // Lokale Jam-/Song-Einstellungen bleiben in localStorage erhalten.
+    window.setInterval(() => {
+      const url = new URL(window.location.href);
+      url.searchParams.set("tvrefresh", String(Date.now()));
+      window.location.replace(url.toString());
+    }, 5 * 60 * 1000);
   }
 
   init();
