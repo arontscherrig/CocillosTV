@@ -1780,9 +1780,57 @@
     }
   }
 
+  function initSpotify() {
+    const qr = byId("spotifyQr");
+    const status = byId("spotifyJamStatus");
+    const setup = byId("spotifySetupButton");
+    if (!qr || !status || !setup) return;
+    const storageKey = "cocillos-spotify-jam";
+    const validLink = (value) => {
+      try {
+        const url = new URL(value);
+        return url.protocol === "https:" &&
+          (url.hostname === "spotify.link" || url.hostname === "open.spotify.com");
+      } catch { return false; }
+    };
+    const render = () => {
+      const link = localStorage.getItem(storageKey) || config.spotify?.jamUrl || "";
+      qr.replaceChildren();
+      if (!validLink(link)) {
+        qr.textContent = "QR";
+        status.textContent = "Noch kein Jam-Link eingerichtet.";
+        return;
+      }
+      if (typeof QRCode === "undefined") {
+        qr.textContent = "QR nicht verfügbar";
+        status.textContent = "QR-Bibliothek konnte nicht geladen werden.";
+        return;
+      }
+      new QRCode(qr, { text: link, width: 220, height: 220,
+        colorDark: "#101714", colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.H });
+      status.textContent = "Scannen und über Spotify beitreten";
+    };
+    setup.addEventListener("click", () => {
+      const current = localStorage.getItem(storageKey) || config.spotify?.jamUrl || "";
+      const input = window.prompt("Spotify Jam-Einladungslink einfügen (leer = entfernen):", current);
+      if (input === null) return;
+      const value = input.trim();
+      if (value && !validLink(value)) {
+        window.alert("Bitte einen gültigen Spotify-Link von spotify.link oder open.spotify.com verwenden.");
+        return;
+      }
+      if (value) localStorage.setItem(storageKey, value);
+      else localStorage.removeItem(storageKey);
+      render();
+    });
+    render();
+  }
+
   function init() {
     applyBranding();
     renderPaymentQr();
+    initSpotify();
     updateClock();
     window.setInterval(updateClock, 1000);
 
