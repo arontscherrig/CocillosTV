@@ -2036,3 +2036,17 @@ body.paused .ticker {
     display: none;
   }
 }
+
+/* Spotify Jam: eigenständige 16:9-Folie, ohne Spotify-Audioeinbettung */
+.spotify-layout{display:grid;grid-template-columns:1.4fr 1fr;gap:24px;height:100%;min-height:0}
+.spotify-main,.spotify-join{padding:clamp(22px,3vw,48px);display:flex;flex-direction:column;align-items:flex-start;justify-content:center;min-height:0}
+.spotify-main{background:radial-gradient(circle at 65% 40%,rgba(30,215,96,.17),transparent 55%),var(--panel)}
+.spotify-record{width:clamp(110px,16vh,200px);height:clamp(110px,16vh,200px);border-radius:50%;background:repeating-radial-gradient(circle,#151b19 0 5px,#222d27 6px 7px);border:6px solid #1ed760;display:grid;place-items:center;margin:18px 0;color:#1ed760;font-size:65px}
+.spotify-main h2,.spotify-join h2{font-size:clamp(30px,3.4vw,56px);margin:8px 0}
+.spotify-main p,.spotify-join p{font-size:clamp(14px,1.35vw,22px);line-height:1.5;color:var(--muted)}
+.spotify-live-note{border-left:3px solid #1ed760;padding:10px 14px;color:#d7e8de;font-size:clamp(12px,1vw,17px);margin-top:18px}
+.spotify-qr{width:244px;height:244px;max-width:100%;background:white;border-radius:16px;padding:12px;display:grid;place-items:center;color:#101714;font-weight:800;font-size:48px;margin:12px 0}
+.spotify-qr img,.spotify-qr canvas{max-width:100%;height:auto}
+#spotifySetupButton{border:1px solid #1ed760;background:#1ed760;color:#0b1710;border-radius:12px;padding:12px 20px;font-weight:750;cursor:pointer}
+.spotify-hint{font-size:clamp(11px,.95vw,15px)!important}
+@media(max-width:800px){.spotify-layout{grid-template-columns:1fr 1fr;gap:10px}.spotify-main,.spotify-join{padding:15px}.spotify-qr{width:160px;height:160px;padding:8px}.spotify-record{width:95px;height:95px;font-size:42px}}
