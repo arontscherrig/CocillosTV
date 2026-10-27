@@ -1,7 +1,7 @@
 {
   "source": "https://restaurant-simplon.ch/wochenmenue/",
-  "week": "19. Oktober 2026 – 25. Oktober 2026",
-  "updatedAt": "2026-10-20T11:41:58Z",
+  "week": "26. Oktober 2026 – 1. November 2026",
+  "updatedAt": "2026-10-27T12:16:14Z",
   "days": [
     {
       "day": "Montag",
@@ -15,13 +15,13 @@
           "name": "Menü 1",
           "price": "19 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Poulet-Piccata mit Tomatenspaghetti und saisonalem Gemüse"
+          "dish": "Zartes Kalbsgeschnetzeltes an cremiger Champignonrahmsauce dazu Kartoffelstock und Gemüse"
         },
         {
           "name": "Menü 2",
           "price": "18 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Pasta an cremiger Champignon-Rahmsauce mit Parmesanflocken"
+          "dish": "Pasta All’Arrabiata mit Cherrytomaten, Peperocini und Parmesanflocken"
         }
       ]
     },
@@ -32,13 +32,13 @@
           "name": "Menü 1",
           "price": "19 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Zarte Rindsplätzli an Pfefferrahmsauce mit Kartoffelgratin und Gemüse"
+          "dish": "Saftige Pouletschenkel-Steaks an Zitronen-Kräutersauce dazu Rosmarinkartoffel und Gemüse"
         },
         {
           "name": "Menü 2",
           "price": "18 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Pasta an cremiger Champignon-Rahmsauce mit Parmesanflocken"
+          "dish": "Pasta All’Arrabiata mit Cherrytomaten, Peperocini und Parmesanflocken"
         }
       ]
     },
@@ -49,13 +49,13 @@
           "name": "Menü 1",
           "price": "19 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Rindsgeschnetzeltes an feiner Senfrahmsauce mit knuspriger Rösti und Gemüse"
+          "dish": "Cheesburger dazu Kroketten"
         },
         {
           "name": "Menü 2",
           "price": "18 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Gnocchi an Kürbis-Mascarpone-Sauce mit gerösteten Kürbiskernen"
+          "dish": "Cremiges Randenrisotto mit Ziegenfrischkäse und gerösteten Baumnüssen"
         }
       ]
     },
@@ -66,13 +66,13 @@
           "name": "Menü 1",
           "price": "19 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Gebratenes Fischfilet an Zitronenbutter mit Petersilienkartoffeln und Gemüse"
+          "dish": "Knuspriger Zander im Bierteig mit hausgemachter Tartarsauce dazu Pommes und Gemüse"
         },
         {
           "name": "Menü 2",
           "price": "18 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Gnocchi an Kürbis-Mascarpone-Sauce mit gerösteten Kürbiskernen"
+          "dish": "Cremiges Randenrisotto mit Ziegenfrischkäse und gerösteten Baumnüssen"
         }
       ]
     }
