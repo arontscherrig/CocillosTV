@@ -1,7 +1,7 @@
 {
   "source": "https://restaurant-simplon.ch/wochenmenue/",
-  "week": "2. November 2026 – 8. November 2026",
-  "updatedAt": "2026-11-03T14:19:45Z",
+  "week": "9. November 2026 – 15. November 2026",
+  "updatedAt": "2026-11-10T14:56:04Z",
   "days": [
     {
       "day": "Montag",
@@ -15,13 +15,13 @@
           "name": "Menü 1",
           "price": "19 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Saftiges Pouletsteak an cremiger Kräuterrahmsauce mit Butterreis und Gemüse"
+          "dish": "Zartes Kalbsgeschnetzeltes an cremiger Champignonrahmsauce dazu Butterspätzli und Gemüse"
         },
         {
           "name": "Menü 2",
           "price": "18 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Pasta an hausgemachter Kürbiscreme mit Parmesanflocken"
+          "dish": "Cremiges Kürbisrisotto mit Parmesanflocken und gerösteten Kürbiskernen"
         }
       ]
     },
@@ -32,13 +32,13 @@
           "name": "Menü 1",
           "price": "19 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Zartes Rindsgulasch mit cremigem Kartoffelstock"
+          "dish": "Saftiges Rindssteak an Pfefferrahmsauce dazu knuspriger Rösti und Gemüse"
         },
         {
           "name": "Menü 2",
           "price": "18 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Pasta an hausgemachter Kürbiscreme mit Parmesanflocken"
+          "dish": "Cremiges Kürbisrisotto mit Parmesanflocken und gerösteten Kürbiskernen"
         }
       ]
     },
@@ -49,13 +49,13 @@
           "name": "Menü 1",
           "price": "19 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Mit Käse gefüllte Rindshacktätschli an kräftigem Jus mit Kartoffelgratin und Gemüse"
+          "dish": "Geschmorter Rindsschulterbraten an kräftigem Jus dazu Kartoffelstock und Gemüse"
         },
         {
           "name": "Menü 2",
           "price": "18 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Pasta alla Sorrentina mit Tomatensauce, Mozzarella und frischem Basilikum"
+          "dish": "Spaghetti Carbonara mit Rindstrockenfleisch, Eigelb und Parmesanflocken"
         }
       ]
     },
@@ -66,13 +66,13 @@
           "name": "Menü 1",
           "price": "19 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Gebratenes Lachsfilet an Zitronen-Dill-Sauce mit Petersilienkartoffeln und Gemüse"
+          "dish": "Gebratenes Zanderfilet an Zitronen-Kräuterbutter dazu Petersilienkartoffeln und Gemüse"
         },
         {
           "name": "Menü 2",
           "price": "18 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Pasta alla Sorrentina mit Tomatensauce, Mozzarella und frischem Basilikum"
+          "dish": "Spaghetti Carbonara mit Rindstrockenfleisch, Eigelb und Parmesanflocken"
         }
       ]
     }
