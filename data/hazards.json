@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-11T16:44:56.737Z",
+  "generatedAt": "2026-11-12T20:11:44.683Z",
   "fire": {
     "status": "ok",
     "source": "BAFU und Kantone",
@@ -221,11 +221,11 @@
     "sourceUrl": "https://www.slf.ch/de/lawinenbulletin-und-schneesituation/",
     "bulletins": [
       {
-        "id": "78e40b96-f881-4f99-a55a-393dff19645a",
+        "id": "a8a1a226-5c58-4323-be5c-0f76024d2e3c",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-11T16:00:00Z",
-        "validUntil": "2026-11-12T16:00:00Z",
+        "validFrom": "2026-11-12T16:00:00Z",
+        "validUntil": "2026-11-13T16:00:00Z",
         "regions": [
           {
             "id": "CH-4213",
@@ -318,11 +318,11 @@
         ]
       },
       {
-        "id": "c57c621a-6d99-4a11-a500-c5e848b95fbd",
+        "id": "e6112f6b-a730-4db4-a005-2da75f80423c",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-11T16:00:00Z",
-        "validUntil": "2026-11-12T16:00:00Z",
+        "validFrom": "2026-11-12T16:00:00Z",
+        "validUntil": "2026-11-13T16:00:00Z",
         "regions": [
           {
             "id": "CH-4122",
@@ -409,6 +409,10 @@
             "name": "Turtmanntal"
           },
           {
+            "id": "CH-3114",
+            "name": "Glarus Mitte"
+          },
+          {
             "id": "CH-4124",
             "name": "Val d'Anniviers"
           },
@@ -421,8 +425,16 @@
             "name": "Zervreila"
           },
           {
+            "id": "CH-2134",
+            "name": "Bisistal"
+          },
+          {
             "id": "CH-1223",
             "name": "Wildhorn"
+          },
+          {
+            "id": "CH-1312",
+            "name": "Monthey - Val d'Illiez"
           },
           {
             "id": "CH-2211",
@@ -453,8 +465,16 @@
             "name": "Binntal"
           },
           {
+            "id": "CH-4111",
+            "name": "Emosson"
+          },
+          {
             "id": "CH-2221",
             "name": "Meiental"
+          },
+          {
+            "id": "CH-1114",
+            "name": "Bex - Villars"
           },
           {
             "id": "CH-1242",
@@ -483,11 +503,11 @@
         ]
       },
       {
-        "id": "2a5cf693-65a3-41d7-9d07-675fd764c05e",
-        "mainValue": "low",
-        "level": 1,
-        "validFrom": "2026-11-11T16:00:00Z",
-        "validUntil": "2026-11-12T16:00:00Z",
+        "id": "6589c82d-77d5-497f-88c1-26e6ca8fb969",
+        "mainValue": "moderate",
+        "level": 2,
+        "validFrom": "2026-11-12T16:00:00Z",
+        "validUntil": "2026-11-13T16:00:00Z",
         "regions": [
           {
             "id": "CH-5121",
@@ -546,16 +566,8 @@
             "name": "Savognin"
           },
           {
-            "id": "CH-3114",
-            "name": "Glarus Mitte"
-          },
-          {
             "id": "CH-6115",
             "name": "Untere Leventina"
-          },
-          {
-            "id": "CH-2134",
-            "name": "Bisistal"
           },
           {
             "id": "CH-5234",
@@ -564,10 +576,6 @@
           {
             "id": "CH-5124",
             "name": "Flims"
-          },
-          {
-            "id": "CH-1312",
-            "name": "Monthey - Val d'Illiez"
           },
           {
             "id": "CH-7115",
@@ -598,16 +606,8 @@
             "name": "Davos"
           },
           {
-            "id": "CH-4111",
-            "name": "Emosson"
-          },
-          {
             "id": "CH-5214",
             "name": "Obersaxen - Safiental"
-          },
-          {
-            "id": "CH-1114",
-            "name": "Bex - Villars"
           },
           {
             "id": "CH-7121",
