@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-16T16:35:32.480Z",
+  "generatedAt": "2026-11-17T08:39:15.475Z",
   "fire": {
     "status": "ok",
     "source": "BAFU und Kantone",
@@ -221,7 +221,7 @@
     "sourceUrl": "https://www.slf.ch/de/lawinenbulletin-und-schneesituation/",
     "bulletins": [
       {
-        "id": "a2e59071-0318-4e7a-bd89-4747446abaad",
+        "id": "ba273172-70f6-4e02-8f2a-1575db94201d",
         "mainValue": "considerable",
         "level": 3,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -234,7 +234,7 @@
         ]
       },
       {
-        "id": "f65cdbbb-5c23-4596-affe-ca76d7ba41a3",
+        "id": "e28ad6d0-0962-4114-8383-60054f660930",
         "mainValue": "considerable",
         "level": 3,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -247,7 +247,7 @@
         ]
       },
       {
-        "id": "30fcedc9-f781-4c76-8d9d-99e72506154b",
+        "id": "93c56f97-507c-4111-b81a-e9f055f19aff",
         "mainValue": "considerable",
         "level": 3,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -260,7 +260,7 @@
         ]
       },
       {
-        "id": "2947f23f-8f46-4f50-8959-f4bee7da5791",
+        "id": "f477bb37-db46-4b67-bda2-c995e14e6dc9",
         "mainValue": "considerable",
         "level": 3,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -273,7 +273,7 @@
         ]
       },
       {
-        "id": "f51db77c-b442-443b-b255-9f3c993370e8",
+        "id": "884fa90c-b660-49a4-aec8-7c89ea6cab77",
         "mainValue": "considerable",
         "level": 3,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -286,7 +286,7 @@
         ]
       },
       {
-        "id": "e126a9da-00ab-4e6f-8606-dd4e00e3a30f",
+        "id": "576aa0be-9974-417b-b77c-bfad0d413e00",
         "mainValue": "considerable",
         "level": 3,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -299,7 +299,7 @@
         ]
       },
       {
-        "id": "1f6f35c9-8488-4c42-854c-18ac7eff135d",
+        "id": "e0297bde-1a3c-484d-9dc8-ddc98b5432e6",
         "mainValue": "considerable",
         "level": 3,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -312,7 +312,7 @@
         ]
       },
       {
-        "id": "bd5017fa-7bae-4580-8633-2103d926677a",
+        "id": "8145be59-3105-4e9e-bdb0-7702a1ef7ddb",
         "mainValue": "considerable",
         "level": 3,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -325,7 +325,7 @@
         ]
       },
       {
-        "id": "9ef9f32b-a52a-4ee2-a666-bbdb28c1d890",
+        "id": "ab7a749a-bf6c-413d-80ac-ed3e40f13320",
         "mainValue": "considerable",
         "level": 3,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -338,7 +338,7 @@
         ]
       },
       {
-        "id": "e62c17b8-80d1-4040-8ada-2dbc18ca6567",
+        "id": "c06b9593-a960-45bd-b9c0-ed41091cf4a5",
         "mainValue": "considerable",
         "level": 3,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -351,7 +351,7 @@
         ]
       },
       {
-        "id": "00808a95-138b-45a4-8a82-7dd82f583ca3",
+        "id": "2d7ebf70-9eaf-4bc3-bec0-7b3d51b18248",
         "mainValue": "considerable",
         "level": 3,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -364,7 +364,7 @@
         ]
       },
       {
-        "id": "b13ffc71-4238-4570-adf5-d5e12d8b8045",
+        "id": "597fb553-01a1-44a4-b625-967ceaf37665",
         "mainValue": "considerable",
         "level": 3,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -377,7 +377,7 @@
         ]
       },
       {
-        "id": "677817fe-0ddf-40eb-a599-ffc2850d423e",
+        "id": "9e144e7d-9cf9-41b3-8186-106e3ea1a7f3",
         "mainValue": "considerable",
         "level": 3,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -390,7 +390,7 @@
         ]
       },
       {
-        "id": "a6fa7488-51d6-49a2-aa03-975b1ae7f461",
+        "id": "5d66e664-fde4-48f5-a626-f96ee15303da",
         "mainValue": "considerable",
         "level": 3,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -403,7 +403,7 @@
         ]
       },
       {
-        "id": "630b7e8f-2669-410f-9203-fe25afd87775",
+        "id": "c5cb6b03-a2a4-4019-bdf5-269a2a75c907",
         "mainValue": "considerable",
         "level": 3,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -416,7 +416,7 @@
         ]
       },
       {
-        "id": "62801e6e-9a9b-44c0-853c-ed0e74564eb7",
+        "id": "bbd8e152-e482-4346-9c77-a00dd1c21a2a",
         "mainValue": "considerable",
         "level": 3,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -429,7 +429,7 @@
         ]
       },
       {
-        "id": "ab23418b-c34f-4e13-93f4-451b5b8d9933",
+        "id": "693956b8-4a2a-4735-bcf2-dab5dc5f1b5d",
         "mainValue": "considerable",
         "level": 3,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -442,7 +442,7 @@
         ]
       },
       {
-        "id": "73a496ea-6b59-4020-97a3-8a1239e8a25b",
+        "id": "2947daab-5e23-46d9-8e4d-bc9bc3b5e077",
         "mainValue": "considerable",
         "level": 3,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -455,7 +455,7 @@
         ]
       },
       {
-        "id": "dc31a01b-0d16-448b-8a2b-9af0dde4db97",
+        "id": "76e7adab-fcc4-4505-b553-064dbab82d96",
         "mainValue": "considerable",
         "level": 3,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -468,7 +468,7 @@
         ]
       },
       {
-        "id": "302d53d1-6892-44aa-8a3d-5bcd5474a0f4",
+        "id": "c3889cb2-00e8-443a-85a6-39da495c4872",
         "mainValue": "considerable",
         "level": 3,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -481,7 +481,7 @@
         ]
       },
       {
-        "id": "b3737b3b-10c7-44cc-b7e7-79cbc4b86400",
+        "id": "ccdc89e5-3783-4444-a3fb-c169287eae29",
         "mainValue": "considerable",
         "level": 3,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -494,7 +494,7 @@
         ]
       },
       {
-        "id": "0ce00a1f-437c-471f-8a7d-90f1ecc4830e",
+        "id": "f7d35bb2-7304-4b87-bf7f-f5017967453b",
         "mainValue": "considerable",
         "level": 3,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -507,7 +507,7 @@
         ]
       },
       {
-        "id": "d23c5af8-44eb-4863-a80e-dbfb3a9c1a6e",
+        "id": "d5e2d6cd-abbd-4c13-8d7d-5996e2c7e800",
         "mainValue": "considerable",
         "level": 3,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -520,7 +520,7 @@
         ]
       },
       {
-        "id": "347ead5e-a42b-48fb-bb4e-b01ba667cb91",
+        "id": "6d6d4698-9118-42c7-b33e-163b2666a692",
         "mainValue": "considerable",
         "level": 3,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -533,7 +533,7 @@
         ]
       },
       {
-        "id": "79c82f7f-cfb3-4cd7-8901-b517c00dcc5e",
+        "id": "ec44c0a2-6ab6-4022-9133-e676a2d1743f",
         "mainValue": "considerable",
         "level": 3,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -546,7 +546,7 @@
         ]
       },
       {
-        "id": "19908124-92dc-4794-9cde-a483066b6b59",
+        "id": "c6cd8e7a-12bc-4d12-85c2-aa31ca4e265e",
         "mainValue": "considerable",
         "level": 3,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -559,7 +559,7 @@
         ]
       },
       {
-        "id": "f8ef4297-044a-4676-bc10-56a0fe2f02eb",
+        "id": "9f95a6f4-501b-4491-8943-bab96d01a50a",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -572,7 +572,7 @@
         ]
       },
       {
-        "id": "ef58e6bb-38df-4c82-8e5b-63d7bce5e7b0",
+        "id": "4be98b33-48ba-4d55-826a-90dbb6543d34",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -585,7 +585,7 @@
         ]
       },
       {
-        "id": "ecbf480b-559b-4763-abd9-5d610f889b1c",
+        "id": "12c71689-9402-4500-87f3-37e057361629",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -598,7 +598,7 @@
         ]
       },
       {
-        "id": "f0dc01d7-179a-4671-a573-e6a536a8280e",
+        "id": "60ba3e21-43fb-4d43-af70-5a5c4c6ec123",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -611,7 +611,7 @@
         ]
       },
       {
-        "id": "1c1e642f-bb65-45f5-b608-2b293238608b",
+        "id": "9d8fc98f-e6b1-4eaf-872c-9c416f7cf043",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -624,7 +624,7 @@
         ]
       },
       {
-        "id": "361113a0-c6f3-4469-b45a-c09ed43f1510",
+        "id": "92983a07-da24-415c-b18b-35c5390fb6bb",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -637,7 +637,7 @@
         ]
       },
       {
-        "id": "9995efb4-55c7-478b-a768-879cbd6d6e3c",
+        "id": "53cb5b04-2ac0-4ef2-b2e8-437db52cca1f",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -650,7 +650,7 @@
         ]
       },
       {
-        "id": "b254468c-0595-4b94-8fdd-1218aa854549",
+        "id": "67da6348-3104-4afb-9fa8-4dda91282a6b",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -663,7 +663,7 @@
         ]
       },
       {
-        "id": "f47530dc-9fc7-4c40-ad0e-98492ad4464d",
+        "id": "e5f5fcf6-eb2c-4f32-b156-156454f14c62",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -676,7 +676,7 @@
         ]
       },
       {
-        "id": "c7b842f9-c776-4221-acee-40189b83c42a",
+        "id": "860e4486-35d9-4702-bd91-abccdf69f958",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -689,7 +689,7 @@
         ]
       },
       {
-        "id": "ba418092-3a5c-4643-a887-0aeb48ee6e41",
+        "id": "2d80644e-8582-4424-be09-48b5793f7081",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -702,7 +702,7 @@
         ]
       },
       {
-        "id": "6d87b47c-88d7-4320-91e3-d0c986f410f4",
+        "id": "c268a05f-3c28-4ab9-8c05-56efe83bed5b",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -715,7 +715,7 @@
         ]
       },
       {
-        "id": "9168a208-0acf-440c-a8d3-bec984af8afc",
+        "id": "8eee30df-d911-4977-bb97-176ff3fe0efc",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -728,7 +728,7 @@
         ]
       },
       {
-        "id": "fb26a214-ff7c-42de-927f-ab35694613a9",
+        "id": "a22833e3-61e0-4555-a901-c6b3297819b2",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -741,7 +741,7 @@
         ]
       },
       {
-        "id": "ff661bb3-3073-45f3-a194-9cd6013af044",
+        "id": "c784c91c-acfc-481a-8d8e-8989847e41bd",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -754,7 +754,7 @@
         ]
       },
       {
-        "id": "82ac8be2-3431-433c-9e18-2c0c25f7dc96",
+        "id": "b0f1617b-1346-4bf1-a2c4-4824c6ecc4da",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -767,7 +767,7 @@
         ]
       },
       {
-        "id": "63cd1b4c-5035-496a-ace9-33ec616923a4",
+        "id": "30c38c05-db55-438d-b3cf-0ca0a7f9e8d0",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -780,7 +780,7 @@
         ]
       },
       {
-        "id": "5efa7436-589d-4290-957a-2a9618646e5a",
+        "id": "ab267276-1702-4506-8711-566a8b097f9b",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -793,7 +793,7 @@
         ]
       },
       {
-        "id": "94566be5-cb7a-4f3b-9ba6-77f811d81b74",
+        "id": "33426cc7-6d90-4e8e-8c9e-f97fea7ce622",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -806,7 +806,7 @@
         ]
       },
       {
-        "id": "6e4ed011-b03c-4eab-8727-638526177d91",
+        "id": "e7b14fcc-9b94-4174-ae6c-e9c81e0729fe",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -819,7 +819,7 @@
         ]
       },
       {
-        "id": "c2539f9e-9b2a-4e90-b73c-0e652436b2cc",
+        "id": "5d74fb56-1fd0-4f45-9464-69ccf6a976f1",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -832,7 +832,7 @@
         ]
       },
       {
-        "id": "05b294db-9ade-4e24-be1b-9298e69a69f9",
+        "id": "a6492333-9ba3-4b39-9716-d082baf8d7d2",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -845,7 +845,7 @@
         ]
       },
       {
-        "id": "096c9d66-17ed-4d30-94ab-a9fef343c609",
+        "id": "355b1ea4-73d6-4b4f-8670-a0659e56ff27",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -858,7 +858,7 @@
         ]
       },
       {
-        "id": "3a818f0e-59ce-4634-90fd-d51161b27a81",
+        "id": "3d874bc6-affa-481d-a305-4aab9336dde4",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -871,7 +871,7 @@
         ]
       },
       {
-        "id": "0271f20a-2913-4477-82e5-e53a6a1c380a",
+        "id": "e98cbb9b-906f-41c0-b30e-806d75a345fc",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -884,7 +884,7 @@
         ]
       },
       {
-        "id": "d75b34b3-e9ab-4544-815b-23698cae6a96",
+        "id": "40ce2bc3-829e-4546-a091-725792c5d093",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -897,7 +897,7 @@
         ]
       },
       {
-        "id": "c7d6a9e2-1639-42b8-bb19-fa884ff0482e",
+        "id": "efc89001-8684-428e-86be-196d62f3768e",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -910,7 +910,7 @@
         ]
       },
       {
-        "id": "92946360-7832-488e-a89e-05689246e22a",
+        "id": "aa291200-2431-4677-9a5d-af652c5a9247",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -923,7 +923,7 @@
         ]
       },
       {
-        "id": "d3eefce5-20a3-4cbf-a96b-e3f0388419ff",
+        "id": "2342f2ad-a6a4-4c63-9f0c-0161a47676b9",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -936,7 +936,7 @@
         ]
       },
       {
-        "id": "679912ac-b25e-46fe-ae82-c1bdfdf4ddd4",
+        "id": "aaca6cb7-07fb-4066-b852-0b8911d596ac",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -949,7 +949,7 @@
         ]
       },
       {
-        "id": "abadec87-a68a-4a56-9e7c-b514b02d5877",
+        "id": "6dd47f84-a01a-46e1-95bf-1a041ce56b13",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -962,7 +962,7 @@
         ]
       },
       {
-        "id": "352eea8e-de46-4ca6-b8fa-48c1154bcb2b",
+        "id": "5e3004e0-2356-41aa-90bd-cff88944289b",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -975,7 +975,7 @@
         ]
       },
       {
-        "id": "92b56150-9206-4ec5-bb6a-3cb6fdc3af21",
+        "id": "08f73218-598b-4c99-8e30-3c8c4f3c0325",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -988,7 +988,7 @@
         ]
       },
       {
-        "id": "7a50ffb4-7dba-4732-817d-be27210135a5",
+        "id": "0f092010-92df-4059-ba9a-aebf3f493d4f",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1001,7 +1001,7 @@
         ]
       },
       {
-        "id": "5c3c9a8d-07f2-4334-84e4-da00c9fa7309",
+        "id": "ba18e544-ffe8-4591-8262-ff5914a9907a",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1014,7 +1014,7 @@
         ]
       },
       {
-        "id": "ad732287-4cc1-41d7-a171-5daeacf5d100",
+        "id": "c027bb9f-48af-4281-8da4-5706cad35ab5",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1027,7 +1027,7 @@
         ]
       },
       {
-        "id": "94344566-289f-448e-90ce-bc78ed34e0ef",
+        "id": "619de9a8-2f0c-46e4-92e6-56bfe9614bde",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1040,7 +1040,7 @@
         ]
       },
       {
-        "id": "73ba60f1-5d13-478c-9703-fb7fb707ebf2",
+        "id": "bb072e3c-6b6c-4128-98c9-727d0ce15428",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1053,7 +1053,7 @@
         ]
       },
       {
-        "id": "891debee-966d-4e71-aa66-457c5bb82a97",
+        "id": "4e7aba19-2920-4f64-92e4-a31b66c609be",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1066,7 +1066,7 @@
         ]
       },
       {
-        "id": "fd663a03-d6a4-4ee2-9297-226578469407",
+        "id": "267f3e33-7136-4ee0-bb4b-a1a723314f9e",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1079,7 +1079,7 @@
         ]
       },
       {
-        "id": "bd00c71d-4dbf-4eb5-96e9-b788c864abfd",
+        "id": "fe4ac1b9-a914-4727-b93f-229b06b6b5bf",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1092,7 +1092,7 @@
         ]
       },
       {
-        "id": "367b838b-0356-456f-a337-058585f9b120",
+        "id": "eaf8456c-ed31-486d-86dd-c13e2c59f1b3",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1105,7 +1105,7 @@
         ]
       },
       {
-        "id": "2f25cc69-cdeb-45d4-a09a-aca21846c831",
+        "id": "69882560-69fa-4faf-8186-fb7ade356177",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1118,7 +1118,7 @@
         ]
       },
       {
-        "id": "3eb0eb42-bc5a-4ecf-bc85-fc1c592ab240",
+        "id": "82b49c21-7ac5-4a25-b6e1-acf1e8792d0f",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1131,7 +1131,7 @@
         ]
       },
       {
-        "id": "b1dbeaba-d1a6-4a92-a13c-8f88415fc1d7",
+        "id": "f754f31e-0a4c-454c-aecf-4dc8c5ce5f82",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1144,7 +1144,7 @@
         ]
       },
       {
-        "id": "7a55d499-3a54-4eac-952b-bd720df66d5c",
+        "id": "1c706d3e-5e93-45e6-bc27-5c0b6aa7d889",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1157,7 +1157,7 @@
         ]
       },
       {
-        "id": "b1a9610a-838c-4480-a4a2-1960f5164b2c",
+        "id": "c7f7a4be-b9a4-4c4b-a4a8-7682f89a6e25",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1170,7 +1170,7 @@
         ]
       },
       {
-        "id": "614cb3ec-c2c1-494a-8d02-045bbf98bd9e",
+        "id": "6e633f4a-eaca-46fd-865c-4fff51b53982",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1183,7 +1183,7 @@
         ]
       },
       {
-        "id": "5c39b33d-6a5e-4867-9825-e83e8782f460",
+        "id": "15562601-d44d-4d5e-9268-e4edf3f772fa",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1196,7 +1196,7 @@
         ]
       },
       {
-        "id": "f7115a61-e651-4757-bc70-3d81c924f9d4",
+        "id": "6c292659-b0a2-490a-bdf2-37e9ce1558d0",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1209,7 +1209,7 @@
         ]
       },
       {
-        "id": "aec7ca79-e1ce-410c-ac84-179e32149966",
+        "id": "4807d19c-0b75-405a-bf96-f27fcdf05aec",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1222,7 +1222,7 @@
         ]
       },
       {
-        "id": "5d67be0f-f0e3-435d-b8b4-8319aba70568",
+        "id": "76f89930-be79-47f1-b627-4f50c67b71dc",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1235,7 +1235,7 @@
         ]
       },
       {
-        "id": "87a2f527-bacb-4069-a67d-777a13c09fe3",
+        "id": "771e076a-a63c-44f8-bcda-bee27f4bab5d",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1248,7 +1248,7 @@
         ]
       },
       {
-        "id": "3e461826-ac33-4989-bb27-53ea5019f180",
+        "id": "91f10573-ae9e-4d3b-8131-955abeafe5d3",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1261,7 +1261,7 @@
         ]
       },
       {
-        "id": "4ebdffda-74e5-41af-af72-36991478c2c7",
+        "id": "4daa2431-1a78-4a51-bab1-807caac00443",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1274,7 +1274,7 @@
         ]
       },
       {
-        "id": "52ebc364-b25c-498c-ba11-c18938220cbe",
+        "id": "86d1b6d9-30a4-4f64-98b2-bf6288c45ad8",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1287,7 +1287,7 @@
         ]
       },
       {
-        "id": "37638813-1fee-427d-9bb9-18952ae06cf5",
+        "id": "c76f4126-1d61-477e-8b48-b95c72f21e04",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1300,7 +1300,7 @@
         ]
       },
       {
-        "id": "54b2555c-efb1-48c0-b147-f98b2a2045df",
+        "id": "fa53f000-d1eb-4539-a8cc-2c278d0216fa",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1313,7 +1313,7 @@
         ]
       },
       {
-        "id": "95f41eac-260f-4a99-8d22-182825f5cdf3",
+        "id": "7b358281-f2c7-40fc-a263-87167469ac3f",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1326,7 +1326,7 @@
         ]
       },
       {
-        "id": "2b194ca9-67cf-4a73-8f36-70e0d3fc44c4",
+        "id": "98ab013a-a2e6-4453-9056-9c71c5ebcd8a",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1339,7 +1339,7 @@
         ]
       },
       {
-        "id": "826be2c9-63f0-4bfc-88fa-b7021b1659fb",
+        "id": "4a8c5bec-a763-4f51-aa5e-c73afbe37a5d",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1352,7 +1352,7 @@
         ]
       },
       {
-        "id": "b950aec4-e7fa-43bc-8e1f-af86ea70055a",
+        "id": "398af8ba-e1a5-4056-b43b-bcd9441378e4",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1365,7 +1365,7 @@
         ]
       },
       {
-        "id": "a57bb421-96be-4c5f-96e1-c610c23f67f2",
+        "id": "eb70428d-f65b-4982-a8d3-27d538efc1bf",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1378,7 +1378,7 @@
         ]
       },
       {
-        "id": "ca956b90-625c-464e-9bde-8fefaca2d9f4",
+        "id": "dc97307b-a583-4df5-976b-b76e60537738",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1391,7 +1391,7 @@
         ]
       },
       {
-        "id": "93bee70c-37af-4784-9aba-816cbc3f7b42",
+        "id": "5aa9e9f3-2f13-406f-8587-ccadbde889b7",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1404,7 +1404,7 @@
         ]
       },
       {
-        "id": "977ad0eb-9f93-49b5-bdf3-f01cec18cc3d",
+        "id": "a2db1393-94b5-4a06-b17e-135ebdc54b22",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1417,7 +1417,7 @@
         ]
       },
       {
-        "id": "2efd2528-8294-4607-9b57-513c2ee2f918",
+        "id": "e9997481-f1b1-4931-b4f2-f1856f470a18",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1430,7 +1430,7 @@
         ]
       },
       {
-        "id": "66ea38d6-02fd-446e-8ec5-7aaf0b624141",
+        "id": "dfe9766c-e446-45d3-ad1b-ab87bbff30c4",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1443,7 +1443,7 @@
         ]
       },
       {
-        "id": "871619ec-3cb7-4087-a408-cf65dea8ea58",
+        "id": "720b801d-d02a-40f3-a6d9-61b0f2dc7c8d",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1456,7 +1456,7 @@
         ]
       },
       {
-        "id": "adb0beab-9440-4022-97a8-0cf4d2538241",
+        "id": "33a02070-365b-48ee-b87a-aaa3ab2996b5",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1469,7 +1469,7 @@
         ]
       },
       {
-        "id": "6b79009b-2a5f-4517-a93b-64bdeeebe2a9",
+        "id": "d1672438-7621-464f-b3b8-4aecbec65f74",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1482,7 +1482,7 @@
         ]
       },
       {
-        "id": "fb9f6304-7ed9-4a35-9819-4939159c5415",
+        "id": "8af344bf-84e8-4caf-98f6-4d4aacc7f431",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1495,7 +1495,7 @@
         ]
       },
       {
-        "id": "e28f6eab-4879-4f51-bdd6-e1a77503a512",
+        "id": "fa4127cd-35f8-4a3c-aec8-5a89f240f1dd",
         "mainValue": "moderate",
         "level": 2,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1508,7 +1508,7 @@
         ]
       },
       {
-        "id": "421eef11-b986-4198-bae0-eab5aac4c4de",
+        "id": "59cefb41-67a4-4972-af17-6036e39ee826",
         "mainValue": "low",
         "level": 1,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1521,7 +1521,7 @@
         ]
       },
       {
-        "id": "2bc5cec5-15a4-4005-88f7-dc96af87ab88",
+        "id": "365db76a-1e40-45fd-885c-5dd9a15c06c6",
         "mainValue": "low",
         "level": 1,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1534,7 +1534,7 @@
         ]
       },
       {
-        "id": "7f588412-95b6-476a-8f94-d75f731e656c",
+        "id": "99ca6172-5fd5-4676-838b-14fde4763458",
         "mainValue": "low",
         "level": 1,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1547,7 +1547,7 @@
         ]
       },
       {
-        "id": "63426076-b479-42a7-8e0b-c8503c22f0e0",
+        "id": "a4e0f519-4cf8-40fe-8baa-2e60649f3d2a",
         "mainValue": "low",
         "level": 1,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1560,7 +1560,7 @@
         ]
       },
       {
-        "id": "c2dc7764-c539-47c3-a341-9c875829214a",
+        "id": "22bd5652-a036-425b-b3a8-1c99a489b33b",
         "mainValue": "low",
         "level": 1,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1573,7 +1573,7 @@
         ]
       },
       {
-        "id": "85f062ac-1fcc-47e1-b3b4-8fd7952cc289",
+        "id": "0532af0e-cb6d-4adb-81e5-b1cb4b96c153",
         "mainValue": "low",
         "level": 1,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1586,7 +1586,7 @@
         ]
       },
       {
-        "id": "fade424f-2e65-41eb-981f-cb1f075a27a8",
+        "id": "8466939d-19a4-4908-a5eb-9ab833ce70e6",
         "mainValue": "low",
         "level": 1,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1599,7 +1599,7 @@
         ]
       },
       {
-        "id": "96a2c867-bc2d-4d0b-8d24-a5c8e58d3af5",
+        "id": "33cf08db-d503-45b4-9b4d-d5d97d309d27",
         "mainValue": "low",
         "level": 1,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1612,7 +1612,7 @@
         ]
       },
       {
-        "id": "fcad1f8e-a648-4111-85fe-607329080974",
+        "id": "bc5d2d0e-b987-454f-b0f3-78a7cb5c5d77",
         "mainValue": "low",
         "level": 1,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1625,7 +1625,7 @@
         ]
       },
       {
-        "id": "0c46c5c5-3cff-4688-8c6d-13d3284867fc",
+        "id": "2ee77393-d3ca-47a9-86d9-d9a64b47d659",
         "mainValue": "low",
         "level": 1,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1638,7 +1638,7 @@
         ]
       },
       {
-        "id": "0f65698e-85d0-48d7-9c79-c41d7b218b74",
+        "id": "b34f9204-7708-42d8-a041-9876e2cc25d5",
         "mainValue": null,
         "level": 0,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1651,7 +1651,7 @@
         ]
       },
       {
-        "id": "80c5943f-a2bb-4946-8d07-8b70dd69baa7",
+        "id": "05969ccc-4ee3-4f66-a551-28ae8c026ce2",
         "mainValue": null,
         "level": 0,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1664,7 +1664,7 @@
         ]
       },
       {
-        "id": "fcc822f3-ba8a-4bc2-aca5-b8e22f22b3d5",
+        "id": "4292a0af-1423-4247-81f2-3aef0d908699",
         "mainValue": null,
         "level": 0,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1677,7 +1677,7 @@
         ]
       },
       {
-        "id": "010f45b6-ae3f-46bd-9859-ea7c6f049125",
+        "id": "463549d5-7527-479a-b711-18bcdfa3d5ad",
         "mainValue": null,
         "level": 0,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1690,7 +1690,7 @@
         ]
       },
       {
-        "id": "15945400-daac-43e5-aaba-de7cc919e26b",
+        "id": "e74fd4e8-178f-4542-842b-c22e28bcc8e2",
         "mainValue": null,
         "level": 0,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1703,7 +1703,7 @@
         ]
       },
       {
-        "id": "ca58ca9c-dfa8-4fb6-a499-a68d7b57171f",
+        "id": "d140efce-9ae1-435d-8cfa-01e9b79ed673",
         "mainValue": null,
         "level": 0,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1716,7 +1716,7 @@
         ]
       },
       {
-        "id": "26d07bca-8e66-480d-a8a5-820bbf2e1a67",
+        "id": "5819b611-de2f-4ec6-a3dd-5418ad56c78e",
         "mainValue": null,
         "level": 0,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1729,7 +1729,7 @@
         ]
       },
       {
-        "id": "43e00c4f-03c8-40c0-b107-5bd1c482f878",
+        "id": "0b8f2ec1-5468-4b0a-b472-a038cfe61135",
         "mainValue": null,
         "level": 0,
         "validFrom": "2026-11-16T16:00:00Z",
@@ -1742,7 +1742,7 @@
         ]
       },
       {
-        "id": "e8545b65-eddd-45c1-b978-3e8004f30871",
+        "id": "3d691c65-6fa7-4293-80d3-b10144f1f7c7",
         "mainValue": null,
         "level": 0,
         "validFrom": "2026-11-16T16:00:00Z",
