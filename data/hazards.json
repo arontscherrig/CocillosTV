@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-21T07:32:02.312Z",
+  "generatedAt": "2026-11-21T21:17:40.759Z",
   "fire": {
     "status": "ok",
     "source": "BAFU und Kantone",
@@ -221,609 +221,11 @@
     "sourceUrl": "https://www.slf.ch/de/lawinenbulletin-und-schneesituation/",
     "bulletins": [
       {
-        "id": "3d9d1d5b-fa7a-4474-9784-10c76f7b47cc",
-        "mainValue": "high",
-        "level": 4,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-1114",
-            "name": "Bex - Villars"
-          }
-        ]
-      },
-      {
-        "id": "32ef9152-137c-4c92-9cb1-d6d3d535babb",
-        "mainValue": "high",
-        "level": 4,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-1223",
-            "name": "Wildhorn"
-          }
-        ]
-      },
-      {
-        "id": "88a6d377-1b0e-4222-8f65-428e1e461187",
-        "mainValue": "high",
-        "level": 4,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-1312",
-            "name": "Monthey - Val d'Illiez"
-          }
-        ]
-      },
-      {
-        "id": "cd2bc692-3d94-4fcc-a0f6-7d51fb6ccc8a",
-        "mainValue": "high",
-        "level": 4,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-4111",
-            "name": "Emosson"
-          }
-        ]
-      },
-      {
-        "id": "ae62253a-740c-4311-9cc5-d59cb88c8a52",
-        "mainValue": "high",
-        "level": 4,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-4112",
-            "name": "Génépi"
-          }
-        ]
-      },
-      {
-        "id": "759eafe1-e295-46df-8288-1da1ae108697",
-        "mainValue": "high",
-        "level": 4,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-4113",
-            "name": "Val d'Entremont - Val Ferret"
-          }
-        ]
-      },
-      {
-        "id": "b0d206ad-dd5b-44da-91c4-fe0599685bb4",
-        "mainValue": "high",
-        "level": 4,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-4114",
-            "name": "Conthey - Fully"
-          }
-        ]
-      },
-      {
-        "id": "cb68ffa5-8529-4ce8-83df-2986066f555c",
-        "mainValue": "high",
-        "level": 4,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-4121",
-            "name": "Montana"
-          }
-        ]
-      },
-      {
-        "id": "4d97c8b4-7ab8-4ce0-8032-4b99448ad4a9",
+        "id": "3086b55a-f687-41ae-a9d6-663e75a00468",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-1225",
-            "name": "Iffigen"
-          }
-        ]
-      },
-      {
-        "id": "6c751c43-023e-44ed-a96e-61367a3319ab",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-1227",
-            "name": "Engstligen"
-          }
-        ]
-      },
-      {
-        "id": "06f5b42d-3ffc-48f2-9ec2-3116e816f394",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-1232",
-            "name": "Blüemlisalp"
-          }
-        ]
-      },
-      {
-        "id": "3d7ba33f-d9f6-46ed-a362-f03254c189c1",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-1234",
-            "name": "Jungfrau - Schilthorn"
-          }
-        ]
-      },
-      {
-        "id": "e9cf36a9-0278-4f41-8953-c7556bbba074",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-1243",
-            "name": "Schreckhorn"
-          }
-        ]
-      },
-      {
-        "id": "fae03fc1-15e9-4259-8cf4-226f998c6d50",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-1245",
-            "name": "Guttannen"
-          }
-        ]
-      },
-      {
-        "id": "cf4f43ff-f269-42a3-bc78-b2cfa9fc3fca",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-1246",
-            "name": "Gadmertal"
-          }
-        ]
-      },
-      {
-        "id": "2e2d787a-666a-435a-98fc-803e9839f0e5",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-1247",
-            "name": "Grimselpass"
-          }
-        ]
-      },
-      {
-        "id": "b7fae1fe-bfbd-42cd-a922-97dcb58ec463",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-2122",
-            "name": "Engelberg"
-          }
-        ]
-      },
-      {
-        "id": "7d07a778-43c0-461e-b610-48fa1c073e64",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-2134",
-            "name": "Bisistal"
-          }
-        ]
-      },
-      {
-        "id": "9d054f0f-7243-4e51-9e7e-6c1a35ded467",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-2211",
-            "name": "Schächental"
-          }
-        ]
-      },
-      {
-        "id": "ebc5dc91-9486-4a3b-892c-5d69fd3afb26",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-2212",
-            "name": "Uri Rotstock"
-          }
-        ]
-      },
-      {
-        "id": "bdfb1f4f-1588-4daf-9f6c-fadb84e38729",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-2221",
-            "name": "Meiental"
-          }
-        ]
-      },
-      {
-        "id": "e273c743-deac-42b5-b740-6021db511166",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-2222",
-            "name": "Maderanertal"
-          }
-        ]
-      },
-      {
-        "id": "b5e5b192-3b45-4f6d-bb0f-44344ba27829",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-2223",
-            "name": "Nördliche Urseren"
-          }
-        ]
-      },
-      {
-        "id": "acc88929-34e1-4bb9-aaac-6c1a9e7a7d93",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-3112",
-            "name": "Glarus Süd-Grosstal"
-          }
-        ]
-      },
-      {
-        "id": "1dc15e77-5c70-4668-8065-0fc2c1c3dca0",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-3113",
-            "name": "Glarus Süd-Sernftal"
-          }
-        ]
-      },
-      {
-        "id": "de68e8e4-5029-4bdc-98bd-e542e324e682",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-3114",
-            "name": "Glarus Mitte"
-          }
-        ]
-      },
-      {
-        "id": "49621751-5803-4f97-9b87-1da27d752f81",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-4115",
-            "name": "Martigny - Verbier"
-          }
-        ]
-      },
-      {
-        "id": "ef76bd5e-eb12-4769-bc70-9e1782196635",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-4116",
-            "name": "Haut Val de Bagnes"
-          }
-        ]
-      },
-      {
-        "id": "f922bd68-4cf7-41f9-aa90-975e84ec66f1",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-4122",
-            "name": "Val d'Hérens"
-          }
-        ]
-      },
-      {
-        "id": "f8a05bb2-6e10-4b53-b6cb-9d8b51e4abb0",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-4123",
-            "name": "Arolla"
-          }
-        ]
-      },
-      {
-        "id": "f8e03161-bc88-4e4f-9b4c-81d94c2b5e3d",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-4124",
-            "name": "Val d'Anniviers"
-          }
-        ]
-      },
-      {
-        "id": "935baa4f-605f-4b5e-8c35-c4e9ee27a178",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-4125",
-            "name": "Mountet"
-          }
-        ]
-      },
-      {
-        "id": "06e2736b-548e-4e59-b930-acead6cc2d88",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-4211",
-            "name": "Leukerbad - Lötschental"
-          }
-        ]
-      },
-      {
-        "id": "51e933fa-e018-42db-85a3-fc53c8615ead",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-4212",
-            "name": "Turtmanntal"
-          }
-        ]
-      },
-      {
-        "id": "6ab5d134-0db5-4f39-8b18-105db63b480f",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-4213",
-            "name": "Konkordia Gebiet"
-          }
-        ]
-      },
-      {
-        "id": "ef17bf26-5e31-4ac7-9eb6-dc7ee073aa72",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-4214",
-            "name": "Riederalp"
-          }
-        ]
-      },
-      {
-        "id": "274f4513-5f87-43bd-b846-b0dd01e12ee6",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-4215",
-            "name": "Leuk"
-          }
-        ]
-      },
-      {
-        "id": "80bcf11a-d8e0-4864-9625-8fffd48a3a23",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-4221",
-            "name": "Untere Vispertäler"
-          }
-        ]
-      },
-      {
-        "id": "6bfb90fe-9de8-4976-b03e-a460b7934148",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-4222",
-            "name": "Zermatt"
-          }
-        ]
-      },
-      {
-        "id": "71316291-0abf-4a8c-bb2a-5fc5057bb6a7",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-4223",
-            "name": "Saas Fee"
-          }
-        ]
-      },
-      {
-        "id": "8542fc4d-6047-4861-b34c-d444ccd06435",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-4224",
-            "name": "Monte Rosa"
-          }
-        ]
-      },
-      {
-        "id": "447973b4-400f-4dd2-8417-a7a48c79c4a6",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-4225",
-            "name": "Mattmark"
-          }
-        ]
-      },
-      {
-        "id": "98e837a7-f513-428e-834d-86a3580d9038",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-4231",
-            "name": "Nördliches Simplon Gebiet"
-          }
-        ]
-      },
-      {
-        "id": "c6926683-d203-4fcd-85f8-3e1f0cf3a3fc",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-4241",
-            "name": "Reckingen"
-          }
-        ]
-      },
-      {
-        "id": "07512f7b-880f-4869-bec2-044630c71538",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-4243",
-            "name": "Nördliches Obergoms"
-          }
-        ]
-      },
-      {
-        "id": "68ea0011-e88a-46ce-993e-95f6965bc71a",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-1111",
-            "name": "Waadtländer Voralpen"
-          }
-        ]
-      },
-      {
-        "id": "2800c74e-c3cf-4ff8-ba16-fabd6d92f607",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
             "id": "CH-1112",
@@ -832,11 +234,11 @@
         ]
       },
       {
-        "id": "4b6184d5-a745-44d6-8837-59c82b118e2e",
+        "id": "331b0b66-2c6c-48c9-b522-c1cfc96fbd14",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
             "id": "CH-1113",
@@ -845,11 +247,24 @@
         ]
       },
       {
-        "id": "64a1929b-76ff-4ceb-85ed-e43bfea8e1c2",
+        "id": "852cd664-89ba-44aa-8d8c-e2d353c28fc2",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-1114",
+            "name": "Bex - Villars"
+          }
+        ]
+      },
+      {
+        "id": "b8599aa9-3916-41f4-aece-50e2661f4d08",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
             "id": "CH-1222",
@@ -858,11 +273,24 @@
         ]
       },
       {
-        "id": "2fd75f63-575b-475b-9970-7e06ab13f6fb",
+        "id": "c69ec55a-fd37-4ebf-a0e0-0de2ff278ed5",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-1223",
+            "name": "Wildhorn"
+          }
+        ]
+      },
+      {
+        "id": "a7e65260-9a34-4e0c-93a0-8f63f91f413b",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
             "id": "CH-1224",
@@ -871,102 +299,115 @@
         ]
       },
       {
-        "id": "a5c7f848-3b03-4271-8c0e-e3486581c380",
+        "id": "9bf8ccdd-c06b-4aaf-bba6-a32c1fcf8d3a",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
-            "id": "CH-1226",
-            "name": "Adelboden"
+            "id": "CH-1225",
+            "name": "Iffigen"
           }
         ]
       },
       {
-        "id": "313f28c9-4b96-410b-afd2-975452bb35bb",
+        "id": "b8239aac-015f-45dd-91b6-fbd6053234c9",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
-            "id": "CH-1228",
-            "name": "Obersimmental"
+            "id": "CH-1227",
+            "name": "Engstligen"
           }
         ]
       },
       {
-        "id": "d290ec67-4002-4bcc-8795-31052a8feb45",
+        "id": "f7f23f77-805a-4659-bd8f-5d59dfebe473",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
-            "id": "CH-1231",
-            "name": "Kandersteg"
+            "id": "CH-1232",
+            "name": "Blüemlisalp"
           }
         ]
       },
       {
-        "id": "39211a27-c830-48c6-a3c0-2da96914492b",
+        "id": "f1bf0640-190f-4c9a-afe2-bd079d7f1813",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
-            "id": "CH-1233",
-            "name": "Lauterbrunnen"
+            "id": "CH-1234",
+            "name": "Jungfrau - Schilthorn"
           }
         ]
       },
       {
-        "id": "509b9cb6-188d-4cc8-b55c-3f8d2af02239",
+        "id": "3aee2534-3e02-49da-b586-3c6f907b42e7",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
-            "id": "CH-1241",
-            "name": "Brienz - Interlaken"
+            "id": "CH-1243",
+            "name": "Schreckhorn"
           }
         ]
       },
       {
-        "id": "4d61be89-053f-4a8d-8cfa-45e50ab8c4bb",
+        "id": "d3520fd7-c535-4606-8b2f-a79f9fa93be7",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
-            "id": "CH-1242",
-            "name": "Grindelwald"
+            "id": "CH-1245",
+            "name": "Guttannen"
           }
         ]
       },
       {
-        "id": "71d392b9-4321-4505-ae51-65f7b68faeec",
+        "id": "2c4a41c1-d6a4-40f5-bff1-bff56558d355",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
-            "id": "CH-1244",
-            "name": "Hasliberg - Rosenlaui"
+            "id": "CH-1246",
+            "name": "Gadmertal"
           }
         ]
       },
       {
-        "id": "85f95851-83b1-4710-8c68-dfb20b5210db",
+        "id": "c6e3afac-4305-4d6d-94a7-9df7fcc3aa42",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-1247",
+            "name": "Grimselpass"
+          }
+        ]
+      },
+      {
+        "id": "d12739f3-dbae-4d46-a668-fc66d817847f",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
             "id": "CH-1311",
@@ -975,219 +416,479 @@
         ]
       },
       {
-        "id": "1e140a8a-82f7-474e-9119-e54e67afc6ae",
+        "id": "b43f9467-2771-4b56-a682-9be3a6575904",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
-            "id": "CH-2123",
-            "name": "Melchtal"
+            "id": "CH-1312",
+            "name": "Monthey - Val d'Illiez"
           }
         ]
       },
       {
-        "id": "593d7a83-e614-404d-8d75-a2a18109ab03",
+        "id": "dd73230b-80f5-4dd7-a283-b01e13db640b",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
-            "id": "CH-2224",
-            "name": "Südliche Urseren"
+            "id": "CH-2122",
+            "name": "Engelberg"
           }
         ]
       },
       {
-        "id": "2829e73b-de73-422c-9445-1df423c3e19d",
+        "id": "4484cfa6-6203-4ce9-b29a-e592b0cf40d3",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
-            "id": "CH-3222",
-            "name": "Alpstein - Alvier"
+            "id": "CH-2134",
+            "name": "Bisistal"
           }
         ]
       },
       {
-        "id": "1e6c78d4-d30a-41e5-8f52-229c1509ab50",
+        "id": "79ae056d-e3e0-40c5-b002-2b6e8ec06629",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
-            "id": "CH-3223",
-            "name": "Flumserberg"
+            "id": "CH-2211",
+            "name": "Schächental"
           }
         ]
       },
       {
-        "id": "bf673f54-7ac2-4b84-b18d-6e043db08397",
+        "id": "69db9f2e-d0fc-44ba-8a29-7e4d57678f3c",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
-            "id": "CH-3224",
-            "name": "Sarganserland"
+            "id": "CH-2212",
+            "name": "Uri Rotstock"
           }
         ]
       },
       {
-        "id": "f2f5d1d9-dd73-46fa-bdf8-88a632a6c1fb",
+        "id": "08df89a6-9224-4c93-89fe-5d3d97dfaac6",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
-            "id": "CH-3311",
-            "name": "Liechtenstein"
+            "id": "CH-2221",
+            "name": "Meiental"
           }
         ]
       },
       {
-        "id": "788ca2e2-8208-44d6-821d-ddfb1247791d",
+        "id": "ccb70815-7a03-4f64-93bf-a57e4cafbce0",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
-            "id": "CH-4232",
-            "name": "Südliches Simplon Gebiet"
+            "id": "CH-2222",
+            "name": "Maderanertal"
           }
         ]
       },
       {
-        "id": "abb5fb52-20d8-417b-8e1f-d574f2f11198",
+        "id": "f20cff07-61db-452c-8bee-43436ff732f3",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
-            "id": "CH-4242",
-            "name": "Binntal"
+            "id": "CH-2223",
+            "name": "Nördliche Urseren"
           }
         ]
       },
       {
-        "id": "f4926e3b-3aa3-4675-b026-7ad5e80a668c",
+        "id": "e13bf9d8-3c88-4fe4-ba66-1cbe677b9df1",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
-            "id": "CH-4244",
-            "name": "Südliches Obergoms"
+            "id": "CH-3112",
+            "name": "Glarus Süd-Grosstal"
           }
         ]
       },
       {
-        "id": "2c1365af-bf60-4ae0-95b7-efb07718a768",
+        "id": "3e99d59b-670d-4834-8b17-5c9640f4a05b",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
-            "id": "CH-5111",
-            "name": "Nördliches Prättigau"
+            "id": "CH-3113",
+            "name": "Glarus Süd-Sernftal"
           }
         ]
       },
       {
-        "id": "d49822d3-d57c-4c4c-93c4-bfd9e1122acf",
+        "id": "4fc6f0c7-9430-48e1-bb6a-d2f4c40f61dd",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
-            "id": "CH-5113",
-            "name": "Westliche Silvretta"
+            "id": "CH-3114",
+            "name": "Glarus Mitte"
           }
         ]
       },
       {
-        "id": "b0ea5fdd-6bbf-4fe0-b899-a60d0d7f60f8",
+        "id": "d60aad18-5921-468f-885e-66982f0d9fb8",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
-            "id": "CH-5121",
-            "name": "Calanda"
+            "id": "CH-4111",
+            "name": "Emosson"
           }
         ]
       },
       {
-        "id": "6a87dc79-37b0-46e6-b343-d1801a84c01c",
+        "id": "4d9cd1e7-198b-4128-84a7-e481109c7cdb",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
-            "id": "CH-5124",
-            "name": "Flims"
+            "id": "CH-4112",
+            "name": "Génépi"
           }
         ]
       },
       {
-        "id": "b922fa2e-38c1-4556-9b0a-7fd7230886dc",
+        "id": "cce8bd5c-976e-4e54-a1b1-cd01f859ebd9",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
-            "id": "CH-5211",
-            "name": "Nördliches Tavetsch"
+            "id": "CH-4113",
+            "name": "Val d'Entremont - Val Ferret"
           }
         ]
       },
       {
-        "id": "4ee2610f-71da-4c48-9c6d-1fef89b7b028",
+        "id": "508d7316-c82f-4ece-aaf3-082b4060cc4a",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
-            "id": "CH-6111",
-            "name": "Bedrettotal"
+            "id": "CH-4114",
+            "name": "Conthey - Fully"
           }
         ]
       },
       {
-        "id": "c6906e25-798c-4525-933e-10b4455ee0db",
+        "id": "41f0df37-8f44-4d21-9143-e4f1fbb7fa66",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
-            "id": "CH-7122",
-            "name": "Östliche Silvretta"
+            "id": "CH-4115",
+            "name": "Martigny - Verbier"
           }
         ]
       },
       {
-        "id": "a4fc680a-def9-4a45-8a18-6252e61eddc3",
+        "id": "36be6622-6c0a-46ec-bb7d-fc2890a8b255",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-4116",
+            "name": "Haut Val de Bagnes"
+          }
+        ]
+      },
+      {
+        "id": "b24db635-378f-40cb-bdf5-11f4e9efde85",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-4121",
+            "name": "Montana"
+          }
+        ]
+      },
+      {
+        "id": "59575407-ad97-4a60-9975-a7789a5f85b9",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-4122",
+            "name": "Val d'Hérens"
+          }
+        ]
+      },
+      {
+        "id": "57a29b40-d7e8-4e6b-a06f-d5aec195180a",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-4123",
+            "name": "Arolla"
+          }
+        ]
+      },
+      {
+        "id": "ad88cd3e-a871-4d0d-b416-3a3c0c9e2625",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-4124",
+            "name": "Val d'Anniviers"
+          }
+        ]
+      },
+      {
+        "id": "a031c52f-917b-4ebb-b3c9-44a19911cf18",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-4125",
+            "name": "Mountet"
+          }
+        ]
+      },
+      {
+        "id": "255f46a4-2ca7-4227-8963-46aaa822ada7",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-4211",
+            "name": "Leukerbad - Lötschental"
+          }
+        ]
+      },
+      {
+        "id": "0b54a9fd-98ac-4791-9346-ebb24891b50f",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-4212",
+            "name": "Turtmanntal"
+          }
+        ]
+      },
+      {
+        "id": "c34563a2-7787-4128-b68e-e65954de63ab",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-4213",
+            "name": "Konkordia Gebiet"
+          }
+        ]
+      },
+      {
+        "id": "ef5aa72a-ec82-4e59-9906-1308da802c40",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-4214",
+            "name": "Riederalp"
+          }
+        ]
+      },
+      {
+        "id": "124610d7-8c9a-4204-ae3c-8ac31966074f",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-4215",
+            "name": "Leuk"
+          }
+        ]
+      },
+      {
+        "id": "c67cea75-397e-40a7-8104-52be18adf1c3",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-4221",
+            "name": "Untere Vispertäler"
+          }
+        ]
+      },
+      {
+        "id": "bcb27ebb-4e19-43dc-9f09-ae3bb3034a43",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-4222",
+            "name": "Zermatt"
+          }
+        ]
+      },
+      {
+        "id": "dd164e3b-99c8-4610-aed8-087fff20ac70",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-4223",
+            "name": "Saas Fee"
+          }
+        ]
+      },
+      {
+        "id": "1f938d46-a7a4-47fb-98ce-72af395164af",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-4224",
+            "name": "Monte Rosa"
+          }
+        ]
+      },
+      {
+        "id": "f8a158f1-6f0f-453a-9a56-75df0e9d70f7",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-4225",
+            "name": "Mattmark"
+          }
+        ]
+      },
+      {
+        "id": "9f627fd0-84ef-4877-9dcc-a374a1b7e061",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-4231",
+            "name": "Nördliches Simplon Gebiet"
+          }
+        ]
+      },
+      {
+        "id": "2693710c-b26f-45cc-ac21-8064eb4405b4",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-4241",
+            "name": "Reckingen"
+          }
+        ]
+      },
+      {
+        "id": "49a9ed5e-35df-4528-bf5e-ded84bf3b3d7",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-4243",
+            "name": "Nördliches Obergoms"
+          }
+        ]
+      },
+      {
+        "id": "9a21e3c8-0934-46d2-8dd8-18ec7c3572f0",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-1111",
+            "name": "Waadtländer Voralpen"
+          }
+        ]
+      },
+      {
+        "id": "35383be0-ad66-4cb2-8518-7228eae4ce4b",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
             "id": "CH-1121",
@@ -1196,24 +897,11 @@
         ]
       },
       {
-        "id": "62de56e3-5e46-433a-b583-ccc2805e0212",
+        "id": "bafdff1b-5d2f-4781-b79b-5393d8ddbe5d",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-1213",
-            "name": "Hohgant"
-          }
-        ]
-      },
-      {
-        "id": "773e1d99-11a9-4469-abc3-020ee60cf1b5",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
             "id": "CH-1221",
@@ -1222,11 +910,284 @@
         ]
       },
       {
-        "id": "5a682538-6fd5-4ba5-9e90-95aca75e2b02",
+        "id": "0a839051-c2e4-4004-a4d3-18b1342ff4b2",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-1226",
+            "name": "Adelboden"
+          }
+        ]
+      },
+      {
+        "id": "992ddb23-0e4b-4a95-bddb-007e459cf4bb",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-1228",
+            "name": "Obersimmental"
+          }
+        ]
+      },
+      {
+        "id": "4a7c79ec-aeb1-4866-bf4b-a198d6cbab7f",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-1231",
+            "name": "Kandersteg"
+          }
+        ]
+      },
+      {
+        "id": "137fdefa-d9df-49eb-a088-d7122180d7e3",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-1233",
+            "name": "Lauterbrunnen"
+          }
+        ]
+      },
+      {
+        "id": "dee67bfc-fed1-43ff-b67d-9533497c12a1",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-1241",
+            "name": "Brienz - Interlaken"
+          }
+        ]
+      },
+      {
+        "id": "cee780ba-b8c7-4a4e-8d97-a4d3e7404c74",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-1242",
+            "name": "Grindelwald"
+          }
+        ]
+      },
+      {
+        "id": "83abb09e-893a-4f20-80f9-fc172f7aaf79",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-1244",
+            "name": "Hasliberg - Rosenlaui"
+          }
+        ]
+      },
+      {
+        "id": "527ab4f9-7c3d-482b-ab1a-52ef29e06e0e",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-2123",
+            "name": "Melchtal"
+          }
+        ]
+      },
+      {
+        "id": "5339ca10-2f9f-4cbe-9b7a-54555765f861",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-2224",
+            "name": "Südliche Urseren"
+          }
+        ]
+      },
+      {
+        "id": "f3b00fb3-d8d5-47be-9202-2557edc5aacc",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-3224",
+            "name": "Sarganserland"
+          }
+        ]
+      },
+      {
+        "id": "11848a18-12a1-40ba-bd6c-4e63ec9a3962",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-4232",
+            "name": "Südliches Simplon Gebiet"
+          }
+        ]
+      },
+      {
+        "id": "f53454bd-9a89-4121-8f54-b25989196f02",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-4242",
+            "name": "Binntal"
+          }
+        ]
+      },
+      {
+        "id": "7a5f4c47-3ddd-4709-99dd-510adffd2dd0",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-4244",
+            "name": "Südliches Obergoms"
+          }
+        ]
+      },
+      {
+        "id": "73717ab8-2bca-4e86-9db5-cb87ebaaf29b",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-5111",
+            "name": "Nördliches Prättigau"
+          }
+        ]
+      },
+      {
+        "id": "2ceb8e50-9cb0-463d-b236-351dab15294f",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-5113",
+            "name": "Westliche Silvretta"
+          }
+        ]
+      },
+      {
+        "id": "be4f6d22-adba-4b86-8674-77e9e2ec2ad3",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-5121",
+            "name": "Calanda"
+          }
+        ]
+      },
+      {
+        "id": "823e031a-316f-460c-bdb9-19cc15856357",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-5124",
+            "name": "Flims"
+          }
+        ]
+      },
+      {
+        "id": "8de59241-5227-4733-a923-3b7447740544",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-5211",
+            "name": "Nördliches Tavetsch"
+          }
+        ]
+      },
+      {
+        "id": "5b24d900-72ad-4307-9bb6-6de94b461a13",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-6111",
+            "name": "Bedrettotal"
+          }
+        ]
+      },
+      {
+        "id": "c2b51c48-486d-4dd8-836e-d92a3e80db2d",
+        "mainValue": "considerable",
+        "level": 3,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-7122",
+            "name": "Östliche Silvretta"
+          }
+        ]
+      },
+      {
+        "id": "7ed6d10a-dfb6-4257-aac9-f644ec628994",
+        "mainValue": "moderate",
+        "level": 2,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-1213",
+            "name": "Hohgant"
+          }
+        ]
+      },
+      {
+        "id": "dc223f05-6ea2-461b-9995-9da579271175",
+        "mainValue": "moderate",
+        "level": 2,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
             "id": "CH-2111",
@@ -1235,11 +1196,11 @@
         ]
       },
       {
-        "id": "20bce682-b4a6-4838-b84e-f8bf46d5bb76",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "id": "75e70dbd-e958-4c12-b177-8e522f7fe8ed",
+        "mainValue": "moderate",
+        "level": 2,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
             "id": "CH-2121",
@@ -1248,11 +1209,11 @@
         ]
       },
       {
-        "id": "04f343ba-c250-439e-8e7c-37f516b4a46b",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "id": "404be50c-322c-448e-ac2e-bfc97452c6ab",
+        "mainValue": "moderate",
+        "level": 2,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
             "id": "CH-2124",
@@ -1261,11 +1222,11 @@
         ]
       },
       {
-        "id": "bb9dead7-660d-4f82-a6ce-78d9ec74672c",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "id": "c41c2e72-4532-48e6-89ee-a5f1c6149318",
+        "mainValue": "moderate",
+        "level": 2,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
             "id": "CH-2132",
@@ -1274,11 +1235,11 @@
         ]
       },
       {
-        "id": "86a675f7-0db0-41a0-b45a-47d8c7ba4722",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "id": "67da8e23-0ad1-4203-9ab7-124ea26cbbb0",
+        "mainValue": "moderate",
+        "level": 2,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
             "id": "CH-2133",
@@ -1287,11 +1248,11 @@
         ]
       },
       {
-        "id": "9221812b-bda5-4b8c-8ca4-13b35efbae0f",
-        "mainValue": "considerable",
-        "level": 3,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "id": "d6211e95-c87d-4ee3-bb20-0f6de3f0ddf4",
+        "mainValue": "moderate",
+        "level": 2,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
             "id": "CH-3111",
@@ -1300,11 +1261,50 @@
         ]
       },
       {
-        "id": "3bfd1e00-45c7-48ce-823c-8804b2e59f91",
+        "id": "a8e88d65-195e-4ada-aac0-ccb1fcd94980",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-3222",
+            "name": "Alpstein - Alvier"
+          }
+        ]
+      },
+      {
+        "id": "bcb3c054-ce06-4288-ba7e-303716eec656",
+        "mainValue": "moderate",
+        "level": 2,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-3223",
+            "name": "Flumserberg"
+          }
+        ]
+      },
+      {
+        "id": "14a0db82-fa8a-4f0a-95cc-506c66d949f6",
+        "mainValue": "moderate",
+        "level": 2,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-3311",
+            "name": "Liechtenstein"
+          }
+        ]
+      },
+      {
+        "id": "a27a77fa-eba1-4750-b054-9226e24e0072",
+        "mainValue": "moderate",
+        "level": 2,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
             "id": "CH-5112",
@@ -1313,11 +1313,11 @@
         ]
       },
       {
-        "id": "c161b695-9e8c-4d0c-a20a-031393b7680e",
+        "id": "92c9a393-9be6-496f-bc86-1b1b142019fc",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
             "id": "CH-5122",
@@ -1326,11 +1326,11 @@
         ]
       },
       {
-        "id": "6e20ea36-d7ac-4c1d-9e44-be65f28b9ce4",
+        "id": "a8845907-a889-431e-b3de-9dc00958117d",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
             "id": "CH-5123",
@@ -1339,11 +1339,11 @@
         ]
       },
       {
-        "id": "44192395-2410-400b-87d8-9e24abb4ae01",
+        "id": "6b99b680-7db1-4dd1-b0dd-ff6d0c3a2c73",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
             "id": "CH-5212",
@@ -1352,11 +1352,11 @@
         ]
       },
       {
-        "id": "6d88d3e1-3ee2-4c70-a005-7b2fa0d262e9",
+        "id": "ad830811-39d8-4bf1-9f10-3bc3918e4e39",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
             "id": "CH-5214",
@@ -1365,11 +1365,11 @@
         ]
       },
       {
-        "id": "c1754f25-7b4c-4cd2-9c58-2c62803a954a",
+        "id": "b9584af3-6ae5-4dfe-a77d-238f5f19db47",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
             "id": "CH-5215",
@@ -1378,11 +1378,11 @@
         ]
       },
       {
-        "id": "eefd9202-f49d-4f3e-9ac3-8d86d9d1ab22",
+        "id": "b5738282-e2d7-476d-8ffa-0be870489992",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
             "id": "CH-5216",
@@ -1391,11 +1391,11 @@
         ]
       },
       {
-        "id": "ee84c3d5-1851-4e41-a7c8-9fc3d459bfb4",
+        "id": "3d7cd81c-eace-42a8-8e02-6927cb87c869",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
             "id": "CH-5221",
@@ -1404,11 +1404,11 @@
         ]
       },
       {
-        "id": "63800950-8c04-4715-8d2f-4109af3ac6c8",
+        "id": "299f1b87-9695-4f76-9bd3-b16eaa17b2f8",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
             "id": "CH-5222",
@@ -1417,11 +1417,11 @@
         ]
       },
       {
-        "id": "fda64524-ebd1-4034-9e17-be8dbd2c7f24",
+        "id": "2c0cb1a3-ea5e-4a9f-b481-3415b4343aa0",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
             "id": "CH-5223",
@@ -1430,11 +1430,11 @@
         ]
       },
       {
-        "id": "48e6d647-82c2-4310-b463-dc0f056736f6",
+        "id": "effe3683-1bb9-47bb-b1f3-c206c1ae2570",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
             "id": "CH-5231",
@@ -1443,11 +1443,11 @@
         ]
       },
       {
-        "id": "57a8dea8-37cb-4402-80f9-e923b02aeaf2",
+        "id": "51575b03-fe1a-488d-a425-950063ed5eee",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
             "id": "CH-5232",
@@ -1456,11 +1456,11 @@
         ]
       },
       {
-        "id": "0c087e30-144f-4c7e-9d71-f18a9b517f6c",
+        "id": "ea1b3cd1-f20e-4436-984b-27f772b0056a",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
             "id": "CH-5233",
@@ -1469,11 +1469,11 @@
         ]
       },
       {
-        "id": "c60e5fa0-38be-4e95-96bf-8638b860b76e",
+        "id": "44e13914-ef1f-4b44-8c75-018c8600d3b2",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
             "id": "CH-5234",
@@ -1482,11 +1482,11 @@
         ]
       },
       {
-        "id": "676ab42b-868a-4d07-b67e-c633ddf11532",
+        "id": "f934a2ac-c454-4aa1-be28-c8486289f7aa",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
             "id": "CH-6112",
@@ -1495,11 +1495,11 @@
         ]
       },
       {
-        "id": "98aa5841-809c-46a5-8965-7f59a12cc975",
+        "id": "4b581d20-5995-4f5f-bf35-053d4b603e5c",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
             "id": "CH-6113",
@@ -1508,11 +1508,11 @@
         ]
       },
       {
-        "id": "5fb0c144-e648-4b68-a95f-cabd2bff34f4",
+        "id": "49187604-3ad6-42a4-a20c-d34a261d6162",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
             "id": "CH-6114",
@@ -1521,232 +1521,11 @@
         ]
       },
       {
-        "id": "230a26da-c656-44d7-97ac-587519e7f6b6",
+        "id": "fc2decde-b0ad-4509-ae90-829bd8c17d2c",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-7111",
-            "name": "Corvatsch"
-          }
-        ]
-      },
-      {
-        "id": "c5f7f798-627a-44df-a4b3-3d3a686c8aae",
-        "mainValue": "moderate",
-        "level": 2,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-7112",
-            "name": "Bernina"
-          }
-        ]
-      },
-      {
-        "id": "37cf407d-fba3-4d6e-a8b5-c03f02f39388",
-        "mainValue": "moderate",
-        "level": 2,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-7113",
-            "name": "Zuoz"
-          }
-        ]
-      },
-      {
-        "id": "4c28adec-ea4d-4bcf-9a16-69d69ac076bc",
-        "mainValue": "moderate",
-        "level": 2,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-7114",
-            "name": "St. Moritz"
-          }
-        ]
-      },
-      {
-        "id": "9898cfaa-a64e-4f8f-81ab-c3799ba99ae6",
-        "mainValue": "moderate",
-        "level": 2,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-7115",
-            "name": "Val Chamuera"
-          }
-        ]
-      },
-      {
-        "id": "4bdb0032-b4c5-4396-a23b-65a1b318b462",
-        "mainValue": "moderate",
-        "level": 2,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-7121",
-            "name": "Samnaun"
-          }
-        ]
-      },
-      {
-        "id": "0b90488f-d014-4ff4-aa14-7cdd186196ea",
-        "mainValue": "moderate",
-        "level": 2,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-7123",
-            "name": "Sur Tasna"
-          }
-        ]
-      },
-      {
-        "id": "f37db2c6-8d57-410e-b8fb-7d9cb504359e",
-        "mainValue": "moderate",
-        "level": 2,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-7124",
-            "name": "Val Suot"
-          }
-        ]
-      },
-      {
-        "id": "c687b266-96c7-441e-865e-3b868d7f7a26",
-        "mainValue": "moderate",
-        "level": 2,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-7125",
-            "name": "Val dal Spöl"
-          }
-        ]
-      },
-      {
-        "id": "0c633bf9-2619-4358-93cf-013d958b1734",
-        "mainValue": "moderate",
-        "level": 2,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-7126",
-            "name": "Val S-charl"
-          }
-        ]
-      },
-      {
-        "id": "b7000776-f15b-4bca-9a6e-2652729965a5",
-        "mainValue": "moderate",
-        "level": 2,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-7211",
-            "name": "Bergell"
-          }
-        ]
-      },
-      {
-        "id": "7be94b92-d63c-41ad-b167-7c7c040c7d7b",
-        "mainValue": "moderate",
-        "level": 2,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-7221",
-            "name": "Oberes Puschlav"
-          }
-        ]
-      },
-      {
-        "id": "e052993b-4ee4-4b21-bc9d-cc419a3e2ed0",
-        "mainValue": "moderate",
-        "level": 2,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-7222",
-            "name": "Unteres Puschlav"
-          }
-        ]
-      },
-      {
-        "id": "115be416-2e55-4540-9269-84efb5e4a7ef",
-        "mainValue": "moderate",
-        "level": 2,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-7231",
-            "name": "Münstertal"
-          }
-        ]
-      },
-      {
-        "id": "622cc2fd-31b5-4a6d-8fbb-4a19859e8f42",
-        "mainValue": "low",
-        "level": 1,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-6115",
-            "name": "Untere Leventina"
-          }
-        ]
-      },
-      {
-        "id": "d2a5b62c-e17e-4ee0-a3bd-91f5fd0149e3",
-        "mainValue": "low",
-        "level": 1,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-6121",
-            "name": "Untere Maggiatäler"
-          }
-        ]
-      },
-      {
-        "id": "b4ed0b3e-16d2-49ba-addb-83e1b231d091",
-        "mainValue": "low",
-        "level": 1,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
-        "regions": [
-          {
-            "id": "CH-6122",
-            "name": "Riviera"
-          }
-        ]
-      },
-      {
-        "id": "eb2102dd-f1d0-4663-af17-0190bb586fdd",
-        "mainValue": "low",
-        "level": 1,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
             "id": "CH-6211",
@@ -1755,15 +1534,301 @@
         ]
       },
       {
-        "id": "826bef65-d2b2-424e-80c7-66423acca6f7",
+        "id": "f3b424dd-c7e4-454d-9098-edf62a105931",
+        "mainValue": "moderate",
+        "level": 2,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-7111",
+            "name": "Corvatsch"
+          }
+        ]
+      },
+      {
+        "id": "d78bd739-a546-47c6-b634-f9586094d26d",
+        "mainValue": "moderate",
+        "level": 2,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-7112",
+            "name": "Bernina"
+          }
+        ]
+      },
+      {
+        "id": "b875414d-ff64-415b-baa2-f5cf6e433043",
+        "mainValue": "moderate",
+        "level": 2,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-7113",
+            "name": "Zuoz"
+          }
+        ]
+      },
+      {
+        "id": "7c497efc-49e1-47c1-9166-492008661259",
+        "mainValue": "moderate",
+        "level": 2,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-7114",
+            "name": "St. Moritz"
+          }
+        ]
+      },
+      {
+        "id": "7808b741-5a11-47fd-a5e4-840109ae0976",
+        "mainValue": "moderate",
+        "level": 2,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-7115",
+            "name": "Val Chamuera"
+          }
+        ]
+      },
+      {
+        "id": "031cd837-a6fc-4b97-87a7-542cfe7c9d3b",
+        "mainValue": "moderate",
+        "level": 2,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-7121",
+            "name": "Samnaun"
+          }
+        ]
+      },
+      {
+        "id": "00e64262-c105-415b-a52b-2651ecc177be",
+        "mainValue": "moderate",
+        "level": 2,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-7123",
+            "name": "Sur Tasna"
+          }
+        ]
+      },
+      {
+        "id": "8ef872a0-4e6c-43f2-beca-c36a2652ba32",
+        "mainValue": "moderate",
+        "level": 2,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-7124",
+            "name": "Val Suot"
+          }
+        ]
+      },
+      {
+        "id": "97e3847a-f9c0-45cb-a70a-422130052425",
+        "mainValue": "moderate",
+        "level": 2,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-7125",
+            "name": "Val dal Spöl"
+          }
+        ]
+      },
+      {
+        "id": "bb1a8876-6b8b-492d-b2d1-7b1f1c232de4",
+        "mainValue": "moderate",
+        "level": 2,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-7126",
+            "name": "Val S-charl"
+          }
+        ]
+      },
+      {
+        "id": "84a1fe2e-9268-4650-be43-b7464d67fac5",
+        "mainValue": "moderate",
+        "level": 2,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-7211",
+            "name": "Bergell"
+          }
+        ]
+      },
+      {
+        "id": "271275e9-2532-4afa-ad58-bc579fe04d34",
+        "mainValue": "moderate",
+        "level": 2,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-7221",
+            "name": "Oberes Puschlav"
+          }
+        ]
+      },
+      {
+        "id": "0a21b8db-532b-4b60-9dfc-46d29945a6ce",
+        "mainValue": "moderate",
+        "level": 2,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-7222",
+            "name": "Unteres Puschlav"
+          }
+        ]
+      },
+      {
+        "id": "7c498568-5549-48bf-9ef4-6bc42dea22c3",
+        "mainValue": "moderate",
+        "level": 2,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-7231",
+            "name": "Münstertal"
+          }
+        ]
+      },
+      {
+        "id": "30ca435c-02e8-42f7-8466-8b1716d15366",
         "mainValue": "low",
         "level": 1,
-        "validFrom": "2026-11-21T07:00:00Z",
-        "validUntil": "2026-11-21T16:00:00Z",
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-6115",
+            "name": "Untere Leventina"
+          }
+        ]
+      },
+      {
+        "id": "a3793fe5-90b3-4215-bda5-386f9e39359d",
+        "mainValue": "low",
+        "level": 1,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-6121",
+            "name": "Untere Maggiatäler"
+          }
+        ]
+      },
+      {
+        "id": "5794a779-0830-43b0-9c1e-878f9a8e7685",
+        "mainValue": "low",
+        "level": 1,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-6122",
+            "name": "Riviera"
+          }
+        ]
+      },
+      {
+        "id": "ff0b94ab-1693-40b0-9ed3-683f05cc59fe",
+        "mainValue": "low",
+        "level": 1,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
         "regions": [
           {
             "id": "CH-6212",
             "name": "Basso Moesano"
+          }
+        ]
+      },
+      {
+        "id": "2fb2a8d5-9fa2-47d9-888b-e9f1eaa4d200",
+        "mainValue": null,
+        "level": 0,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-1212",
+            "name": "Östliche Berner Voralpen"
+          }
+        ]
+      },
+      {
+        "id": "89ca3e91-12b9-4940-8317-07729de0ddbb",
+        "mainValue": null,
+        "level": 0,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-2112",
+            "name": "Schwarzenberg"
+          }
+        ]
+      },
+      {
+        "id": "902c59dd-f30c-4163-8965-a4bcbba507bb",
+        "mainValue": null,
+        "level": 0,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-2131",
+            "name": "Rothenthurm"
+          }
+        ]
+      },
+      {
+        "id": "769766a8-2893-495b-9563-d95d6b8af95d",
+        "mainValue": null,
+        "level": 0,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-3211",
+            "name": "Appenzeller Alpen"
+          }
+        ]
+      },
+      {
+        "id": "d9a0fb8c-98b4-4caa-8a22-53f1fe738604",
+        "mainValue": null,
+        "level": 0,
+        "validFrom": "2026-11-21T16:00:00Z",
+        "validUntil": "2026-11-22T16:00:00Z",
+        "regions": [
+          {
+            "id": "CH-3221",
+            "name": "Toggenburg"
           }
         ]
       }
