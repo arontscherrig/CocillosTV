@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-20T18:54:42.299Z",
+  "generatedAt": "2026-11-21T07:32:02.312Z",
   "fire": {
     "status": "ok",
     "source": "BAFU und Kantone",
@@ -221,10 +221,10 @@
     "sourceUrl": "https://www.slf.ch/de/lawinenbulletin-und-schneesituation/",
     "bulletins": [
       {
-        "id": "a6f8e1f8-ea97-4a9c-82cb-bf6a88577145",
+        "id": "3d9d1d5b-fa7a-4474-9784-10c76f7b47cc",
         "mainValue": "high",
         "level": 4,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -234,10 +234,10 @@
         ]
       },
       {
-        "id": "cb940234-91ed-4173-b150-55d7d4d8f0f9",
+        "id": "32ef9152-137c-4c92-9cb1-d6d3d535babb",
         "mainValue": "high",
         "level": 4,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -247,10 +247,10 @@
         ]
       },
       {
-        "id": "f126fac5-fffe-4355-9370-1e553a1d286c",
+        "id": "88a6d377-1b0e-4222-8f65-428e1e461187",
         "mainValue": "high",
         "level": 4,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -260,10 +260,10 @@
         ]
       },
       {
-        "id": "e6875da8-5f2a-4c76-9776-d41b1a0904cc",
+        "id": "cd2bc692-3d94-4fcc-a0f6-7d51fb6ccc8a",
         "mainValue": "high",
         "level": 4,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -273,10 +273,10 @@
         ]
       },
       {
-        "id": "b9837db7-254d-4251-8e23-d43fe12c65c2",
+        "id": "ae62253a-740c-4311-9cc5-d59cb88c8a52",
         "mainValue": "high",
         "level": 4,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -286,10 +286,10 @@
         ]
       },
       {
-        "id": "9d47c240-69b6-4baa-9325-c24b3d4867dc",
+        "id": "759eafe1-e295-46df-8288-1da1ae108697",
         "mainValue": "high",
         "level": 4,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -299,10 +299,10 @@
         ]
       },
       {
-        "id": "d347a33e-c054-4d9f-8097-042622d877d2",
+        "id": "b0d206ad-dd5b-44da-91c4-fe0599685bb4",
         "mainValue": "high",
         "level": 4,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -312,10 +312,10 @@
         ]
       },
       {
-        "id": "a8f2fd3f-ce81-45fb-b296-22bde1d84123",
+        "id": "cb68ffa5-8529-4ce8-83df-2986066f555c",
         "mainValue": "high",
         "level": 4,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -325,10 +325,10 @@
         ]
       },
       {
-        "id": "b8e29a5f-cef7-4205-8a6b-c7cd935725e1",
+        "id": "4d97c8b4-7ab8-4ce0-8032-4b99448ad4a9",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -338,10 +338,10 @@
         ]
       },
       {
-        "id": "3310f26d-28d0-485d-bf77-e16946c2c8d2",
+        "id": "6c751c43-023e-44ed-a96e-61367a3319ab",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -351,10 +351,10 @@
         ]
       },
       {
-        "id": "5b581d0f-85a1-45c4-870a-73d661466690",
+        "id": "06f5b42d-3ffc-48f2-9ec2-3116e816f394",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -364,10 +364,10 @@
         ]
       },
       {
-        "id": "12f6f53e-b1a5-45ee-8ad8-da88a6b7e3c5",
+        "id": "3d7ba33f-d9f6-46ed-a362-f03254c189c1",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -377,10 +377,10 @@
         ]
       },
       {
-        "id": "245f6405-34f3-49ff-a356-efd644e71062",
+        "id": "e9cf36a9-0278-4f41-8953-c7556bbba074",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -390,10 +390,10 @@
         ]
       },
       {
-        "id": "b379109d-fff5-4917-b106-aaabbcfb51b7",
+        "id": "fae03fc1-15e9-4259-8cf4-226f998c6d50",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -403,10 +403,10 @@
         ]
       },
       {
-        "id": "31dee855-bc75-4bc5-a72a-e134fce6c402",
+        "id": "cf4f43ff-f269-42a3-bc78-b2cfa9fc3fca",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -416,10 +416,10 @@
         ]
       },
       {
-        "id": "e911fcdc-e4f7-4f42-a506-d685582551c5",
+        "id": "2e2d787a-666a-435a-98fc-803e9839f0e5",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -429,10 +429,10 @@
         ]
       },
       {
-        "id": "72a1ba7d-3673-4529-8e96-2df004304e03",
+        "id": "b7fae1fe-bfbd-42cd-a922-97dcb58ec463",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -442,10 +442,10 @@
         ]
       },
       {
-        "id": "28418233-4c41-489f-9a37-03ca90578440",
+        "id": "7d07a778-43c0-461e-b610-48fa1c073e64",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -455,10 +455,10 @@
         ]
       },
       {
-        "id": "9a7b0aba-db27-4787-a8ff-3285dcf66a71",
+        "id": "9d054f0f-7243-4e51-9e7e-6c1a35ded467",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -468,10 +468,10 @@
         ]
       },
       {
-        "id": "7656c502-5198-4f49-96f6-b7133b947209",
+        "id": "ebc5dc91-9486-4a3b-892c-5d69fd3afb26",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -481,10 +481,10 @@
         ]
       },
       {
-        "id": "4f1cf94c-cb93-4003-b084-76533b9cf9e3",
+        "id": "bdfb1f4f-1588-4daf-9f6c-fadb84e38729",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -494,10 +494,10 @@
         ]
       },
       {
-        "id": "13104ae4-e7d7-46c2-a730-c675c270c37b",
+        "id": "e273c743-deac-42b5-b740-6021db511166",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -507,10 +507,10 @@
         ]
       },
       {
-        "id": "7a2dad26-c5b0-4e11-a618-56dc752834be",
+        "id": "b5e5b192-3b45-4f6d-bb0f-44344ba27829",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -520,10 +520,10 @@
         ]
       },
       {
-        "id": "c200e10c-68d9-47ae-a897-3e43117dab2b",
+        "id": "acc88929-34e1-4bb9-aaac-6c1a9e7a7d93",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -533,10 +533,10 @@
         ]
       },
       {
-        "id": "7c436897-99e6-4735-8f7d-c21bf7059428",
+        "id": "1dc15e77-5c70-4668-8065-0fc2c1c3dca0",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -546,10 +546,10 @@
         ]
       },
       {
-        "id": "861bf750-8aed-4c94-ad4f-de9144f266bf",
+        "id": "de68e8e4-5029-4bdc-98bd-e542e324e682",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -559,10 +559,10 @@
         ]
       },
       {
-        "id": "c2b3edc8-38e4-436d-9249-e11d2990c369",
+        "id": "49621751-5803-4f97-9b87-1da27d752f81",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -572,10 +572,10 @@
         ]
       },
       {
-        "id": "3d9139e0-35c2-46bb-b5bb-eda18461aa9c",
+        "id": "ef76bd5e-eb12-4769-bc70-9e1782196635",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -585,10 +585,10 @@
         ]
       },
       {
-        "id": "0a184168-6c8f-4fd3-bbcf-c81ee7c22853",
+        "id": "f922bd68-4cf7-41f9-aa90-975e84ec66f1",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -598,10 +598,10 @@
         ]
       },
       {
-        "id": "23c438bf-3713-4668-b0eb-50ff4519e44c",
+        "id": "f8a05bb2-6e10-4b53-b6cb-9d8b51e4abb0",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -611,10 +611,10 @@
         ]
       },
       {
-        "id": "a3b9beb8-e169-4e52-8267-9b9f719d5c2c",
+        "id": "f8e03161-bc88-4e4f-9b4c-81d94c2b5e3d",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -624,10 +624,10 @@
         ]
       },
       {
-        "id": "3f42a8cb-a20f-41a8-883d-9dddd8dc497a",
+        "id": "935baa4f-605f-4b5e-8c35-c4e9ee27a178",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -637,10 +637,10 @@
         ]
       },
       {
-        "id": "060a6ef5-36db-43c4-875f-fa2619273e8a",
+        "id": "06e2736b-548e-4e59-b930-acead6cc2d88",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -650,10 +650,10 @@
         ]
       },
       {
-        "id": "16d3b022-6c62-47ca-9d04-6649e8305f8b",
+        "id": "51e933fa-e018-42db-85a3-fc53c8615ead",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -663,10 +663,10 @@
         ]
       },
       {
-        "id": "5b1f3857-6279-452e-b8a6-67fa476271de",
+        "id": "6ab5d134-0db5-4f39-8b18-105db63b480f",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -676,10 +676,10 @@
         ]
       },
       {
-        "id": "7abb5d1d-49d3-44a6-881f-f850318bec3a",
+        "id": "ef17bf26-5e31-4ac7-9eb6-dc7ee073aa72",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -689,10 +689,10 @@
         ]
       },
       {
-        "id": "6959ba5f-a261-4582-89ac-8ff17f91e05c",
+        "id": "274f4513-5f87-43bd-b846-b0dd01e12ee6",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -702,10 +702,10 @@
         ]
       },
       {
-        "id": "142e5d7f-f4b5-4062-b2a7-5f389d1817a0",
+        "id": "80bcf11a-d8e0-4864-9625-8fffd48a3a23",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -715,10 +715,10 @@
         ]
       },
       {
-        "id": "34a860de-2c02-43e2-a6f1-3e8bed101959",
+        "id": "6bfb90fe-9de8-4976-b03e-a460b7934148",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -728,10 +728,10 @@
         ]
       },
       {
-        "id": "fdfedbb0-62e1-4b6a-a069-632334de85fa",
+        "id": "71316291-0abf-4a8c-bb2a-5fc5057bb6a7",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -741,10 +741,10 @@
         ]
       },
       {
-        "id": "73e8849c-74a5-4e31-88ba-d8bb738e8b58",
+        "id": "8542fc4d-6047-4861-b34c-d444ccd06435",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -754,10 +754,10 @@
         ]
       },
       {
-        "id": "20190660-de2b-4f72-ad12-5398bae28382",
+        "id": "447973b4-400f-4dd2-8417-a7a48c79c4a6",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -767,10 +767,10 @@
         ]
       },
       {
-        "id": "19e6efda-d8b4-428b-8193-ae87b5219cba",
+        "id": "98e837a7-f513-428e-834d-86a3580d9038",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -780,10 +780,10 @@
         ]
       },
       {
-        "id": "e33da7e1-cde7-4647-965c-db5fd718c89a",
+        "id": "c6926683-d203-4fcd-85f8-3e1f0cf3a3fc",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -793,10 +793,10 @@
         ]
       },
       {
-        "id": "1b97bcb5-c473-4960-b1f0-676bbef7d976",
+        "id": "07512f7b-880f-4869-bec2-044630c71538",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -806,10 +806,10 @@
         ]
       },
       {
-        "id": "0f21a867-0417-46bb-a199-7c484452684f",
+        "id": "68ea0011-e88a-46ce-993e-95f6965bc71a",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -819,10 +819,10 @@
         ]
       },
       {
-        "id": "c98b9c7d-3640-42ab-a375-437389c43fa2",
+        "id": "2800c74e-c3cf-4ff8-ba16-fabd6d92f607",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -832,10 +832,10 @@
         ]
       },
       {
-        "id": "4b8460e5-5d07-48d1-8b0f-757406ba53c0",
+        "id": "4b6184d5-a745-44d6-8837-59c82b118e2e",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -845,10 +845,10 @@
         ]
       },
       {
-        "id": "e105d7b0-f992-4db8-ab4c-d27055eceb28",
+        "id": "64a1929b-76ff-4ceb-85ed-e43bfea8e1c2",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -858,10 +858,10 @@
         ]
       },
       {
-        "id": "270264cc-6f6f-4d42-a456-1075f1454a35",
+        "id": "2fd75f63-575b-475b-9970-7e06ab13f6fb",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -871,10 +871,10 @@
         ]
       },
       {
-        "id": "57d1beb3-063d-4a5f-9dcb-d369a220841e",
+        "id": "a5c7f848-3b03-4271-8c0e-e3486581c380",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -884,10 +884,10 @@
         ]
       },
       {
-        "id": "dc8277d6-0de0-408d-a715-b273c60d90f3",
+        "id": "313f28c9-4b96-410b-afd2-975452bb35bb",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -897,10 +897,10 @@
         ]
       },
       {
-        "id": "6ffa552c-859f-48e8-a560-4f16d2ba5858",
+        "id": "d290ec67-4002-4bcc-8795-31052a8feb45",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -910,10 +910,10 @@
         ]
       },
       {
-        "id": "e44deebd-5a70-4379-8825-e50c506d588e",
+        "id": "39211a27-c830-48c6-a3c0-2da96914492b",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -923,10 +923,10 @@
         ]
       },
       {
-        "id": "f6d84de7-1433-4f17-a495-bd17a9ff53e4",
+        "id": "509b9cb6-188d-4cc8-b55c-3f8d2af02239",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -936,10 +936,10 @@
         ]
       },
       {
-        "id": "1bfab914-21fa-404f-9413-91434f194323",
+        "id": "4d61be89-053f-4a8d-8cfa-45e50ab8c4bb",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -949,10 +949,10 @@
         ]
       },
       {
-        "id": "82828dce-cf81-48ce-92df-1bbe67cac197",
+        "id": "71d392b9-4321-4505-ae51-65f7b68faeec",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -962,10 +962,10 @@
         ]
       },
       {
-        "id": "e95cfc34-da60-4cd7-b660-e337acadedd0",
+        "id": "85f95851-83b1-4710-8c68-dfb20b5210db",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -975,10 +975,10 @@
         ]
       },
       {
-        "id": "c193030d-9d95-41a8-8bb7-4ed8a0371660",
+        "id": "1e140a8a-82f7-474e-9119-e54e67afc6ae",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -988,10 +988,10 @@
         ]
       },
       {
-        "id": "39c9274e-5c88-40a1-ba0b-09c07334c47a",
+        "id": "593d7a83-e614-404d-8d75-a2a18109ab03",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1001,10 +1001,10 @@
         ]
       },
       {
-        "id": "58b4ce63-4ed7-438c-911d-254283b29a52",
+        "id": "2829e73b-de73-422c-9445-1df423c3e19d",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1014,10 +1014,10 @@
         ]
       },
       {
-        "id": "75ba46f9-b043-4ed6-99a2-1a4a0f327a28",
+        "id": "1e6c78d4-d30a-41e5-8f52-229c1509ab50",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1027,10 +1027,10 @@
         ]
       },
       {
-        "id": "b7d1f36c-5d2c-45b0-bba0-56fcf1325d9f",
+        "id": "bf673f54-7ac2-4b84-b18d-6e043db08397",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1040,10 +1040,10 @@
         ]
       },
       {
-        "id": "552fe66c-2f75-4f90-8d54-1725a0bc45b3",
+        "id": "f2f5d1d9-dd73-46fa-bdf8-88a632a6c1fb",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1053,10 +1053,10 @@
         ]
       },
       {
-        "id": "fe170abd-9db5-4084-81e2-4b3a16a77143",
+        "id": "788ca2e2-8208-44d6-821d-ddfb1247791d",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1066,10 +1066,10 @@
         ]
       },
       {
-        "id": "067a2ed3-9f7b-490c-b778-458b48cdee00",
+        "id": "abb5fb52-20d8-417b-8e1f-d574f2f11198",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1079,10 +1079,10 @@
         ]
       },
       {
-        "id": "05fd94c9-f2f8-44de-ad71-b7d7a53f8473",
+        "id": "f4926e3b-3aa3-4675-b026-7ad5e80a668c",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1092,10 +1092,10 @@
         ]
       },
       {
-        "id": "7dc55ed6-d42a-4bda-9157-7a559e0ec981",
+        "id": "2c1365af-bf60-4ae0-95b7-efb07718a768",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1105,10 +1105,10 @@
         ]
       },
       {
-        "id": "e6d2c172-6a33-4072-90f4-d81933fa23a9",
+        "id": "d49822d3-d57c-4c4c-93c4-bfd9e1122acf",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1118,10 +1118,10 @@
         ]
       },
       {
-        "id": "0dbc4544-d3fa-47f6-8910-b5c17c9e9632",
+        "id": "b0ea5fdd-6bbf-4fe0-b899-a60d0d7f60f8",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1131,10 +1131,10 @@
         ]
       },
       {
-        "id": "91157339-7f85-4a46-be83-1382ab36ac93",
+        "id": "6a87dc79-37b0-46e6-b343-d1801a84c01c",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1144,10 +1144,10 @@
         ]
       },
       {
-        "id": "7a80c607-490f-4809-9a11-7ebb832bfda2",
+        "id": "b922fa2e-38c1-4556-9b0a-7fd7230886dc",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1157,10 +1157,10 @@
         ]
       },
       {
-        "id": "4a07beb8-c112-487c-9915-aa8d40ad1417",
+        "id": "4ee2610f-71da-4c48-9c6d-1fef89b7b028",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1170,10 +1170,10 @@
         ]
       },
       {
-        "id": "de046a9f-638e-4d21-a981-6fbff0a16607",
+        "id": "c6906e25-798c-4525-933e-10b4455ee0db",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1183,10 +1183,10 @@
         ]
       },
       {
-        "id": "5575bd22-8afe-4262-aaf4-11c788dc9580",
+        "id": "a4fc680a-def9-4a45-8a18-6252e61eddc3",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1196,10 +1196,10 @@
         ]
       },
       {
-        "id": "9e49e421-3201-4133-aefc-a48b61cb9c82",
+        "id": "62de56e3-5e46-433a-b583-ccc2805e0212",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1209,10 +1209,10 @@
         ]
       },
       {
-        "id": "93c77e22-f578-4c0f-b8a2-0c60bfed98b0",
+        "id": "773e1d99-11a9-4469-abc3-020ee60cf1b5",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1222,10 +1222,10 @@
         ]
       },
       {
-        "id": "0e0e2bf1-6f7b-419b-88df-73a2332c000b",
+        "id": "5a682538-6fd5-4ba5-9e90-95aca75e2b02",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1235,10 +1235,10 @@
         ]
       },
       {
-        "id": "ca17d3eb-22de-46f9-b04f-05e779d2b0f8",
+        "id": "20bce682-b4a6-4838-b84e-f8bf46d5bb76",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1248,10 +1248,10 @@
         ]
       },
       {
-        "id": "58fefb95-8424-4f87-9d8c-19e0a8114897",
+        "id": "04f343ba-c250-439e-8e7c-37f516b4a46b",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1261,10 +1261,10 @@
         ]
       },
       {
-        "id": "43d4bbcb-2554-4d5a-aead-3460b40bacbc",
+        "id": "bb9dead7-660d-4f82-a6ce-78d9ec74672c",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1274,10 +1274,10 @@
         ]
       },
       {
-        "id": "3a442bd0-7c21-401b-b96b-b588536da517",
+        "id": "86a675f7-0db0-41a0-b45a-47d8c7ba4722",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1287,10 +1287,10 @@
         ]
       },
       {
-        "id": "d8e83b71-3b9a-4e16-9bc4-d7e2c86f9951",
+        "id": "9221812b-bda5-4b8c-8ca4-13b35efbae0f",
         "mainValue": "considerable",
         "level": 3,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1300,10 +1300,10 @@
         ]
       },
       {
-        "id": "c9d86d5b-d5a8-44d8-8528-4bd2759001dc",
+        "id": "3bfd1e00-45c7-48ce-823c-8804b2e59f91",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1313,10 +1313,10 @@
         ]
       },
       {
-        "id": "aeea2e2a-18a6-4f8b-bc56-e8c1d55d3a9e",
+        "id": "c161b695-9e8c-4d0c-a20a-031393b7680e",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1326,10 +1326,10 @@
         ]
       },
       {
-        "id": "09bcc604-db28-496c-bcc2-8e5dd3b43d97",
+        "id": "6e20ea36-d7ac-4c1d-9e44-be65f28b9ce4",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1339,10 +1339,10 @@
         ]
       },
       {
-        "id": "9e0d4715-6555-41af-a64a-67619af6a3dc",
+        "id": "44192395-2410-400b-87d8-9e24abb4ae01",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1352,10 +1352,10 @@
         ]
       },
       {
-        "id": "33bbfc30-f7f1-4040-a382-0221aba3f1d4",
+        "id": "6d88d3e1-3ee2-4c70-a005-7b2fa0d262e9",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1365,10 +1365,10 @@
         ]
       },
       {
-        "id": "649a9b60-b51f-4ae9-9956-4ee9c8c263f5",
+        "id": "c1754f25-7b4c-4cd2-9c58-2c62803a954a",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1378,10 +1378,10 @@
         ]
       },
       {
-        "id": "52ff1d62-097d-4344-b8b4-83e08b993eec",
+        "id": "eefd9202-f49d-4f3e-9ac3-8d86d9d1ab22",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1391,10 +1391,10 @@
         ]
       },
       {
-        "id": "8f4dfbbe-c554-4060-9714-1f8426c6e022",
+        "id": "ee84c3d5-1851-4e41-a7c8-9fc3d459bfb4",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1404,10 +1404,10 @@
         ]
       },
       {
-        "id": "360506c1-8303-4aa0-91bf-68e3c0b7e28d",
+        "id": "63800950-8c04-4715-8d2f-4109af3ac6c8",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1417,10 +1417,10 @@
         ]
       },
       {
-        "id": "399e1850-1171-4166-93b4-818508c12a80",
+        "id": "fda64524-ebd1-4034-9e17-be8dbd2c7f24",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1430,10 +1430,10 @@
         ]
       },
       {
-        "id": "ca3f08bc-0f5a-470d-b579-a74a6f130f34",
+        "id": "48e6d647-82c2-4310-b463-dc0f056736f6",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1443,10 +1443,10 @@
         ]
       },
       {
-        "id": "89015ea1-a2cb-43ac-bdd1-6b0e54214c8e",
+        "id": "57a8dea8-37cb-4402-80f9-e923b02aeaf2",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1456,10 +1456,10 @@
         ]
       },
       {
-        "id": "9748d1bc-822b-4982-a717-3993715fffb0",
+        "id": "0c087e30-144f-4c7e-9d71-f18a9b517f6c",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1469,10 +1469,10 @@
         ]
       },
       {
-        "id": "6d0e5d81-b0b4-4374-ab6b-b0825763f56c",
+        "id": "c60e5fa0-38be-4e95-96bf-8638b860b76e",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1482,10 +1482,10 @@
         ]
       },
       {
-        "id": "36774897-8513-4950-8fcb-4bbae18c908f",
+        "id": "676ab42b-868a-4d07-b67e-c633ddf11532",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1495,10 +1495,10 @@
         ]
       },
       {
-        "id": "cd6be04d-f81f-4221-977f-9da642cc6228",
+        "id": "98aa5841-809c-46a5-8965-7f59a12cc975",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1508,10 +1508,10 @@
         ]
       },
       {
-        "id": "6a5ced30-e15f-4dd1-a979-43f98e057cde",
+        "id": "5fb0c144-e648-4b68-a95f-cabd2bff34f4",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1521,10 +1521,10 @@
         ]
       },
       {
-        "id": "f02c54ba-9033-4ed4-a86e-80ee2115f84e",
+        "id": "230a26da-c656-44d7-97ac-587519e7f6b6",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1534,10 +1534,10 @@
         ]
       },
       {
-        "id": "12be02fb-02d7-47a5-9cbb-d4f4f94d2a99",
+        "id": "c5f7f798-627a-44df-a4b3-3d3a686c8aae",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1547,10 +1547,10 @@
         ]
       },
       {
-        "id": "0e07c4ad-4bf1-49fb-90fe-ec406add9650",
+        "id": "37cf407d-fba3-4d6e-a8b5-c03f02f39388",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1560,10 +1560,10 @@
         ]
       },
       {
-        "id": "ccb2abdf-830b-4fb8-8752-309008c50228",
+        "id": "4c28adec-ea4d-4bcf-9a16-69d69ac076bc",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1573,10 +1573,10 @@
         ]
       },
       {
-        "id": "c75c2211-2b16-4ad2-a705-a022e267d34c",
+        "id": "9898cfaa-a64e-4f8f-81ab-c3799ba99ae6",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1586,10 +1586,10 @@
         ]
       },
       {
-        "id": "c2cb680d-c4ac-4c55-bbac-82a1b7921c52",
+        "id": "4bdb0032-b4c5-4396-a23b-65a1b318b462",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1599,10 +1599,10 @@
         ]
       },
       {
-        "id": "594eeda9-db1b-4800-a279-07644dd0ff98",
+        "id": "0b90488f-d014-4ff4-aa14-7cdd186196ea",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1612,10 +1612,10 @@
         ]
       },
       {
-        "id": "1665f4ea-1d4e-47d5-b7b8-34214496973e",
+        "id": "f37db2c6-8d57-410e-b8fb-7d9cb504359e",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1625,10 +1625,10 @@
         ]
       },
       {
-        "id": "593e1782-1fc4-461c-971c-9c99f8b78ded",
+        "id": "c687b266-96c7-441e-865e-3b868d7f7a26",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1638,10 +1638,10 @@
         ]
       },
       {
-        "id": "254908d5-18a1-415a-bcce-1ae27b4e3015",
+        "id": "0c633bf9-2619-4358-93cf-013d958b1734",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1651,10 +1651,10 @@
         ]
       },
       {
-        "id": "53d8acba-d2ab-47d5-b8eb-ca0b3c725678",
+        "id": "b7000776-f15b-4bca-9a6e-2652729965a5",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1664,10 +1664,10 @@
         ]
       },
       {
-        "id": "92e9871c-575f-4957-b583-ffcca437d83b",
+        "id": "7be94b92-d63c-41ad-b167-7c7c040c7d7b",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1677,10 +1677,10 @@
         ]
       },
       {
-        "id": "70b3971f-814e-4fdd-abb6-cf6d6c75fc09",
+        "id": "e052993b-4ee4-4b21-bc9d-cc419a3e2ed0",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1690,10 +1690,10 @@
         ]
       },
       {
-        "id": "e169825c-9838-4b68-858a-0a71a7295ebf",
+        "id": "115be416-2e55-4540-9269-84efb5e4a7ef",
         "mainValue": "moderate",
         "level": 2,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1703,10 +1703,10 @@
         ]
       },
       {
-        "id": "4bdcac90-45bf-4fbd-9e2d-7f7230fd2b49",
+        "id": "622cc2fd-31b5-4a6d-8fbb-4a19859e8f42",
         "mainValue": "low",
         "level": 1,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1716,10 +1716,10 @@
         ]
       },
       {
-        "id": "0f3a2c3c-778e-47ce-ab5a-e819c95e1b5b",
+        "id": "d2a5b62c-e17e-4ee0-a3bd-91f5fd0149e3",
         "mainValue": "low",
         "level": 1,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1729,10 +1729,10 @@
         ]
       },
       {
-        "id": "ff1d44dc-469e-45e1-b394-b5d7cb57978c",
+        "id": "b4ed0b3e-16d2-49ba-addb-83e1b231d091",
         "mainValue": "low",
         "level": 1,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1742,10 +1742,10 @@
         ]
       },
       {
-        "id": "1b30c6ef-6a32-4d05-a7be-976d4991ea82",
+        "id": "eb2102dd-f1d0-4663-af17-0190bb586fdd",
         "mainValue": "low",
         "level": 1,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
@@ -1755,10 +1755,10 @@
         ]
       },
       {
-        "id": "1b0c8ef1-9871-4f8b-a000-7840c5ec2f23",
+        "id": "826bef65-d2b2-424e-80c7-66423acca6f7",
         "mainValue": "low",
         "level": 1,
-        "validFrom": "2026-11-20T16:00:00Z",
+        "validFrom": "2026-11-21T07:00:00Z",
         "validUntil": "2026-11-21T16:00:00Z",
         "regions": [
           {
