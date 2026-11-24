@@ -1,7 +1,7 @@
 {
   "source": "https://restaurant-simplon.ch/wochenmenue/",
-  "week": "16. November 2026 – 22. November 2026",
-  "updatedAt": "2026-11-17T16:03:48Z",
+  "week": "23. November 2026 – 29. November 2026",
+  "updatedAt": "2026-11-24T17:49:41Z",
   "days": [
     {
       "day": "Montag",
@@ -15,13 +15,13 @@
           "name": "Menü 1",
           "price": "19 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Saftige Pouletbrust an cremiger Kräuterrahmsauce mit Jasminreis und Gemüse"
+          "dish": "Saftige Pouletbrust an cremiger Paprikasauce dazu knusprige Rösti und Gemüse"
         },
         {
           "name": "Menü 2",
           "price": "18 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Pasta Pesto Genovese mit Cherrytomaten und Parmesanflocken"
+          "dish": "Pasta an hausgemachtem Basilikum-Pesto mit Cherrytomaten und Parmesanflocken"
         }
       ]
     },
@@ -32,13 +32,13 @@
           "name": "Menü 1",
           "price": "19 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Zartes Rindsgeschnetzeltes an Paprikarahmsauce mit Butterspätzli und Gemüse"
+          "dish": "Saftiger Rindshamburger mit Cheddar und hausgemachter Sauce dazu Pommes"
         },
         {
           "name": "Menü 2",
           "price": "18 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Spaghetti Pesto Genovese mit Cherrytomaten und Parmesanflocken"
+          "dish": "Pasta an hausgemachtem Basilikum-Pesto mit Cherrytomaten und Parmesanflocken"
         }
       ]
     },
@@ -49,13 +49,13 @@
           "name": "Menü 1",
           "price": "19 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Poulet Riz Casimir an cremiger Currysauce mit Jasminreis und Früchten"
+          "dish": "Poulet-Cordonbleu dazu Ofenkartoffel und Gemüse"
         },
         {
           "name": "Menü 2",
           "price": "18 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Hausgemachte Lasagne al Forno mit Rindshackfleisch und Mozzarella"
+          "dish": "Cremiges Tomatenrisotto mit getrockneten Tomaten und Parmesanflocken"
         }
       ]
     },
@@ -66,13 +66,13 @@
           "name": "Menü 1",
           "price": "19 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Knuspriges Zanderfilet im Backteig mit Tartarsauce, Petersilienkartoffeln und Gemüse"
+          "dish": "Gebratenes Fischfilet an Zitronenbutter dazu Kräuterreis und Gemüse"
         },
         {
           "name": "Menü 2",
           "price": "18 CHF",
           "starter": "Tagesvorspeise",
-          "dish": "Hausgemachte Lasagne al Forno mit Rindshackfleisch und Mozzarella"
+          "dish": "Cremiges Tomatenrisotto mit getrockneten Tomaten und Parmesanflocken"
         }
       ]
     }
